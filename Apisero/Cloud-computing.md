@@ -11,6 +11,9 @@ Desktop, Laptop, smartphone, Tablet
 
 But there is encryption from end to end from ID-passwords, OTPs
 
+![cloud1](https://user-images.githubusercontent.com/42698268/129158109-9d122ae0-d8c8-41e0-b03c-b1560305b966.png)
+
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Five Essential Characteristics of Cloud Computing
