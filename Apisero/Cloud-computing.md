@@ -3,6 +3,8 @@
 
 The National Institute of Standards and Technology(NIST) Defines Cloud Computing as "Cloud Computing is a model for enabling ubiquitous ``` (can be accessed from everywhere) ```, convenient ``` (easy installation, easy notfications) ```, on-demand network access to a shared pool of configurable computing resources(for example, networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction."
 
+basically Cloud computing is the delivery of different services through the Internet, including data storage, servers, databases, networking, and software.
+
 These can be stored on cloud and can be accessed from anywhere:
 E-mail, Documents, Blogs, Spreadsheets, Video, Pictures, Calender, Chat, Presentations, Address Book
 
@@ -126,54 +128,3 @@ But there is encryption from end to end from ID-passwords, OTPs
 
 # Summary
 ![Screenshot from 2021-08-12 12-58-55](https://user-images.githubusercontent.com/42698268/129157376-1c77ddf6-ff64-40a7-ba1b-2bfa272bd8de.png)
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
