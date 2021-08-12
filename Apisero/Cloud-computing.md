@@ -1,5 +1,6 @@
 # Cloud Computing, Pay-as-you-go
 # Introduction to cloud computing
+
 The National Institute of Standards and Technology(NIST) Defines Cloud Computing as "Cloud Computing is a model for enabling ubiquitous ``` (can be accessed from everywhere) ```, convenient ``` (easy installation, easy notfications) ```, on-demand network access to a shared pool of configurable computing resources(for example, networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction."
 
 These can be stored on cloud and can be accessed from anywhere:
@@ -10,45 +11,119 @@ Desktop, Laptop, smartphone, Tablet
 
 But there is encryption from end to end from ID-passwords, OTPs
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Five Essential Characteristics of Cloud Computing
+
 1. **On-demand self service**: Cloud computing empowers the consumer to unilaterally provision computing capabilities like server time and network storage with no need for human interaction with individual service providers. ```(you can access any mail or photos of last 10 years)```
 2. **Broad network access**: In cloud computing, the internet allows any thin or thick client, such as laptop or a mobile phone, to access capabilities through standard mechanisms.
 3. **Resource pooling**: In the cloud environment, the provider's computing resources are pooled to serve the multiple consumers through the multi-tenant model, with different resources being assigned and reassigned on a real-time basis according to consumer demand. The user loses cntrol over the data location but may be able to specify higher level of abstraction.```(just like in a bulding everyone is living in their flat and paying rent and have their own privacy)```
 4. **Rapid elasticity**: Capabilities can be both elastically and automatically provisioned and released, to scale rapidly with demand. To the consumer, the cpabilities available for provisioning often appear to be unlimited and can be appropriated in any quantity at any time.```(if customers increased on your website then it will allocate another server, i.e will change itself dynamically)```
 5. **Measured service**: Cloud systems automatically monitor, control, optimise and report resource usage, thus providing transparency for both the service provider and consumer of the utilised service.```(will give you data that how many people visited your website, how many males and females visited, how many visited after 10pm, how many just visited and not purchased anything, how many purchased, i.e you can have every data)```
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 #  Three service models of cloud computing
+
 1. **IaaS** : Infrastructure which you need as an IT professional to build something, for e.g infrastructure of school is bench, blackboard, laboratory, librray, infrastructure of cinema hall is screen, chairs etc, for IT is server, router, gateway, switches, infrastructure as a service includes all the hardwares. You don't need to take hardware servers, just take from the cloud, deploy your applications and launch it in playstore and everyone will be able to downlaod it from playstore an dcan use it
+
+
 ![cloud2](https://user-images.githubusercontent.com/42698268/129156202-9e1f6041-e1d8-4122-b742-dba52898c69d.png)
+
+
+
+![Screenshot from 2021-08-12 12-13-20](https://user-images.githubusercontent.com/42698268/129156341-c91ef6ef-cf75-4c4c-a099-e9a4dd3b1afe.png)
 
 
 ```You have purchased new laptop, this is Iaas, now you hahve installed windows os in it, this is PaaS and now you have downlaoded VLC media player to use it, this is SaaS```
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 # Four types of Cloud(Deployment Models):
+
+![Screenshot from 2021-08-12 12-13-32](https://user-images.githubusercontent.com/42698268/129156457-9966e66d-23ed-4fce-bd55-352417d859aa.png)
+
 1. ***Private Cloud*** : ***example***: Your own computer, even all companies have their own private cloud like, IBM, Huwayei, Samsung, MI etc, it can be only used by their own employees. ***advantages***: very much secure, ***disadvantages***:can't be accessed from anywhere, you need your own hardware, therfore costly
+
+![Screenshot from 2021-08-12 12-39-51](https://user-images.githubusercontent.com/42698268/129156482-6e4a999e-6497-4aef-b81a-0ca8d781a86f.png)
+
 
 2. ***Public cloud*** : example: Microsoft Azure, AWS, Google cloud, Alibaba, ***Advantages***: cheap as you don't require your own hardware, pay until you use, no need ot pay extra, ***disadvantages***: not as secure as private cloud.
 
+![Screenshot from 2021-08-12 12-40-42](https://user-images.githubusercontent.com/42698268/129156504-ae26a41a-e470-4b4c-9121-7dbb8bec8899.png)
+
+
 3. ***Hybrid Cloud*** : contains both public and private cloud, most preferred by companies nowadays so that important data can be kept in private cloud and data like employee data, other day to day data can be kept on public cloud. here both private and public cloud can interact with each other.
+
+![Screenshot from 2021-08-12 12-42-13](https://user-images.githubusercontent.com/42698268/129156587-40699667-462b-43d1-8fa2-0a110f9e9ff2.png)
 
 
 4. ***Community cloud***: Nowadays created by communities to perform certainw orks, it is like a chain, for example community cloud created by hospitals where anyone can register and donate blood or if anyone wants can go on that website and search, Quora is also community cloud, education related community cloud are there, hospitals related etc.
 
+![Screenshot from 2021-08-12 12-41-32](https://user-images.githubusercontent.com/42698268/129156666-b829d382-7b95-49da-8f9b-0b303d30fb90.png)
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # History and evolution of cloud computing
 
+![Screenshot from 2021-08-12 12-36-31](https://user-images.githubusercontent.com/42698268/129156749-9e432dd5-7ff7-4b1c-b7b0-b9971a020191.png)
+
+![Screenshot from 2021-08-12 12-38-18](https://user-images.githubusercontent.com/42698268/129156776-585494ad-2359-48e8-89d0-e3e2f0512f10.png)
+
+# Evolution of Cloud Computing
+
+![Screenshot from 2021-08-12 12-39-12](https://user-images.githubusercontent.com/42698268/129156833-841c276d-1e2c-4ce0-ab1b-3a9130e332ce.png)
+
+
 # Cloud Computing Architecture
-frontend
-middleware
-backend
+
+![Screenshot from 2021-08-12 12-42-57](https://user-images.githubusercontent.com/42698268/129156985-9f297af8-e11c-4e56-a1aa-a0c0d82e9444.png)
+
+
+
+![Screenshot from 2021-08-12 12-44-42](https://user-images.githubusercontent.com/42698268/129157011-28be5b7c-ec85-4ff7-8608-553299ddbc80.png)
+
+![Screenshot from 2021-08-12 12-45-26](https://user-images.githubusercontent.com/42698268/129157051-0463a849-14ea-435a-950f-bc68f0953a97.png)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # AWS
+
+![Screenshot from 2021-08-12 12-47-11](https://user-images.githubusercontent.com/42698268/129157074-6e26d8c7-9af3-4230-be34-954495ae72e2.png)
+
 # Microsoft Azure
+
+![Screenshot from 2021-08-12 12-49-58](https://user-images.githubusercontent.com/42698268/129157090-863dc9b9-67d3-4ece-9d38-2876672de48c.png)
+
+![Screenshot from 2021-08-12 12-51-25](https://user-images.githubusercontent.com/42698268/129157152-961863ef-49d8-44ce-aa61-456ca8500ecd.png)
+![Screenshot from 2021-08-12 12-51-40](https://user-images.githubusercontent.com/42698268/129157171-a96d3642-396d-479f-be7a-a161f718e240.png)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 # Google Cloud Platform
 
+![Screenshot from 2021-08-12 12-52-05](https://user-images.githubusercontent.com/42698268/129157223-eb3a6552-4425-4e07-93df-f914ad75b2f7.png)
+
+![Screenshot from 2021-08-12 12-53-55](https://user-images.githubusercontent.com/42698268/129157301-fe320f99-f901-4173-8288-2e98d04672fe.png)
+
 # Merits of Cloud Computing
+![Screenshot from 2021-08-12 12-54-10](https://user-images.githubusercontent.com/42698268/129157338-22e90611-f568-46f5-9358-150e57b8ec36.png)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 # Applications of Cloud Computing
+![Screenshot from 2021-08-12 12-56-43](https://user-images.githubusercontent.com/42698268/129157353-1f6500b6-2d11-4f52-8e35-22d3060ba885.png)
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Summary
+![Screenshot from 2021-08-12 12-58-55](https://user-images.githubusercontent.com/42698268/129157376-1c77ddf6-ff64-40a7-ba1b-2bfa272bd8de.png)
+
 
 
     
