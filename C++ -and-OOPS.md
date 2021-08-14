@@ -61,6 +61,24 @@ types of constant: Primary and secondary
 ### Keywords
 ![Screenshot from 2021-08-14 23-45-35](https://user-images.githubusercontent.com/42698268/129456626-93114d45-ea46-4f82-8088-482001b7e80b.png)
 
+# Data Types in C++
+![Screenshot from 2021-08-15 01-16-33](https://user-images.githubusercontent.com/42698268/129458804-fd4ea922-6164-4f9b-bd10-b551edfd015d.png)
+
+### variable declaration
+![Screenshot from 2021-08-15 01-17-33](https://user-images.githubusercontent.com/42698268/129458819-8a2f665e-0125-4e75-8655-185f2b8b4572.png)
+
+# Input Output Instructions
+![Screenshot from 2021-08-15 01-20-52](https://user-images.githubusercontent.com/42698268/129458825-d1e1f1e4-f557-49bb-b880-e4dc3c2fccbe.png)
+
+![Screenshot from 2021-08-15 01-21-26](https://user-images.githubusercontent.com/42698268/129458841-89ff5ce8-a5b9-4fac-b520-004aba0d3986.png)
+
+![Screenshot from 2021-08-15 01-23-45](https://user-images.githubusercontent.com/42698268/129458856-6a1d6805-ec80-4998-95da-017fbfe785e8.png)
+![Screenshot from 2021-08-15 01-24-21](https://user-images.githubusercontent.com/42698268/129458857-113747ac-a449-43be-8618-98478c9a56a6.png)
+![Screenshot from 2021-08-15 01-25-38](https://user-images.githubusercontent.com/42698268/129458859-97ef4d51-9306-4e99-a89d-a7997b7d60b4.png)
+# Header Files
+
+![Screenshot from 2021-08-15 01-26-48](https://user-images.githubusercontent.com/42698268/129458861-4aef5c06-1f7c-4f32-a5d6-475c70497c8b.png)
+![Screenshot from 2021-08-15 01-27-26](https://user-images.githubusercontent.com/42698268/129458863-3623c695-8aa5-458e-a327-9c48452f11e2.png)
 
 
 
