@@ -81,9 +81,13 @@ types of constant: Primary and secondary
 ![Screenshot from 2021-08-15 01-27-26](https://user-images.githubusercontent.com/42698268/129458863-3623c695-8aa5-458e-a327-9c48452f11e2.png)
 
 # Reference Variables
-![Screenshot from 2021-08-15 02-02-59](https://user-images.githubusercontent.com/42698268/129459396-64f49374-9e41-4f89-b216-c1b76705f0cc.png)
+![Screenshot from 2021-08-15 02-10-04](https://user-images.githubusercontent.com/42698268/129459525-fcf86aa2-7e2a-4a1d-b78b-209e4e111695.png)
+
 ![Screenshot from 2021-08-15 02-03-14](https://user-images.githubusercontent.com/42698268/129459397-9068791c-32fb-4d5e-a10f-d259212d5a32.png)
 ![Screenshot from 2021-08-15 02-03-27](https://user-images.githubusercontent.com/42698268/129459398-19621933-95cd-4d13-89b8-3dfb1093450d.png)
+
+# Functions
+
 
 
 
