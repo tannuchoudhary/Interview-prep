@@ -25,7 +25,7 @@ Example: Assembly language.
 ### differences
 ![Screenshot from 2021-08-14 08-36-40](https://user-images.githubusercontent.com/42698268/129432438-f385d6a1-2fe8-4ca4-9b0a-e3e662827094.png)
 
-# OOPS
+# 3. OOPS
 ![Screenshot from 2021-08-14 10-28-34](https://user-images.githubusercontent.com/42698268/129434732-f1b2edaf-f1bc-438d-91e1-94e72cfaaa88.png)
 
 # Class and Object
@@ -41,6 +41,26 @@ An Object is an instance of a Class. When a class is defined, no memory is alloc
 ![Screenshot from 2021-08-14 10-32-57](https://user-images.githubusercontent.com/42698268/129434740-bac49482-89ff-45d5-ba71-cd50114b2c53.png)
 
 ![Screenshot from 2021-08-14 10-34-24](https://user-images.githubusercontent.com/42698268/129434757-fad1c4c9-d9ac-4cff-85d1-379a78c6ac11.png)
+
+# 4. Software Development in C++
+![Screenshot from 2021-08-14 21-33-44](https://user-images.githubusercontent.com/42698268/129452368-9477f639-2c6b-4939-a478-64c73f22041d.png)
+
+
+# Constants, Variables and Keywords
+
+### constants
+![Screenshot from 2021-08-14 23-40-11](https://user-images.githubusercontent.com/42698268/129456594-3e110d21-f6b6-49f8-9609-b8db0be7a961.png)
+
+types of constant: Primary and secondary
+![Screenshot from 2021-08-14 23-42-16](https://user-images.githubusercontent.com/42698268/129456620-bf488532-18c0-464f-a17e-7762fe4e0da8.png)
+
+
+### Variables
+![Screenshot from 2021-08-14 23-44-32](https://user-images.githubusercontent.com/42698268/129456622-ca6c5925-0728-4e36-9431-e8f6ccad6368.png)
+
+### Keywords
+![Screenshot from 2021-08-14 23-45-35](https://user-images.githubusercontent.com/42698268/129456626-93114d45-ea46-4f82-8088-482001b7e80b.png)
+
 
 
 
