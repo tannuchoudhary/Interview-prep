@@ -59,7 +59,7 @@ Output : matching = 2 non-matching = 1
 ```Keep talking: During the whole interview, you should be talking to the interviewer because if you stay silent, the interviewer won’t understand your thought process.```
 ```Comment your code: For every line of code, write short comments for your and interviewer’s ease.```
 ``` Always review your code: When you’re done with your coding, try to explain the algorithm with a sample test case and perform the complete dry run.```
-
+# [#4](https://medium.com/@saismitapanda09/amazewow-interview-experience-and-preparation-guidelines-1dfb49795185)
 # ques 14: 
 
 
