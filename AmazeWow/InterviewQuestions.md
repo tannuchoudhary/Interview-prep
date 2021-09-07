@@ -107,11 +107,11 @@ Output: 4
 
 # [#12](https://www.geeksforgeeks.org/amazon-interview-experience-2-months-internship/?ref=rp)
 
-# [#12](https://www.geeksforgeeks.org/amazon-interview-experience-2-months-internship/?ref=rp)
+# [#13](https://www.geeksforgeeks.org/amazon-interview-experience-2-months-internship/?ref=rp)
 
-# [#12]()
+# [#14](https://www.geeksforgeeks.org/amazon-interview-experience-off-campus-amazewow/?ref=rp)
 
-# [#12]()
+# [#15](https://www.geeksforgeeks.org/amazon-sde-1-fte-6-months-internship-experience-amazewow-2021/?ref=rp)
 
 # [#12]()
 
