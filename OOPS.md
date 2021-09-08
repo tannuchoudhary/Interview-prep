@@ -98,4 +98,36 @@ Basically class template is to make the class generic, so it can accept any data
 
 ![Screenshot from 2021-09-08 02-32-13](https://user-images.githubusercontent.com/42698268/132455710-3b0377f4-e075-4534-932a-e0323a5c824a.png)
 
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+class arrayList{
+    private:
+        struct controlBlock{
+          int capapcity;
+          int *arr_ptr;
+        };
+        
+        controlBlock *s;
+        
+    public:
+        arrayList(int capacity){
+            s = new controlBlock;
+            s->capacity = capacity;
+            s->arr_ptr = new int[s->capacity];
+        }
+        
+        void addElement(int index, int data){
+            
+        }
+    
+};
+
+int main(){
+    
+    return 0;
+}
+```
+
 ``` accessing elements through the name of the structure is done by dot operator and accessing it through the pointer which is pointing to the structure is done by arrow operator```
