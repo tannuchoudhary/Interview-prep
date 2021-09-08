@@ -98,6 +98,7 @@ Basically class template is to make the class generic, so it can accept any data
 
 ![Screenshot from 2021-09-08 02-32-13](https://user-images.githubusercontent.com/42698268/132455710-3b0377f4-e075-4534-932a-e0323a5c824a.png)
 
+## For integer
 ```cpp
 #include<bits/stdc++.h>
 using namespace std;
@@ -105,7 +106,7 @@ using namespace std;
 class arrayList{
     private:
         struct controlBlock{
-          int capapcity;
+          int capacity;
           int *arr_ptr;
         };
         
@@ -119,15 +120,103 @@ class arrayList{
         }
         
         void addElement(int index, int data){
-            
+            if(index>=0 && index<=s->capacity-1){
+                s->arr_ptr[index] = data;
+            }
+            else cout<<endl<<"Array index is not valid";
+        }
+        
+        //passing the reference to store the data in reference variable data
+        void viewElement(int index, int &data){
+            if(index>=0 && index<=s->capacity-1){
+               data = s->arr_ptr[index];
+            }
+            else cout<<endl<<"Array index is not valid";
+        }
+        
+        void viewList(){
+            int i;
+            for(i=0; i<s->capacity; i++){
+                cout<<" "<<s->arr_ptr[i];
+            }
         }
     
 };
 
 int main(){
-    
+    int data;
+    arrayList list1(4);
+    list1.addElement(0, 25.6);
+    list1.viewElement(0, data);
+    cout<<"Value in the array is "<<data;
     return 0;
 }
+
+
+```
+## For general using template
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+//syntax
+template<class X> class arrayList{
+    private:
+        struct controlBlock{
+          int capacity;
+          X *arr_ptr;
+        };
+        
+        controlBlock *s;
+        
+    public:
+        arrayList(int capacity){
+            s = new controlBlock;
+            s->capacity = capacity;
+            s->arr_ptr = new X[s->capacity];
+        }
+        
+        void addElement(int index, X data){
+            if(index>=0 && index<=s->capacity-1){
+                s->arr_ptr[index] = data;
+            }
+            else cout<<endl<<"Array index is not valid";
+        }
+        
+        //passing the reference to store the data in reference variable data
+        void viewElement(int index, X &data){
+            if(index>=0 && index<=s->capacity-1){
+               data = s->arr_ptr[index];
+            }
+            else cout<<endl<<"Array index is not valid";
+        }
+        
+        void viewList(){
+            int i;
+            for(i=0; i<s->capacity; i++){
+                cout<<" "<<s->arr_ptr[i];
+            }
+        }
+    
+};
+
+int main(){
+    float data;
+    //pass value as parameter as constructor is taking parameter
+    arrayList <float> list1(4);
+    //and here also you have to tell the template that what kind of data you are going to pass
+    list1.addElement(0, 25.6);
+    list1.viewElement(0, data);
+    cout<<"Value in the array is "<<data;
+    return 0;
+}
+
 ```
 
+
 ``` accessing elements through the name of the structure is done by dot operator and accessing it through the pointer which is pointing to the structure is done by arrow operator```
+
+# 6. Virtual function
+```pounter k through object ko call kro to arrow operator lgta h, and object k through kro to dot operator``` 
+
+
