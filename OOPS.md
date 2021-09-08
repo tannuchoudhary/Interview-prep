@@ -92,4 +92,10 @@ int main(){
 ```output: 5.4```
 
 ## Class Template
+When you are creating a class, you need to create different class for different kinds of data types, for e.g if I have created a class which is creating array and assigning values in the array and displaying them, if I want to create this for int and float then I have to write it two times, but if i will declare the class as template and replace the datatypes with place holder then it will work for all data types.
 
+Basically class template is to make the class generic, so it can accept any datatype and we don't need to create different classes of different datatypes for the same work.
+
+![Screenshot from 2021-09-08 02-32-13](https://user-images.githubusercontent.com/42698268/132455710-3b0377f4-e075-4534-932a-e0323a5c824a.png)
+
+``` accessing elements through the name of the structure is done by dot operator and accessing it through the pointer which is pointing to the structure is done by arrow operator```
