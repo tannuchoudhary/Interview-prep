@@ -92,7 +92,7 @@ int main(){
 }
 
 ```
-# Ques 0. [Program for Mean and median of an unsorted array](geeksforgeeks.org/program-for-mean-and-median-of-an-unsorted-array/)
+# Ques 0. [Program for Mean, median and mode of an unsorted array](geeksforgeeks.org/program-for-mean-and-median-of-an-unsorted-array/)
 
 ```
 Mean of an array = (sum of all elements) / (number of elements)
@@ -109,6 +109,42 @@ Mode can also be find easily using unordered_map
 
 ```
 
+```
+To find median, we have two approaches
+approach 1: sort the array and find the middle element or avg of middle two elements if no of elements are even
+```
+```cpp
+/*approach 2: If all the elements are unique then we can find it using set(by using the same approach as we use to  find the kth smallest element in an unsorted array, if the elements are unique)*/
+int main(){
+    int ar[] = {1, 15, 6, 17, 8, 10, 19, 30, 15, 1, 1};
+    
+    //find median
+    
+    int n = sizeof(ar) / sizeof(ar[0]);
+    int k = n/2;
+    
+    //if no of elements are odd then middle element in sorted array is mean
+   
+        
+        //insert the array in set
+        set<int> s(ar, ar+n);
+        
+        //set the iterator to the beginning
+        set<int> :: iterator itr = s.begin();
+        
+        //advance the iterator to the k-1th position
+        advance(itr, k-1);
+        
+        cout<<"Mean: "<<*itr<<endl;
+    
+}
+
+```
+```
+Approach 3: But if the elements are repeating then use priority queue
+
+```
+
 ```cpp
 #include<bits/stdc++.h>
 using namespace std;
@@ -117,7 +153,7 @@ int main(){
     int ar[] = {1, 15, 6, 17, 8, 10, 19, 30, 15, 1, 1};
     
     //find median
-    /*
+    
     int n = sizeof(ar) / sizeof(ar[0]);
     int k = n/2;
     
@@ -125,7 +161,7 @@ int main(){
     set<int> :: iterator itr = s.begin();
     advance(itr, k-1);
     
-    cout<<*itr;*/
+    cout<<"Mean: "<<*itr;
     
     //find mode
     
@@ -143,7 +179,7 @@ int main(){
             num = it.first;
         }
     }
-    cout<<num;
+    cout<<"Mode: "<<num;
     return 0;
 }
 ```
