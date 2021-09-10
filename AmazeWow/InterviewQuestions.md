@@ -94,6 +94,59 @@ int main(){
 ```
 # Ques 0. [Program for Mean and median of an unsorted array](geeksforgeeks.org/program-for-mean-and-median-of-an-unsorted-array/)
 
+```
+Mean of an array = (sum of all elements) / (number of elements)
+
+Median of a sorted array of size n is defined as the middle element when n is odd and average of middle two elements when n is even
+
+Mode is the element having the most no of occurence or frequency
+```
+
+```
+Mean can be find easily in O(n) by iterating through the loop and adding all elements and divide them by the size of the array
+
+Mode can also be find easily using unordered_map
+
+```
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int ar[] = {1, 15, 6, 17, 8, 10, 19, 30, 15, 1, 1};
+    
+    //find median
+    /*
+    int n = sizeof(ar) / sizeof(ar[0]);
+    int k = n/2;
+    
+    set<int> s(ar, ar+n);
+    set<int> :: iterator itr = s.begin();
+    advance(itr, k-1);
+    
+    cout<<*itr;*/
+    
+    //find mode
+    
+    unordered_map<int, int> freq;
+    for(auto it : ar){
+        freq[it]++;
+    }
+    
+    int maxm = INT_MIN;
+     int i=0;
+     int num;
+    for(auto it : freq){
+        if(it.second>maxm){
+            maxm = it.second;
+            num = it.first;
+        }
+    }
+    cout<<num;
+    return 0;
+}
+```
 # Ques 1. Alternate reversal of linked list in a group of size k. Like the first group should be reversed, the second group should be the same, the third should be reversed, the fourth should be the same, etc.
 ```
 Example : 
