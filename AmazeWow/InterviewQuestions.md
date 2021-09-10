@@ -94,25 +94,53 @@ int main(){
 ```
 # Ques 0. [Program for Mean, median and mode of an unsorted array](geeksforgeeks.org/program-for-mean-and-median-of-an-unsorted-array/)
 
-```
-Mean of an array = (sum of all elements) / (number of elements)
+* Mean of an array = (sum of all elements) / (number of elements)
+    * Mean can be found easily in O(n) by iterating through the loop and adding all elements and divide them by the size of the array
 
-Median of a sorted array of size n is defined as the middle element when n is odd and average of middle two elements when n is even
+* Mode is the element having the most no of occurence or frequency
+     * Mode can also be found easily using unordered_map
 
-Mode is the element having the most no of occurence or frequency
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int ar[] = {1, 15, 6, 17, 8, 10, 19, 30, 15, 1, 1};
+    
+    
+    //find mode
+    
+    unordered_map<int, int> freq;
+    for(auto it : ar){
+        freq[it]++;
+    }
+    
+    int maxm = INT_MIN;
+     int i=0;
+     int num;
+    for(auto it : freq){
+        if(it.second>maxm){
+            maxm = it.second;
+            num = it.first;
+        }
+    }
+    cout<<"Mode: "<<num;
+    return 0;
+}
 ```
 
-```
-Mean can be find easily in O(n) by iterating through the loop and adding all elements and divide them by the size of the array
 
-Mode can also be find easily using unordered_map
+* Median of a sorted array of size n is defined as the middle element when n is odd and average of middle two elements when n is even
+    * To find median, we have 3 approaches
+        * approach 1: sort the array and find the middle element or avg of middle two elements if no of elements are even
+        * approach 2: If all the elements are unique then we can find it using set(by using the same approach as we use to  find the kth smallest element in an unsorted array, if the elements are unique)
+        * approach 3: Use Min heap or Max heap i.e priority queue in c++ if elements are repeating.( build a min heap or max heap and insert all the elements and extract elements n/2 times, but it would also take O(n + nlogn), where n is for inserting and nlogn is for fetching n/2 elements.
+ 
 
-```
 
-```
-To find median, we have two approaches
-approach 1: sort the array and find the middle element or avg of middle two elements if no of elements are even
-```
+
+## approach 02:
 ```cpp
 /*approach 2: If all the elements are unique then we can find it using set(by using the same approach as we use to  find the kth smallest element in an unsorted array, if the elements are unique)*/
 int main(){
@@ -140,49 +168,12 @@ int main(){
 }
 
 ```
-```
-Approach 3: But if the elements are repeating then use priority queue
 
-```
+``` Time Complexity:  O( log N) in Average Case and O(N) in Worst Case, as we know the Set in C++ STL is implemented using Binary Search Tree and we also know that the time complexity of all cases(searching , inserting, deleting ) in BST is log (n) in average case and O(n) in worst case.```
 
-```cpp
-#include<bits/stdc++.h>
-using namespace std;
 
-int main(){
-    int ar[] = {1, 15, 6, 17, 8, 10, 19, 30, 15, 1, 1};
-    
-    //find median
-    
-    int n = sizeof(ar) / sizeof(ar[0]);
-    int k = n/2;
-    
-    set<int> s(ar, ar+n);
-    set<int> :: iterator itr = s.begin();
-    advance(itr, k-1);
-    
-    cout<<"Mean: "<<*itr;
-    
-    //find mode
-    
-    unordered_map<int, int> freq;
-    for(auto it : ar){
-        freq[it]++;
-    }
-    
-    int maxm = INT_MIN;
-     int i=0;
-     int num;
-    for(auto it : freq){
-        if(it.second>maxm){
-            maxm = it.second;
-            num = it.first;
-        }
-    }
-    cout<<"Mode: "<<num;
-    return 0;
-}
-```
+
+
 # Ques 1. Alternate reversal of linked list in a group of size k. Like the first group should be reversed, the second group should be the same, the third should be reversed, the fourth should be the same, etc.
 ```
 Example : 
@@ -194,6 +185,11 @@ k=2
 Output : 2->1->3->4->6->5->7->8
 
 ```
+apply the reversing of nodes of linked list in group of size k along with skipping k nodes each times after reversing the group:
+
+![IMG20210911013012](https://user-images.githubusercontent.com/42698268/132911145-ff9f721a-5f4b-4fd8-b41c-325c79d24f8d.jpg)
+
+
 
 # Ques 2. There are two strings given to find the matching and non-matching characters.
 
