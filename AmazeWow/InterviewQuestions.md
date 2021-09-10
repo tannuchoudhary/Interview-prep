@@ -1,5 +1,6 @@
 ``` For each question, time complexity has to be told. ```
 
+# [#1](https://www.geeksforgeeks.org/amazon-wow-interview-experience/)
 # Ques 1. Alternate reversal of linked list in a group of size k. Like the first group should be reversed, the second group should be the same, the third should be reversed, the fourth should be the same, etc.
 ```
 Example : 
@@ -113,14 +114,14 @@ Output: 4
 
 # [#15](https://www.geeksforgeeks.org/amazon-sde-1-fte-6-months-internship-experience-amazewow-2021/?ref=rp)
 
-# [#12]()
+# [#16](https://www.geeksforgeeks.org/amazon-interview-experience-off-campus-amazewow/)
 
 
-# [#12]()
+# [#17](https://www.geeksforgeeks.org/amazon-interview-experience-for-sde-internship-amazewow-2020/)
 
-# [#12]()
+# [#18](https://www.geeksforgeeks.org/amazon-sde-1-fte-6-months-internship-experience-amazewow-2021/?ref=rp)
 
-# [#12]()
+# [#19](https://www.geeksforgeeks.org/amazon-interview-experience-sde-1-offcampus/?ref=rp)
 
 # [#12]()
 
