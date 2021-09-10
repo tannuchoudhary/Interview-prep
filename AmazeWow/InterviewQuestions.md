@@ -1,6 +1,99 @@
 ``` For each question, time complexity has to be told. ```
 
 # [#1](https://www.geeksforgeeks.org/amazon-wow-interview-experience/)
+
+# Ques -1 . [Infix to Postfix](https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/)
+
+```
+Precedence of operators
+()
+^     (right to left)
+* /   (left to right)
++ -   (left to right)
+```
+```cpp
+
+#include<bits/stdc++.h>
+using namespace std;
+
+//this will return the order of precedence of operator
+int prec(char c){
+    if(c=='^')
+        return 3;
+    else if(c == '/' || c == '*')
+        return 2;
+    else if(c == '+' || c == '-')
+        return 1;
+    else return -1;
+}
+
+void infixToPostfix(string s){
+    //stack to store operators
+    stack<char> st;
+    //store answer
+    string result;
+    
+    //iterate for all characters
+    for(int i=0; i<s.length(); i++){
+        char c = s[i];
+        
+        //if the current character is operand then add it in result
+        if((c>='a' && c<= 'z') || (c>='A' && c<='Z') || (c>='0' && c<='9')){
+            //note down how we are concatinating characters using + operator in string
+            result += c;
+        }
+        
+        //if current char is opening bracket, push it in stack
+        else if(c=='(')
+            st.push('(');
+        
+        //if closing bracket, pop elements from stack and add it in result until opening bracket is not encountered
+        else if(c == ')'){
+            while(st.top() != '('){
+                result += st.top();
+                st.pop();
+            }
+            //pop the ;ast opening bracket present in stack
+            st.pop();
+        }
+        
+        //if the current char is operator
+        else{
+            //check if the precedence of operator is less than the precedence of operator already 
+            //present in the stack and then pop it and add it in result
+            
+            //while popping if closing bracket will be encounered then prec function will return -1
+            //for it i.e it has the least precedence, so we'll stop there
+            while(!st.empty() && prec(s[i])<=prec(st.top())){
+                result += st.top();
+                st.pop();
+            }
+            //push the current character in stack
+            st.push(c);
+        }
+    }
+    
+    //after coming out of while loop, add the remaining operators from stack to the result
+    while(!st.empty()){
+        result += st.top();
+        st.pop();
+    }
+        
+    
+    //print the result string
+    cout<<result<<endl;
+}
+
+int main(){
+    
+    string expr = "a+b*(c^d-e)^(f+g*h)-i";
+    infixToPostfix(expr);
+    return 0;
+}
+
+```
+# Ques 0. [Program for Mean and median of an unsorted array](geeksforgeeks.org/program-for-mean-and-median-of-an-unsorted-array/)
+
 # Ques 1. Alternate reversal of linked list in a group of size k. Like the first group should be reversed, the second group should be the same, the third should be reversed, the fourth should be the same, etc.
 ```
 Example : 
