@@ -174,7 +174,8 @@ int main(){
 
 
 
-# Ques 1. Alternate reversal of linked list in a group of size k. Like the first group should be reversed, the second group should be the same, the third should be reversed, the fourth should be the same, etc.
+# Ques 1. [Alternate reversal of linked list in a group of size k. Like the first group should be reversed, the second group should be the same, the third should be reversed, the fourth should be the same, etc.](https://www.youtube.com/watch?v=Of0HPkk3JgI)
+
 ```
 Example : 
 
@@ -189,7 +190,80 @@ apply the reversing of nodes of linked list in group of size k along with skippi
 
 ![IMG20210911013012](https://user-images.githubusercontent.com/42698268/132911145-ff9f721a-5f4b-4fd8-b41c-325c79d24f8d.jpg)
 
+## Code
 
+```cpp
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* reverseKGroup(ListNode* head, int k) {
+        //if k is 1 or LL is empty then return original LL
+        if(k==1 || head==NULL) return head;
+        
+        //delcare dummy node and point it to head
+        ListNode* dummy = new ListNode(0);
+        dummy->next = head;
+        
+        //declare 3 dummy nodes
+        ListNode *pre = dummy, *cur = dummy, *nex = dummy;
+        int count = 0;
+        
+        //count the number of nodes
+        while(cur->next!=NULL){
+            cur = cur->next;
+            count++;
+        }
+        
+        //alt will help to skip the alternate group
+        int alt = 1;
+        
+        while(count>=(k*2)){
+            //set current = next of pre
+            //set nex = next of current
+            cur = pre->next;
+            nex = cur->next;
+            
+            //skip every alternate group after the first iteration
+             if(alt>1){
+                 int skip = k;
+                while(skip--){
+                    pre = pre->next;
+                    cur = cur->next;
+                    nex = nex->next;
+                }
+                 //after skipping the group, decrease the size
+                 count -= k;
+            }
+            
+            //reverse the next group after skipping
+            //the idea is to implement the reverse process k-1 times, it will help to reverse the group of k elements
+            for(int i=1; i<k; i++){
+                cur->next = nex->next;
+                nex->next = pre->next;
+                pre->next = nex;
+                nex = cur->next;
+                
+            }
+            //set the pre at the cur, for next iteration
+            pre = cur;  
+            //again decrease the size
+            count -= k;
+            alt++;
+        }
+        return dummy->next;
+    }
+};
+
+```
 
 # Ques 2. There are two strings given to find the matching and non-matching characters.
 
