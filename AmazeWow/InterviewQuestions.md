@@ -423,8 +423,8 @@ Output: 4
 #include<bits/stdc++.h>
 using namespace std;
 int n=1000;
-//if array contains 0, it is prime
-//if contains 1 then it is non prime
+//if ar[i] contains 0, then i is prime
+//if ar[i] contains 1, then i is not prime
 
 //array a is filled with numbers 0 and 1, each posiiton will tll whether i is prime or not
 //basically this array will give you all the prime no.s if you will print that element of "a"
