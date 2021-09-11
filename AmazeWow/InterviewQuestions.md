@@ -418,3 +418,46 @@ Output: 4
 * Next greater element: You are given an array: You are given an array arr of length N. You have to return a list of integers containing the NGE(next greater element) of each element of the given array.
 * 
 
+# SIEVE OF ERATOSTHENES
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+//if array contains 0, it is prime
+//if contains 1 then it is non prime
+
+//array a is filled with numbers 0 and 1, each posiiton will tll whether i is prime or not
+//basically this array will give you all the prime no.s if you will print that element of "a"
+//which contains 0
+void seive(int a[], int n){
+    //all even numbers are non prime
+   for(int i=0; i<=n; i+=2){
+       a[i] = 1;
+   }
+   
+   //1 is neither prime nor composite
+   a[1] = 0;
+   //2 is prime
+   a[2] = 1;
+   
+   for(int i=3; i<=n; i+=2){
+       //if the no is already marked as non prime then no neeed to check that
+       //mark all the multiples of i as non prime if they are marked as prime
+       if(a[i] == 0){
+           for(int j=i*i; j<=n; j+=i){
+               //marked multiple as non prime
+               a[j] = 1;
+           }
+       }
+   }
+}
+int main(){
+    int a[100] = {0};
+    seive(a);
+    for(int i = 0; i<100; i++){
+        if(a[i] == 0)
+        cout<<i<<" ";
+    }
+    return 0;
+}
+```
