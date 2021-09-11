@@ -1,3 +1,5 @@
+# [#0 STL short notes](https://www.hackerearth.com/practice/notes/standard-template-library/)
+
 ``` For each question, time complexity has to be told. ```
 
 # [#1](https://www.geeksforgeeks.org/amazon-wow-interview-experience/)
@@ -223,7 +225,7 @@ public:
             count++;
         }
         
-        //alt will help to skip the alternate group
+        //alt will help to skip the skipping very first time
         int alt = 1;
         
         while(count>=(k*2)){
@@ -272,6 +274,11 @@ Example :
 
 Input : s1 = abc s2 = abd 
 Output : matching = 2 non-matching = 1
+```
+## Bruteforce
+```
+We have to traverse the first string and for each characters, find that character in the second string using find() operation of stl in strings.
+This operation will take total of O(n1 * n2) where n1 is the size of the first string and n2 is the size of the second string
 ```
 # Ques 3. 
 
