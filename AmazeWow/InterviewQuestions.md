@@ -4,7 +4,7 @@
 
 # [#1](https://www.geeksforgeeks.org/amazon-wow-interview-experience/)
 
-# Ques -1 . [Infix to Postfix](https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/)
+# Ques 0 . [Infix to Postfix](https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/)
 
 ```
 Precedence of operators
@@ -94,7 +94,7 @@ int main(){
 }
 
 ```
-# Ques 0. [Program for Mean, median and mode of an unsorted array](geeksforgeeks.org/program-for-mean-and-median-of-an-unsorted-array/)
+# Ques 1. [Program for Mean, median and mode of an unsorted array](geeksforgeeks.org/program-for-mean-and-median-of-an-unsorted-array/)
 
 * Mean of an array = (sum of all elements) / (number of elements)
     * Mean can be found easily in O(n) by iterating through the loop and adding all elements and divide them by the size of the array
@@ -176,7 +176,7 @@ int main(){
 
 
 
-# Ques 1. [Alternate reversal of linked list in a group of size k. Like the first group should be reversed, the second group should be the same, the third should be reversed, the fourth should be the same, etc.](https://www.youtube.com/watch?v=Of0HPkk3JgI)
+# Ques 2. [Alternate reversal of linked list in a group of size k. Like the first group should be reversed, the second group should be the same, the third should be reversed, the fourth should be the same, etc.](https://www.youtube.com/watch?v=Of0HPkk3JgI)
 
 ```
 Example : 
@@ -267,7 +267,7 @@ public:
 
 ```
 
-# Ques 2. There are two strings given to find the matching and non-matching characters.
+# Ques 3. There are two strings given to find the matching and non-matching characters.
 
 ```
 Example :
@@ -280,7 +280,55 @@ Output : matching = 2 non-matching = 1
 We have to traverse the first string and for each characters, find that character in the second string using find() operation of stl in strings.
 This operation will take total of O(n1 * n2) where n1 is the size of the first string and n2 is the size of the second string
 ```
-# Ques 3. 
+
+## better
+
+```
+sort both strings
+take two pointers, keep ptr1 at start of first string and keep ptr2 at start of second string,
+if characters match increase count by by 1 and increment both pointers
+if they don't match then increment that pointer only which is pointing to the smaller character.
+at last, no of matching characters = count, and non matching characters = length sf string - count
+
+time complexity would be O(2n logn ) for sorting both strings and O(2n) for traversing both the strings in worst case, overall O(n logn) 
+
+```
+
+
+## Optimal
+
+```
+store the frequency of all characters of string 1 in hashmap and traverse the second string, if the character is in hashmap then increment the count by 1.
+time complexity  = O(n) for putting everything in the hashmap and O(n) for traversing the second string
+i.e O(2n) => O(n)
+space comp: O(n) dor hashmap
+
+```
+# Ques 4. Reach from one start string to the destination string in a minimum number of steps provided some set of intermediate strings cannot be reached. The string consists of numbers starting from 0 to 9 and it works like a suitcase lock where from 0 there can be two options 1 or 9, similarly, from 1 we can go to 2 or 0. 
+
+Hint: Use BFS constructing graphs of strings.
+
+```
+Input : 
+Source = 123
+Destination = 456
+steps = 9
+```
+## My approach without using BFS
+``` i don't know how to implement it using bfs ```
+```
+iterate through the first string and for each character find out whether going clockwise or anticlockwise would take minimum steps and add the min in the answer
+if first string is ar[], and target array is t[] then
+
+```
+```cpp
+int steps=0;
+for(int i=0; i<n; i++){
+    int minStep = min(t[i] - ar[i] , (a[i]+(10-t[i])));
+    steps += minStep;
+}
+    
+```
 
 # [#2](https://www.geeksforgeeks.org/amazon-interview-experience-amazewow-2020/)
 
