@@ -301,9 +301,11 @@ time complexity would be O(2n logn ) for sorting both strings and O(2n) for trav
 store the frequency of all characters of string 1 in hashmap and traverse the second string, if the character is in hashmap then increment the count by 1.
 time complexity  = O(n) for putting everything in the hashmap and O(n) for traversing the second string
 i.e O(2n) => O(n)
-space comp: O(n) dor hashmap
+space comp: O(n) for hashmap
 
 ```
+
+---------------------------------------------------------------------------------------------------------------------
 # Ques 4. Reach from one start string to the destination string in a minimum number of steps provided some set of intermediate strings cannot be reached. The string consists of numbers starting from 0 to 9 and it works like a suitcase lock where from 0 there can be two options 1 or 9, similarly, from 1 we can go to 2 or 0. 
 
 Hint: Use BFS constructing graphs of strings.
@@ -329,6 +331,85 @@ for(int i=0; i<n; i++){
 }
     
 ```
+
+---------------------------------------------------------------------------------------------------------------------
+# Ques 5: Find a maximum of the difference between maximum and minimum of all subarrays of size k.
+
+## Soltuion:
+## *There are four questions you should know before solving this question*
+## Ques(i): Find all subarrays of an array
+
+![Screenshot from 2021-09-14 00-06-21](https://user-images.githubusercontent.com/42698268/133139713-b0aba731-8146-4bbc-b150-33dd921f1136.png)
+
+![Screenshot from 2021-09-14 00-19-48](https://user-images.githubusercontent.com/42698268/133140148-9756b5dc-309f-4539-8f01-3a888ffe7b51.png)
+
+
+```O(n^3) solution ```
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int ar[] = {10, 20, 30, 40};
+    int sz = sizeof(ar)/sizeof(ar[0]);
+    
+    for(int sp=0; sp<sz; sp++){
+        for(int ep=sp; ep<sz; ep++){
+            for(int cur=sp; cur<=ep; cur++){
+                cout<<ar[cur]<<" ";
+            }
+            cout<<endl;
+        }
+    }
+    return 0;
+}
+```
+
+``` O(n^2) solution ```
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int ar[] = {10, 20, 30, 40};
+    int sz = sizeof(ar)/sizeof(ar[0]);
+    
+    for(int sp=0; sp<sz; sp++){
+        string st = "";
+        for(int ep=sp; ep<sz; ep++){
+            //convert integer to string
+            st += to_string(ar[ep]);
+            st += " ";
+            cout<<st;
+            cout<<endl;
+        }
+    }
+    return 0;
+}
+```
+## Ques(ii): Find all subarrays of an array of size k
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int ar[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+    int sz = sizeof(ar)/sizeof(ar[0]);
+    int k=5;
+    
+    for(int sp=0; sp<sz-k+1; sp++){
+        
+        for(int ep=sp; ep<(sp+k); ep++){
+                cout<<ar[ep]<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+```
+## Ques(iii): 
 
 # [#2](https://www.geeksforgeeks.org/amazon-interview-experience-amazewow-2020/)
 
