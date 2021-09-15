@@ -409,7 +409,7 @@ int main(){
     return 0;
 }
 ```
-## Ques(iii): 
+## Ques(iii): using Sliding window concept find the maximums from the subarray of size k from the array
 
 # [#2](https://www.geeksforgeeks.org/amazon-interview-experience-amazewow-2020/)
 
