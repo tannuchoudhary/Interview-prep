@@ -477,8 +477,49 @@ Output - Bad family
 ```
 ## Solution:
 If a graph is bipartite then ant family is good, else bad
+i.e if a graph contains odd length cycle then it is bad ant family
 
 ![IMG20210916175005](https://user-images.githubusercontent.com/42698268/133611265-4339ea95-c8e3-410f-8be7-bfd2af5a8af0.jpg)
+
+
+# Ques 7: Next greater element
+
+## Brute
+### steps: 
+* Create an answer array
+* Traverse the array
+* for each element, traverse from i+1 to last and whenever you'll get element greater than the current, push it in answer and break;
+
+![Screenshot from 2021-09-16 19-10-01](https://user-images.githubusercontent.com/42698268/133622717-d6b6de69-fa99-4b8c-bd25-1616d30ffb68.png)
+
+## Optimal
+### Steps: 
+```abbrev: nge- next greater element```
+* Create a stack and create an answer array
+* Traverse from last to first element
+* If the stack is empty then nge for current element will be the element itself and then push it into the stack
+* If the stack already has elements then compare and find out if the stack's element is smaller then the current element of an array, if it is then pop it out until the top element of stack becomes greater then the current element of an array, and now top element of the stack would be nge for current element of an array, place it in answer array then push the current element of array in stack
+* if the current element is lesser than the top of the stack then top of the stack woud be nge for current element so place it in answer and then push the current element of the array into the stack.
+
+![Screenshot from 2021-09-16 19-18-17](https://user-images.githubusercontent.com/42698268/133625793-bfd65971-297a-4e8e-8e9d-2626b3ecafb3.png)
+
+
+## Ques: What if you are told that find the next greater element and if the next greater element is not present in the right of an array then search it in the left of the array
+So this is the same kind of a problem but the array got converted into circular array, i.e if answer is not in left then you have to search it from the start of the array i.e starting from 0th index.
+
+## Solution:
+Just make another copy of the same array at the end of an original tray and implement the same process which you did in the last question.
+
+![Screenshot from 2021-09-16 19-33-57](https://user-images.githubusercontent.com/42698268/133631142-f6d1eaa8-b928-4e1b-94f8-48103238822d.png)
+
+Now you don't exactly need to create a new array, just have to use modulo to traverse it in a circular way. You jsut need to write your for loop from 0 to 2n-1 and use the modulo as explained below
+
+![Screenshot from 2021-09-16 20-05-01](https://user-images.githubusercontent.com/42698268/133631682-6572ddbc-08f2-4fb3-93c5-f740edf9f10e.png)
+
+
+# Ques 8: Given two arrays move an element from one array to another only if the average of both the arrays become greater than the previous average find which element can be moved
+
+# Ques 9: Minimum element in the stack without using another stack
 
 
 # [#2](https://www.geeksforgeeks.org/amazon-interview-experience-amazewow-2020/)
@@ -602,6 +643,12 @@ Output: 4
 # ques 2: 2 Behavioral questions were also asked, behavioural questions at amazon interviews are primarily focused on their [leadership principles](https://www.amazon.jobs/en-gb/principles)
 
 # ques 3: prepare these topics: [link](https://www.amazon.jobs/en-gb/landing_pages/software-development-topics)
+# ques 4: Explain Banker’s algorithm with an example
+# ques 5: Thrashing
+# ques6: Deadlock
+# ques 7: Semaphore
+# ques 8: DBMS(ACID properties)
+# ques 9: (Behavioural-for final interview) Give an example where you spent some time and figured out something on your own.
 
 
 
