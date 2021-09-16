@@ -409,7 +409,61 @@ int main(){
     return 0;
 }
 ```
-## Ques(iii): using Sliding window concept find the maximums from the subarray of size k from the array
+## Ques(iii): using Sliding window concept find the maximums from the subarray of size k from an array(striver question sliding window maximum)
+
+![Screenshot from 2021-09-16 15-38-55](https://user-images.githubusercontent.com/42698268/133594029-85f55db1-55c2-4b8f-a6d6-d6e562a1ae05.png)
+
+
+### Brute solution
+![Screenshot from 2021-09-16 15-41-09](https://user-images.githubusercontent.com/42698268/133598775-9d18a339-1ea4-4677-9b5d-e7ac1b58e913.png)
+
+### Optimal Solution
+
+![Screenshot from 2021-09-16 16-11-09](https://user-images.githubusercontent.com/42698268/133598880-c1f7e65c-d2ab-4505-ac1b-2abbc424b389.png)
+
+![Screenshot from 2021-09-16 16-15-40](https://user-images.githubusercontent.com/42698268/133599246-8ac3fb3d-73fd-46ed-91be-3ac8c7014893.png)
+
+### steps:
+* create a dequeue and an answer array
+* Iterate through the array
+* check if the front of dequeue is out of bound i.e beyond the size k, i.e, dq.front() == i-k, then pop the front element
+* now iterate in the dequeue and find out if any of the element is smaller then the current element then pop it out, because if any of the element is smmaller then the current element then there is no need to keep them as someone is there who has the largest value and as we are finding the maximum then only this element will be considered.
+* Now push the current element into dequeue
+* Now if i>=k-1 then push the maximum element i.e the front element into the answer 
+
+![Screenshot from 2021-09-16 16-48-00](https://user-images.githubusercontent.com/42698268/133609064-2c3510d9-e454-4a41-853e-b4f577519cad.png)
+
+
+![Screenshot from 2021-09-16 16-49-51](https://user-images.githubusercontent.com/42698268/133609038-c551d18e-d446-42c4-a40d-53ea5bf5d46e.png)
+
+### Code
+```cpp
+class Solution {
+public:
+    vector<int> maxSlidingWindow(vector<int>& nums, int k) {
+        deque<int> dq;
+        vector<int> ans;
+        
+        for(int i=0; i<nums.size(); i++){
+            if(!dq.empty() && dq.front() == i-k) //check out of bound elements at front and push them out
+                dq.pop_front();
+            while(!dq.empty() && nums[dq.back()]<nums[i]) // check if any of the element in the deque is lesser than the current element then pop it out
+                dq.pop_back();
+            
+            dq.push_back(i);//push the current element index in deque
+            if(i>=k-1) ans.push_back(nums[dq.front()]);//psuh the answer in ans vector, i.e the front of deque because front of deque is maximum
+        }
+        
+        return ans;
+    }
+};
+
+```
+
+
+
+* Time complexity is ``` O(N) + O(N) ``` , as first O(N) is for traversing all the elements and the second O(N) is for removing those elements which are out of bound ech time, so throughout the iteration, total of n elements would be removed in worst case, so the time complexity is O(2N) which is eventually O(N)
+* Space complexity is ``` O(K) ``` which is taking by dequeue, for storing the k elements at a time in decreasing order to fetch the maximum element.
 
 # [#2](https://www.geeksforgeeks.org/amazon-interview-experience-amazewow-2020/)
 
