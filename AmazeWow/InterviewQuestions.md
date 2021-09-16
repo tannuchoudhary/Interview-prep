@@ -465,6 +465,22 @@ public:
 * Time complexity is ``` O(N) + O(N) ``` , as first O(N) is for traversing all the elements and the second O(N) is for removing those elements which are out of bound ech time, so throughout the iteration, total of n elements would be removed in worst case, so the time complexity is O(2N) which is eventually O(N)
 * Space complexity is ``` O(K) ``` which is taking by dequeue, for storing the k elements at a time in decreasing order to fetch the maximum element.
 
+# Ques 6: Given a family of ants, in which female and male ants are there, interactions b/w family members are given i.e., it is given who interacts with whom, find if it is a good family and a family is good if only two different genders interact. 
+
+```
+example:
+Input: number of ants = 6, Interactions = { 1-2, 3-4, 5-6}
+Output - Good family
+Input : number of ants = 6 Interaction = {1-3, 3-5, 1-5}
+Output - Bad family
+
+```
+## Solution:
+If a graph is bipartite then ant family is good, else bad
+
+![IMG20210916175005](https://user-images.githubusercontent.com/42698268/133611265-4339ea95-c8e3-410f-8be7-bfd2af5a8af0.jpg)
+
+
 # [#2](https://www.geeksforgeeks.org/amazon-interview-experience-amazewow-2020/)
 
 # Ques 4.
