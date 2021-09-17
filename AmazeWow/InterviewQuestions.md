@@ -409,7 +409,7 @@ int main(){
     return 0;
 }
 ```
-## Ques(iii): using Sliding window concept find the maximums from the subarray of size k from an array(striver question sliding window maximum)
+## Ques(iii): using Sliding window concept find the maximums from the subarray of size k from an array([striver's question sliding window maximum](https://www.youtube.com/watch?v=CZQGRp93K4k&t=911s))
 
 ![Screenshot from 2021-09-16 15-38-55](https://user-images.githubusercontent.com/42698268/133594029-85f55db1-55c2-4b8f-a6d6-d6e562a1ae05.png)
 
@@ -482,7 +482,7 @@ i.e if a graph contains odd length cycle then it is bad ant family
 ![IMG20210916175005](https://user-images.githubusercontent.com/42698268/133611265-4339ea95-c8e3-410f-8be7-bfd2af5a8af0.jpg)
 
 
-# Ques 7: Next greater element
+# Ques 7: [Next greater element](https://www.youtube.com/watch?v=Du881K7Jtk8&t=792s)
 
 ## Brute
 ### steps: 
@@ -582,7 +582,46 @@ public:
 
 # Ques 8: Given two arrays move an element from one array to another only if the average of both the arrays become greater than the previous average find which element can be moved
 
-# Ques 9: Minimum element in the stack without using another stack
+# Ques9:  [Minimum Element in Stack with Extra space](https://www.youtube.com/watch?v=asf9P2Rcopo)
+
+We know that we already have two operations in stack, push and pop, now we want to implement another operation i.e getMinimum which will return minimum element from stack, so how we'll implement it.
+steps:
+* First of all we will create a new stack called supporting stack, let us say it ss
+* Then start traversing through the elements given and instructions
+* If you are asked to push the element into the stack then push it in the original stack
+* also check in ss that if the ss is empty then push it in ss, else if not empty then check if(current element is less than top of ss then push it) else leave it
+* if you are asked to pop an element from stack then check if top of the stack is same as top of ss then pop it from ss as well as original stack and if not equal then just pop it from original stack.
+* if asked from minimum element then just return the top of the ss.
+
+![Screenshot from 2021-09-17 15-07-38](https://user-images.githubusercontent.com/42698268/133761739-48cc2519-4b6c-4265-a1c6-102a4af3cafb.png)
+
+
+![Screenshot from 2021-09-17 14-52-41](https://user-images.githubusercontent.com/42698268/133759686-f8c515db-498e-4bef-a11b-8abed211a2ca.png)
+
+
+![Screenshot from 2021-09-17 15-24-42](https://user-images.githubusercontent.com/42698268/133764113-f66fb9a1-288a-428a-ac2d-dfa14500721f.png)
+
+edge case: here in push operation it is written that ss.top>=a that means if current element which we want to push is already in the ss due to pushing the same element previously, then still we will push it in our ss, beacause when we'll go to pop it then if it is only one time in ss then it will not give the right answe, timestamp: 8:07
+
+![Screenshot from 2021-09-17 15-28-20](https://user-images.githubusercontent.com/42698268/133764598-1c175c0d-5b84-4c47-910f-424dc7cfe289.png)
+
+
+ ![Screenshot from 2021-09-17 15-33-38](https://user-images.githubusercontent.com/42698268/133765431-3476ea5d-2596-47a3-a47a-b2d8160154c4.png)
+ 
+
+ 
+
+
+# Ques 10: [Minimum element in the stack without using another stack](https://www.youtube.com/watch?v=ZvaRHYYI0-4&t=65s)
+
+we can't create another stack, we can just use variable to store the minimum element and we have to return minimumElement each time we are asked.
+
+ this will be our getMin function:
+ 
+![Screenshot from 2021-09-17 15-38-33](https://user-images.githubusercontent.com/42698268/133766871-017fcf9f-870b-420a-b3db-232e0933e729.png)
+
+ 
+ 
 
 
 # [#2](https://www.geeksforgeeks.org/amazon-interview-experience-amazewow-2020/)
