@@ -503,6 +503,37 @@ i.e if a graph contains odd length cycle then it is bad ant family
 
 ![Screenshot from 2021-09-16 19-18-17](https://user-images.githubusercontent.com/42698268/133625793-bfd65971-297a-4e8e-8e9d-2626b3ecafb3.png)
 
+```cpp
+class Solution {
+public:
+    vector<int> nextGreaterElements(vector<int>& nums) {
+        
+        int n = nums.size();
+        //you need a stack and an aswer vector to return named nge
+        //nge is initialized with -1 because if we don't have any next greater element then we will return -1
+        stack<int> st;
+        vector<int> nge(n, -1);
+        
+        
+        //start traverse from last, that is why n-1
+        for(int i=(n-1); i>=0; i--){
+            //remove those elements from stack which has lesser value than the current array value because they would not be needed
+            while(!st.empty() && st.top()<=nums[i])
+                st.pop();
+            //if there is element in the top of stack then that surely would be nge
+            //if stack is empty then there is no nge present so leave it, as vector already contains -1
+           
+                if(!st.empty()) nge[i]=st.top();
+      
+            //push the current number in stack for next iteration
+            st.push(nums[i]);
+        }
+        return nge;
+        
+    }
+};
+```
+
 
 ## Ques: What if you are told that find the next greater element and if the next greater element is not present in the right of an array then search it in the left of the array
 So this is the same kind of a problem but the array got converted into circular array, i.e if answer is not in left then you have to search it from the start of the array i.e starting from 0th index.
@@ -516,6 +547,38 @@ Now you don't exactly need to create a new array, just have to use modulo to tra
 
 ![Screenshot from 2021-09-16 20-05-01](https://user-images.githubusercontent.com/42698268/133631682-6572ddbc-08f2-4fb3-93c5-f740edf9f10e.png)
 
+```cpp
+class Solution {
+public:
+    vector<int> nextGreaterElements(vector<int>& nums) {
+        
+        int n = nums.size();
+        //you need a stack and an aswer vector to return called nge
+        //nge is initialized with -1 because if we don't have any next greater element then we will return -1
+        stack<int> st;
+        vector<int> nge(n, -1);
+        
+        //assume you have two arrays, no need to atatch a new array
+        //you can create an effect by using modulo
+        //traverse from last, for two arrays that is why 2*n-1
+        for(int i=(2*n-1); i>=0; i--){
+            //remove those elements from stack which has lesser value than the current array value because they would not be needed
+            while(!st.empty() && st.top()<=nums[i%n])
+                st.pop();
+            //here i is less than n because we just want to find nge for original elements and not the copied one
+            //if there is element in the top of stack then that surely would be nge
+            //if stack is empty then there is no nge present so leave it, as vector already contains -1
+            if(i<n){
+                if(!st.empty()) nge[i]=st.top();
+            }
+            //push the current number in stack for next iteration
+            st.push(nums[i%n]);
+        }
+        return nge;
+        
+    }
+};
+```
 
 # Ques 8: Given two arrays move an element from one array to another only if the average of both the arrays become greater than the previous average find which element can be moved
 
