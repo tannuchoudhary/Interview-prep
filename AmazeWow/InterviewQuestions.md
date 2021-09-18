@@ -6,6 +6,8 @@
 
 # Ques 0 . [Infix to Postfix](https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/)
 
+note:
+
 ```
 Precedence of operators
 ()
