@@ -618,11 +618,33 @@ edge case: here in push operation it is written that ss.top>=a that means if cur
 
 we can't create another stack, we can just use variable to store the minimum element and we have to return minimumElement each time we are asked.
 
- this will be our getMin function:
+
+ ## this will be our getMin function:
  
 ![Screenshot from 2021-09-17 15-38-33](https://user-images.githubusercontent.com/42698268/133766871-017fcf9f-870b-420a-b3db-232e0933e729.png)
 
+![Screenshot from 2021-09-20 13-37-15](https://user-images.githubusercontent.com/42698268/133974261-8842ffcd-353c-431b-b443-3a7329a7f778.png)
+
+
+
+ ## Now push operation: 
  
+ ![Screenshot from 2021-09-20 13-40-50](https://user-images.githubusercontent.com/42698268/133974307-66f8ab90-07ce-4ff5-b605-0a3b21099dff.png)
+ 
+Thought process:
+* Declare a variable minEle;
+* when you are asked to push an element,let us say x in stack
+    * If stack is empty, push the x into the stack and assign minEle = x;
+    * else if stack is not empty
+        * If x is greater than or equal to the minEle, then just push it into the stack, no need to update minEle
+        * If x is smaller than minEle then push  ``` 2*x - minEle ``` into the stack and update minEle = x, as you need to update the minEle such that later you can retrieve the previously stored minimum value in minEle.
+* Now each time you have minimum element in minEle, and when you'll be asked to find min Element then just return the variable minEle
+ 
+ ## Now pop operation:
+ 
+* Now what if you will pop the element, then check if st.top() is smaller than minEle that means it is a flag which is representing anomaly and is telling you that the value which should be here is in minEle, now if you want to pop the element then your minEle should retrieve the last minimum stored value, so we'll assign ``` minEle = 2*minEle - 1``` and pop the stack top.
+        
+
  
 
 
