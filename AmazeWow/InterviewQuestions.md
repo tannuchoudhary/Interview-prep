@@ -642,9 +642,23 @@ Thought process:
  
  ## Now pop operation:
  
-* Now what if you will pop the element, then check if st.top() is smaller than minEle that means it is a flag which is representing anomaly and is telling you that the value which should be here is in minEle, now if you want to pop the element then your minEle should retrieve the last minimum stored value, so we'll assign ``` minEle = 2*minEle - 1``` and pop the stack top.
+ ![Screenshot from 2021-09-21 13-02-53](https://user-images.githubusercontent.com/42698268/134130200-47a512f5-f87d-4944-83a1-26aefba37aa4.png) 
+ 
+* Now what if you will pop the element
+* If stack is empty then just return -1
+* Else if stack is not empty:
+    * Then if stack.top() is greater than minEle then just pop the stack top
+    * else if st.top() is smaller than minEle that means it is a flag which is representing anomaly and is telling you that the value which should be here is in minEle, now if you want to pop the element then your minEle should retrieve the last minimum stored value, so we'll assign ``` minEle = 2*minEle - stack.top()``` and pop the stack top.
         
+## Now finding ths stack top
 
+![Screenshot from 2021-09-21 13-05-05](https://user-images.githubusercontent.com/42698268/134130517-b0606595-cb29-4baf-863f-6c8a1eee5512.png)
+
+steps:
+* if stack is empty then return -1
+* else if not empty:
+    * if stack top is greater then minEle then just return the top of the stack
+    * else if stack top is lesser than minEle then this is flag which tells that minimum is stored in minEle then return minEle.
  
 
 
