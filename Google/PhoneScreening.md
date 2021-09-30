@@ -149,3 +149,7 @@ In computer graphics it is popular for its capability to detect a very small err
 
 ## 5. Merge Sort
 
+## 6. Quick Sort
+
+## 7. Heap Sort
+
