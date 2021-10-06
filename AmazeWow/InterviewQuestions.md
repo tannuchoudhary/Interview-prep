@@ -33,6 +33,7 @@ int maxSum(int a[], int b[], int m, int n){
     
     
     
+    
         while(i<m){
              sum1 += a[i];
              i++;
