@@ -1,3 +1,77 @@
+# 2021 Questions
+## 1. [Maximum sum path across 2 arrays](https://www.geeksforgeeks.org/maximum-sum-path-across-two-arrays/)
+
+```thought process: used merge sort kind of concept, did on my own(without looking at solution)```
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int maxSum(int a[], int b[], int m, int n){
+    int i=0, j=0;
+    int ans = 0;
+    int sum1=0, sum2=0;
+    while(i<m && j<n){
+        if(a[i] == b[j]){
+            sum1 += a[i];
+            sum2 += b[j];
+            ans += max(sum1, sum2);
+            sum1 = 0;
+            sum2 = 0;
+            i++, j++;
+        }
+        
+        else if(a[i]<b[j]){
+            sum1 += a[i];
+            i++;
+        }
+        else if(b[j]<a[i]){
+            sum2 += b[j];
+            j++;
+        }
+    }
+    
+    
+    
+        while(i<m){
+             sum1 += a[i];
+             i++;
+        }
+    
+    
+        while(j<n){
+             sum2 += b[j];
+             j++;
+        }
+
+    
+    
+    ans += max(sum1, sum2);
+    return ans;
+}
+
+int main(){
+    int m, n;
+    cin>>m>>n;
+    int a[m], b[n];
+    for(int i=0; i<m; i++){
+        cin>>a[i];
+    }
+   
+    for(int i=0; i<n; i++){
+        cin>>b[i];
+    }
+    
+    int ans = maxSum(a, b, m, n);
+    cout<<ans;
+    return 0;
+    
+}
+```
+
+
+
+
 # [#0 STL short notes](https://www.hackerearth.com/practice/notes/standard-template-library/)
 
 ``` For each question, time complexity has to be told. ```
