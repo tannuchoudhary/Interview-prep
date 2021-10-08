@@ -153,3 +153,14 @@ In computer graphics it is popular for its capability to detect a very small err
 
 ## 7. Heap Sort
 
+# Chart
+
+![1_wv3W3jYq7EHCDiwYVaCXrA](https://user-images.githubusercontent.com/42698268/136614156-be962f99-b26c-4a2c-9e26-b3929e166d4b.png)
+
+# [Website](https://algs4.cs.princeton.edu/cheatsheet/): This has helped me so much
+
+
+
+
+
+
