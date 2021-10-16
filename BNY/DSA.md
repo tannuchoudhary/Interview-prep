@@ -20,4 +20,28 @@ long long unsigned int decimalValue(Node *head)
 }
 ```
 
-# 2. 
+# 2. [Bubble Sort](https://www.geeksforgeeks.org/bubble-sort/)
+
+
+```cpp
+void bubbleSort(int arr[], int n)
+{
+    // Your code here    
+    int flag = 0;
+    for(int i=0; i<n-1; i++){
+        flag = 0;
+        for(int j=0; j<(n-i-1); j++){
+            if(arr[j] > arr[j+1]){
+                flag = 1;
+                swap(&arr[j], &arr[j+1]);
+            }
+        }
+        if(flag == 0) break;
+    }
+}
+```
+# 3. Which data structure is used to implement auto-complete feature
+
+Ans : Autocomplete is a feature of suggesting possible extensions to a partially written text and is widely used in search engine, code IDEs and much more. Trie data structure is a perfect fit to implement this feature efficient in terms of memory and time [O(length of string)].
+
+# 4. Trie Implementation
