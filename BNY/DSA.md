@@ -44,4 +44,61 @@ void bubbleSort(int arr[], int n)
 
 Ans : Autocomplete is a feature of suggesting possible extensions to a partially written text and is widely used in search engine, code IDEs and much more. Trie data structure is a perfect fit to implement this feature efficient in terms of memory and time [O(length of string)].
 
-# 4. Trie Implementation
+# 4. [Trie Implementation (from techdose)](https://www.youtube.com/playlist?list=PLEJXowNB4kPyi859E6qGUs7jlpQehJndl)
+
+## 1. Basics of Trie
+-------------------------
+###  Intro
+      * Trie is exactly like binary tree, but instead of two child for each node, it can have n nodes
+      * Trie is an n-ary tree
+      
+Structure of trie node:
+
+![Screenshot from 2021-10-17 13-50-26](https://user-images.githubusercontent.com/42698268/137624712-1955d9cd-2c41-4c28-9342-031910b5d3c0.png)
+
+Making dictionary using trie:
+
+![Screenshot from 2021-10-17 13-54-17](https://user-images.githubusercontent.com/42698268/137624720-e085cbcb-3409-4604-88e7-e4ee4e0083ec.png)
+
+
+
+      
+###  Uses of trie data structure:
+
+#### 1. Used in Dictionary to
+      * Store words
+      * Search words
+      * Remove words
+   
+#### 2. Search a word in O(length of word) time
+
+#### 3. used in finding prefixes
+#### 4. Very Ordered and clean data structure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
