@@ -90,8 +90,19 @@ Making dictionary using trie:
 
 * First of all we will have root node, word end will be zero for that, then in this case we'll insert aba, for the last character, word end will be 1
 * Insert aba
+
+![Screenshot from 2021-10-17 20-25-08](https://user-images.githubusercontent.com/42698268/137634044-6facb285-c102-4797-a947-e40e811a4873.png)
+
 * Insert abc
+
+![Screenshot from 2021-10-17 20-26-22](https://user-images.githubusercontent.com/42698268/137634060-9d9f340a-65aa-4016-af5c-7da856674dd1.png)
+
+
 * Insert ab(just change the word count of 'b' after 'a' to be 1, which will represent that one of the string has ended here.
+
+
+![Screenshot from 2021-10-17 20-28-08](https://user-images.githubusercontent.com/42698268/137634088-56bd05fa-844c-4530-b791-96797739a7e4.png)
+
 
 ## Searching in a Trie
 
