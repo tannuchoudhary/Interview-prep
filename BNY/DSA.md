@@ -46,11 +46,13 @@ Ans : Autocomplete is a feature of suggesting possible extensions to a partially
 
 # 4. [Trie Implementation (from techdose)](https://www.youtube.com/playlist?list=PLEJXowNB4kPyi859E6qGUs7jlpQehJndl)
 
-## 1. Basics of Trie
+## L 01. Basics of Trie
 -------------------------
 ###  Intro
       * Trie is exactly like binary tree, but instead of two child for each node, it can have n nodes
       * Trie is an n-ary tree
+      * Each node have value and bool which tells whether this is the end of word or not
+      * Each node have pointer for 26 childs (if creating for dictioanry)
       
 Structure of trie node:
 
@@ -70,14 +72,28 @@ Making dictionary using trie:
       * Search words
       * Remove words
    
-#### 2. Search a word in O(length of word) time
+#### 2. Used in searching a word in O(length of word) time
 
 #### 3. used in finding prefixes
 #### 4. Very Ordered and clean data structure
 
 
+## L 02. Trie Insertion and Search
+## Insertion in Trie
+------------------------------------
 
+* First of all create a root node which will contain no data, word end will be zero and will have 26 pointers
 
+* How to get a characters value for inserting, subtract it with base value
+
+![Screenshot from 2021-10-17 20-17-10](https://user-images.githubusercontent.com/42698268/137632663-8582ee54-6340-4545-915a-cfae196be152.png)
+
+* First of all we will have root node, word end will be zero for that, then in this case we'll insert aba, for the last character, word end will be 1
+* Insert aba
+* Insert abc
+* Insert ab(just change the word count of 'b' after 'a' to be 1, which will represent that one of the string has ended here.
+
+## Searching in a Trie
 
 
 
