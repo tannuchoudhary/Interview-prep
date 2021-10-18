@@ -427,6 +427,70 @@ For over 234 years, as the investment company for the world, we have been leadin
 
 
 
+# ONCAMPUS
+
+# [1](https://www.geeksforgeeks.org/bny-mellon-internship-interview-experience-for-software-developer-on-campus-2022/). Write a code to remove duplicates from the given linked list on provided HackerRank code pair link.
+# 2. Compiled and interpreted language differences.
+# 3. What is a constructor?
+# 4. Give me an example where you can do constructor overloading
+# 5. What is Exception Handling – what is need for this
+# 6. Explain the flow of the program in the try, catch and finally block
+# 7. What is the purpose of finally block
+# 8. C++ and Python difference
+# 9. Which data structure you would use to design a traffic signal and why?
+# 10. Give me a real-life scenario where you see stack implemented
+# 11. Identify which data structure is used for the following implementations –  1)Memory allocation and deallocation in the compiler – Ans: heap  2)Browser history – Ans: stack
+# 12. What is multithreading in java?
+# 13. ArrayList and Vector difference
+# 14. What is namespace in C++?
+# 15. How much do you know python? Do you know NumPy library?
+# 16. Which question do you feel you could have answered better in Round 1
+# 17. What are threads?
+# 18. In C, if we write while(true) as a loop, what will happen and why?
+# 19. What is the function pointer in C – where we can use this?
+# 20. Declared array of size 5 and if I try to access 7th location, What will happen?
+# 21. What is a static keyword in java?
+# 22. What is a singleton in java?
+# 23. The project, resume discussion, and follow up questions
+# 24. What is core dump, thread dump?
+# 25. Do you know Apache Tomcat? Have you worked on it? (I used this in one of my projects)
+# 26. What are adaptive and responsive websites?
+# 27. What is JDK, JRE, JVM?
+# 28. HTTP and HTTPS difference
+# 29. What is Big O notation? Do you know any other notations?
+# 30. Which data structure you will use to store different country names such as India, US, UK, and then their respective state names and then respective city names.   Ans – Tree  Why? – As the given data is hierarchical
+# 31. What are GET and POST methods
+# 32. Tell me approach to code the following question
+```
+Testcase 1) Input -  abcd@gmail.com
+Expected output - a*@gmail.com
+Testcase 2) Input - pq@gmail.com
+Expected output - p*@gmail.com
+```
+# 33. Give a brief summary about yourself, what all things you have done so far – technical, no technical both
+# 34. Java and python difference – which one do you think is better?
+# 35. Why do you prefer to code in Java?
+# 36. What are all projects you have done and implementations?
+# 37. Why did you choose this problem statement as your project, what was your thought process to come with this problem statement specifically?
+# 38. How you tested your project?
+# 39. Tell me about a time when you could not do well in academics and how you tackled this situation.
+# 40. Do you think that doing all these projects was beneficial? If yes then how?
+# 41. What are your future plans?
+# 42. Have been involved in any technical discussion forums – how do you keep yourself updated?
+# 43. Do you want to highlight any point which we missed to discuss which will add value to your candidature?
+
+---------------------------------------------------------------------
+
+# [44](https://www.geeksforgeeks.org/bny-mellon-internship-interview-experience-on-campus-2022/?ref=rp). A coding question- https://www.geeksforgeeks.org/count-words-in-a-given-string/ and one more that was also basic question on stack. Then he asked me about my projects and detailed discussion on technologies I have used.
+# 45. He asked some DBMS and OOPS questions –
+
+* Operator Overloading, Polymorphism, early/late binding, virtual memory etc.
+* Also asked me to write an SQL Query (Joins and aggregate functions).
+* Then, I was told that I am selected for next Interview Rounds.
+
+# 46. Started with introductions, he asked coding questions – https://www.geeksforgeeks.org/minimum-number-increment-operations-make-array-elements-equal/ and https://www.geeksforgeeks.org/count-distinct-pairs-with-given-sum/.
+Then he gave me SQL question to solve on HackerRank and a question on code related to API’s and some discussion on languages.
+In few minutes, I was told I am selected for final round.
 
 
 
