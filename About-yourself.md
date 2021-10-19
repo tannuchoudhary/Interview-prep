@@ -10,7 +10,7 @@
 *  apart from my curriculum I have done a paid internship at coding Ninjas as a Teaching Assistant, My job there was to debug the code of students, suggesting them the optimal approach and algorithms for the problems,
 
 
-*   in addition to that I have also done freelancing job in Chegg India, where I have solved more than 200 problems in computer science asked by students from all over the world.
+*   in addition to that I have also done freelancing job in Chegg India as an expert for computer science, where I have solved more than 200 problems in computer science asked by students from all over the world.
 
 
 
