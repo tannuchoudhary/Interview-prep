@@ -54,3 +54,9 @@ I can do the work and deliver exceptional results to the company. I will fit in 
 # What does virtusa do?
 Virtusa Corporation is an American information technology services company founded in 1996, in colombo, in Sri Lanka and has its headquarters in Southborough, Massachusetts, United States.
 The company provides IT consulting, business consulting, systems implementation and application outsourcing services to large enterprises and software vendors.
+
+# Virtusa CEO
+Kris Canekeratne
+
+# Virtusa Founder
+
