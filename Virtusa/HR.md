@@ -48,3 +48,9 @@ I've seen your company consistently listed as one of the top places to work, I'v
 
 # Why job is important for you?
 This job opening at your esteemed organization has the potential to give my personality a boost as well as render me sufficient opportunities to leverage most of my acquired skill sets – professionally as well as personally
+
+I can do the work and deliver exceptional results to the company. I will fit in beautifully and be a great addition to the team. I possess a combination of skills and experience that make you stand out. 
+
+# What does virtusa do?
+Virtusa Corporation is an American information technology services company founded in 1996, in colombo, in Sri Lanka and has its headquarters in Southborough, Massachusetts, United States.
+The company provides IT consulting, business consulting, systems implementation and application outsourcing services to large enterprises and software vendors.
