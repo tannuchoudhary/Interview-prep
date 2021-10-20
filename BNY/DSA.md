@@ -421,7 +421,67 @@ For over 234 years, as the investment company for the world, we have been leadin
 
 
 
+.
 
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+
+# [42](https://www.geeksforgeeks.org/bny-mellon-interview-experience-for-6-month-internship-2020-virtual/?ref=rp)To swap 0 and 5 without the use of any condition, loop, or extra space
+
+```answer-> 5-Input number ```
+
+```code
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int num;
+    cin>>num;
+    
+    int ans = 5-num;
+    cout<<ans;
+    return 0;
+}
+```
+# 43. To find the duplicate element in an array of size n with elements from 1 to n-1.
+``` striver list ```
+```cpp
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+        int slow = nums[0];
+        int fast = nums[0];
+        
+        slow = nums[slow];
+        fast = nums[nums[fast]];
+        
+        while(slow != fast){
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+        }
+        
+        slow = nums[0];
+        while(slow != fast){
+            slow = nums[slow];
+            fast = nums[fast];
+        }
+        
+        return slow;
+    }
+};
+```
+
+# 44. Print all the possible permutations of a string (will not contain duplicate alphabets)
 
 
 
