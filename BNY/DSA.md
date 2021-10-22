@@ -484,7 +484,7 @@ public:
 # 44. Print all the possible permutations of a string (will not contain duplicate alphabets)
 
 
-
+# 45. he also asked me a puzzle on my approach to finding the defective ball (of lighter weight) from a group of 8 balls of similar weights with the help of a physical balance using minimum turns on it.
 
 
 # ONCAMPUS
