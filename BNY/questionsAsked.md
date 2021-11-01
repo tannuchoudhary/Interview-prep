@@ -261,6 +261,66 @@ I've seen your company consistently listed as one of the top places to work, I'v
 
 # 11. [Minimum Number of Taps to Open to Water a Garden](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/)
 
+
+
+```cpp
+class Solution {
+public:
+    int minTaps(int n, vector<int>& ranges) {
+        
+        for(int i=1;i<ranges.size();i++){
+            if(ranges[i] == 0) ranges[i]=i;
+            else{
+                int range = max(0, i-ranges[i]);
+                ranges[range] = max(i+ranges[i],ranges[range]);
+            }
+        }
+        
+        int maxIdx = 0;
+        int pos = 0;
+        int jump = 0;
+        
+        for(int i=0;i<n;i++){
+            if(maxIdx<i) return -1;
+            
+            maxIdx = max(maxIdx, ranges[i]);
+            
+            if(i==pos){
+                jump++;
+                pos = maxIdx;
+            }
+        }
+        
+        return maxIdx>=n ? jump : -1;
+        
+    }
+};
+
+```
+
+
+
+```cpp
+class Solution {
+public:
+    int minTaps(int n, vector<int>& ranges) {
+        //dp[i] represents min of taps to open to water if the garden be from [0,i]
+        //So, the required answer is dp[n] if it has been modified
+        //else not possible and so we return -1
+        vector<int> dp(n+1, n+2); //initialise all values with more than max no. of taps possible
+        dp[0] = 0;
+        for(int i = 0; i<=n; ++i){
+            int leftMost = max(i - ranges[i]+1, 0);
+            int rightMost = min(i+ranges[i], n);
+            for(int j = leftMost; j<=rightMost; ++j){
+                dp[j] = min(dp[j], dp[max(0,leftMost-1)]+1);
+            }
+        }
+        return dp[n] < n+2 ? dp[n] : -1;  
+    }
+};
+```
+
 # 12. Tell me about your favorite algorithms, explain one of them, and write the code for the same.
 
 # 13. What is a BST, what are other types of trees?
