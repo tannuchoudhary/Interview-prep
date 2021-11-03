@@ -80,7 +80,7 @@ Making dictionary using trie:
 #### 2. Used in searching a word in O(length of word) time
 
 #### 3. used in finding prefixes
-#### 4. Very Ordered and clean data structure
+#### 4. Very Ordered, structured and clean data structure
 
 
 ## L 02. Trie Insertion and Search
