@@ -112,6 +112,8 @@ Making dictionary using trie:
 ## Searching in a Trie
 For each word, start traversing from the root, if the required character's pointer is not null then continue else break, and if the end character of the word has word end == 1 in node, then word is present else not.
 
+
+## Trie deletion and search
 Whole code:
 
 ```cpp
