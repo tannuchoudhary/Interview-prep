@@ -264,6 +264,33 @@ I've seen your company consistently listed as one of the top places to work, I'v
 # 11. [Minimum Number of Taps to Open to Water a Garden](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/)
 
 
+```cpp
+class Solution {
+public:
+    int minTaps(int n, vector<int>& ranges) {
+        int min = 0;
+        int max = 0;
+        int open = 0;
+        
+        //run until you will not reach end of garden
+        while(max<n){
+            //on each iteration take the one covering maximum from inital point of garden
+            for(int i=0; i<ranges.size(); i++){
+                if(i-ranges[i]<=min && i+ranges[i]>max){
+                    max = i+ranges[i];
+                }
+            }
+            //not possible to cover whole garden
+            if(min == max) return -1;
+            open++;
+            //update min, as now you have to find the tap which will start covering the garden from minimum
+            min = max;
+        }
+        return open;
+    }
+};
+```
+
 
 ```cpp
 class Solution {
@@ -325,6 +352,24 @@ public:
 
 # 12. Tell me about your favorite algorithms, explain one of them, and write the code for the same.
 
+## Kadane's Algorithm - Largest Sum Contiguous Subarray
+
+```cpp
+class Solution {
+public:
+    int maxSubArray(vector<int>& nums) {
+        int sum = 0;
+        int maxSum = INT_MIN;
+        for(auto it : nums){
+            sum += it;
+            maxSum = max(maxSum, sum);
+            if(sum<0) sum = 0;
+        }
+        return maxSum;
+    }
+};
+```
+
 # 13. What is a BST, what are other types of trees?
 
 Binary Search Tree is a node-based binary tree data structure which has the following properties:
@@ -344,7 +389,7 @@ Binary Search Tree is a node-based binary tree data structure which has the foll
 
 * **Red-Black Tree**: Another kind of auto-balancing tree is red-black. According to the red-black tree’s properties, the red-black name is given because the Red-black tree has either red or Black painted on each node. It maintains the balance of the forest. Even though this tree is not fully balanced, the searching operation only takes O (log n) time. When the new nodes are added in Red-Black Tree, nodes will be rotated to maintain the Red-Black Tree’s properties.
 
-* N-ary Tree: The maximum number of children in this type of tree with a node is N. A binary tree is a two-year tree, as at most 2 children in every binary tree node. A complete N-ary tree is a tree where kids of a node either are 0 or N.
+* N-ary Tree: The maximum number of children in this type of tree with a node is N. A binary tree is a two-ary tree, as at most 2 children in every binary tree node. A complete N-ary tree is a tree where kids of a node either are 0 or N.
 
 * Advantages of Tree
 
