@@ -255,11 +255,22 @@ int main()
 ```
 
 # 9. What is the hardest challenge you’ve faced and how did you overcome it?
+* family pressure, and did education against them
+* they wanted to marry me
+* made them proud by being top in university
+* performed well in chess
+* I am first girl child from my family to attend university
+
 
 # 10. Why do you want to join BNY Mellon?
 
 I've seen your company consistently listed as one of the top places to work, I've read employee testimonials and heard of your enthusiasm for encouraging employee growth through education, training and vast resources. I already know that engaged employees produce better work, and that is evident in the most recent campaign you created. I would love to join your innovative team, continue to create great work, and grow within the company by learning new skills.
 
+* kuch facts company ka batao(epam k ek delivery manager h sandeep joshi jiska quote h "if engineering is in your dna, then come and join epam" this is the slogan of sandeep joshi who is representing india to the world level")
+* also epam garaje developed mask similar to m95, for poor people which is part of social work 
+
+* just find out these kind of facts of bny
+* i have offer letter of apisero but i want to join bny mellon, because
 
 # 11. [Minimum Number of Taps to Open to Water a Garden](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/)
 
@@ -351,7 +362,7 @@ public:
 ```
 
 # 12. Tell me about your favorite algorithms, explain one of them, and write the code for the same.
-
+## BFS and all of its advantages
 ## Kadane's Algorithm - Largest Sum Contiguous Subarray
 
 ```cpp
@@ -514,11 +525,36 @@ public:
 };
 ```
 
-# 19. SQL query –> Employee and department table is given you need to find the salary of employees in each department
+# 19. SQL query –> Employee and department table is given you need to find the maximum salary of employees in each department
 
+``` SELECT DEPT_ID, MAX(SALARY) FROM department GROUP BY DEPT_ID;```
 ## [Answer](https://www.geeksforgeeks.org/sql-query-to-find-the-highest-salary-of-each-department/)
 
 # 20. What is Lambda?
+* Example
+
+``` python
+# Double all numbers using map and lambda
+  
+numbers = (1, 2, 3, 4)
+result = map(lambda x: x + x, numbers)
+print(list(result))
+
+```
+``` output [2, 4, 6, 8] ```
+
+You can also square them instead of doubling them like this:
+
+``` python
+# square all numbers using map and lambda
+  
+numbers = (1, 2, 3, 4)
+result = map(lambda x: x * x, numbers)
+print(list(result))
+
+```
+``` output [1, 4, 9, 16] ```
+
 Some definitions:
 * Lambda expressions (or lambda functions) are essentially blocks of code that can be assigned to variables, passed as an argument, or returned from a function call, in languages that support high-order functions. They have been part of programming languages for quite some time.
 * In mathematics and computer programming, the Lambda symbol is used to introduce "anonymous functions." Lambda notation distinguishes between variables used as mathematical arguments and variables that stand for predefined values.
@@ -732,7 +768,21 @@ I think graph data structure is used in switches
 
 # 29. What is the CAP theorem?
 
+* consitency - accurate results
+* atomicity - ALL OR NONE
+* partition tolerance - cluster of nodes, they all communicate and if communication is not happening dur to something still system chalna chahiye, i.e combined system chalte rhna chahiye( it is a kind of durability)
+
+i.e koi node fail kr jaye fir v tmhara system kaam krna chahiye
+
+* this is used in non relational database
+
+
 # 30. Tell me about the previous rounds.
+* Tell about interviewer
+* Kind of questions they asked
+* Time se jada interview liya gaya th
+* Judge krne k lie usne pura time liye, he took double time
+* I was very happy die to this, as interviewer gave me propeer time to explain my answer
 
 # 31. Favourite programming language?
 
@@ -752,11 +802,21 @@ I think graph data structure is used in switches
 
 # 39. Which databases have you used? Where have you used it?
 
-I have used Mysql
+* relational and non relational
+* I have used Mysql
 
 Greater benefits have been achieved in Mysql, for being open sourced and providing, for the operational environment, the same functionality as any DBMS (cost-benefit ratio)
 
+# 40. What servers have you used?
+* i've used apache server to host my project locally on my computer
+* local host - is an ip (127. 0. 0. 1 ip will be used to access locally hosted files)
+* agar aise host krna padey to server kharidna padega to wo isp(intenet service provider) wo tmko ek ip dega
+
+
+
 # 40. Do you have any leadership experience?
+* coding ninjas
+* girlscript
 
 # 41. What do you know about BNY Mellon and why you want to join it?
 
