@@ -418,13 +418,105 @@ What is the importance of graph theory in real life applications?
 
 Graph theory and probability make it possible to guarantee a reliable service, for example by finding diversions when a particular connection is busy. All roads and motorways also form a large network, which is used by navigation services like Google Maps when working out the shortest route between two given points.
 
-# 16. Where graph traversals algorithms are used? Tell about different traversal algorithms and write the order of printing of nodes in the inorder and pre-order traversal.
+# 16. Where graph traversals algorithms are used? 
+Graph traversal algorithms: 
+* BFS
+* DFS
 
-# 17. Coding question: https://leetcode.com/problems/linked-list-cycle-ii/
+These are used in:
+* checking whether a graph is bipartite or not
+* cycle detection
+* Topological sort
+* Finding shortest path in undirected graph with unit weights
 
-# 18. Coding question: https://leetcode.com/problems/palindromic-substrings/
+# 17. Tell about different traversal algorithms
+## Graph:
+* DFS
+* BFS
+
+## Tree
+* Inorder
+* Preorder
+* Postorder
+* Level order
+
+# 18. write the order of printing of nodes in the inorder and pre-order traversal.
+
+* Inorder : left root right
+* Preorder: root left right
+
+# 19. Coding question: https://leetcode.com/problems/linked-list-cycle-ii/
+
+```cpp
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode *detectCycle(ListNode *head) {
+        
+        if(head == NULL || head->next == NULL) return NULL;
+        ListNode *slow = head;
+        ListNode *fast = head;
+        
+        while(fast->next && fast->next->next){
+            slow = slow->next;
+            fast = fast->next->next;
+            
+            if(slow == fast){
+                slow = head;
+                while(slow!=fast){
+                    slow = slow->next;
+                    fast = fast->next;
+                }
+                return fast;
+            }
+        }
+        return NULL;
+    }
+};
+```
+
+# 20. Coding question: https://leetcode.com/problems/palindromic-substrings/
+
+We perform a "center expansion" among all possible centers of the palindrome.
+
+Let N = len(S). There are 2N-1 possible centers for the palindrome: we could have a center at S[0], between S[0] and S[1], at S[1], between S[1] and S[2], at S[2], etc.
+
+To iterate over each of the 2N-1 centers, we will move the left pointer every 2 times, and the right pointer every 2 times starting with the second (index 1). Hence, left = center / 2, right = center / 2 + center % 2.
+
+From here, finding every palindrome starting with that center is straightforward: while the ends are valid and have equal characters, record the answer and expand.
+
+```cpp
+class Solution {
+public:
+    int countSubstrings(string s) {
+        int N = s.length();
+        int ans = 0;
+        //find out all the 2n-1 centers
+        for(int center=0; center<(2*N-1); center++){
+            int left = center/2;
+            int right = left + center%2;
+            //and find out for each center, how many palindromes are there
+            while(left>=0 && right<N && s[left] == s[right]){
+                ans++;
+                left--;
+                right++;
+            }
+        }
+        return ans;
+    }
+};
+```
 
 # 19. SQL query –> Employee and department table is given you need to find the salary of employees in each department
+
+## [Answer](https://www.geeksforgeeks.org/sql-query-to-find-the-highest-salary-of-each-department/)
 
 # 20. What is Lambda?
 Some definitions:
@@ -433,7 +525,163 @@ Some definitions:
 * In computer programming, an anonymous function (function literal, lambda abstraction, lambda function, lambda expression or block) is a function definition that is not bound to an identifier.
 * Essentially a lambda is a block of code that can be passed as an argument to a function call.([explanation](https://martinfowler.com/bliki/Lambda.html)), 
 
+* Example:
+
+Essentially a lambda is a block of code that can be passed as an argument to a function call. I'll illustrate this with a simple example. Imagine I have a list of employee objects and I want a list of those employees who are managers, which I determine with an IsManager property.
+
+```ruby
+def managers(emps)
+  return emps.select {|e| e.isManager}
+end
+```
+
+Essentially select is a method defined on the Ruby collection class. It takes a block of code, a lambda, as an argument. In ruby you write that block of code between curlies (not the only way). If the block of code takes any arguments you declare those between the vertical bars. What select does is iterate through the input array, executes the block of code with each element, and returns an array of those elements for which the block evaluated as true.
+
+Now if you're a C programmer you probably think "I could do that with a function pointer", if you're a Java programmer you probably think "I could do that with an anonymous inner class". These mechanisms are similar to lambdas, but there are two telling differences.
+
+The first one is a formal difference, lambdas usually define closures - which means they can refer to variables visible at the time they were defined. Consider this method
+```
+def highPaid(emps)
+  threshold = 150
+  return emps.select {|e| e.salary > threshold}
+end
+ ```
+Notice that the code in the select block is referring to a local variable defined in the enclosing method. Many of the alternatives to lambdas in languages that don't have real closures can't do that. Lambdas allow you to do even more interesting stuff. Consider this function.
+```
+def paidMore(amount)
+  return lambda {|e| e.salary > amount}
+end
+```
+The second difference is less of a defined formal difference, but is just as important, if not more so in practice. Languages that support lambdas allow you to define them with very little syntax. While this might not seem an important point, I believe it's crucial - it's the key to make it natural to use them frequently.
+
+### Some more definitions of lambda
+
+* In very simple, informal words to someone that knows very little or nothing on math or programming, I would explain it as a small "machine" or "box" that takes some input, makes some work and produces some output, has no particular name, but we know where it is and by just this knowledge, we use it.
+
+Practically speaking, for a person that knows what a function is, I would tell them that it is a function that has no name, usually put to a point in memory that can be used just by referencing to that memory (usually via the usage of a variable - if they have heard about the concept of the function pointers, I would use them as a similar concept) - this answer covers the pretty basics (no mention of closures etc) but one can get the point easily.
+
+* In short, a lambda is just an anonymous and inline function.
+* Lambda is an anonymous function. This means lambda is a function object in Python that doesn't require a reference before. 
+
+* Imagine that you have a restaurant with a delivery option and you have an order that needs to be done in under 30 minutes. The point is clients usually don't care if you send their food by bike with a car or barefoot as long as you keep the meal warm and tied up. So lets convert this idiom to Javascript with anonymous and defined transportation functions.
+
+Below we defined the way of our delivering aka we define a name to a function:
+
+```
+// ES5 
+var food = function withBike(kebap, coke) {
+return (kebap + coke); 
+};
+```
+What if we would use arrow/lambda functions to accomplish this transfer:
+```
+// ES6    
+const food = (kebap, coke) => { return kebap + coke };
+```
+You see there is no difference for client and no time wasting to think about how to send food. Just send it.
+
 # 21. What is a virtual function?
+## Points to keep in mind
+* Pointer of a parent class can point to the object of child class, or to the object of any descendent(vanshaj) of the parent class
+
+![Screenshot from 2021-11-05 23-51-40](https://user-images.githubusercontent.com/42698268/140559966-7fc03785-81e8-4bee-8a46-0ed31ae5fd86.png)
+
+* Program to understand this concept
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+class A{
+    public:
+        void f1(){
+            
+        }
+};
+
+class B : public A{
+    public:
+        //this is function overriding
+        void f1(){
+            
+        }
+    
+};
+
+int main(){
+    A *ptr1, *ptr2, obj1;
+    B obj2;
+    
+    ptr1 = &obj1; // ptr1 pointer of type base class can store the address of type A(this is normally what we do)
+    ptr2 = &obj2; //parent class pointer can point to object of child class
+    
+    //calling function using object
+    //here early binding is happening, i.e while compiling compiler will find out that obj2 is of child class type 
+    obj2.f1(); //therefore it will call the f1 function of child class as obj2 is of type child class
+    
+    //calling function using pointer
+    ptr2->f1() //as ptr2 is containing the address of type of child class
+    //so it should have called the f1() of child class
+    
+    /* but at the time of compilation, compiler will not able to find out the type of 
+    address contained in ptr2 at the time of early binding */
+    
+    /* as at compile time only the type of pointer can be found out and not the type of object
+    whose address is contained by the pointer, and the type of pointer was decided at the time
+    of declaration, in line 21, which is of type A*/
+    
+    /*so compiler will assume that, we are trying to call f1() of parent class i.e A, and it 
+    will call the f1() of class A, which is very wrong */
+    
+    /*but the bigger problem is that it will not even show the error, you will never be able to 
+    figure out what is the problem*/
+    
+    /* So to avoid this problem, the solution is that we'll prevent early binding, we'll tell 
+    compiler to do late binding, so that pointer k type ko nahi balki pointer k content ko
+    adhaar maana jaye */
+    
+    /* so to do this, we'll declare the function in parent class i.e class A as virtual*/
+    
+    /* Now no need to define these functions as virtual in child classes, as compiler will
+    automatically consider them as virtual function*/
+    
+    /* Now as we have defined the function as virtual, now due to virtual keyword, late 
+    binding will be done*/
+    
+}
+
+```
+## Result:
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+class A{
+    public:
+       virtual void f1(){
+            
+        }
+};
+
+class B : public A{
+    public:
+        void f1(){
+            
+        }
+    
+};
+
+int main(){
+    A *ptr1, *ptr2, obj1;
+    B obj2;
+    
+    ptr1 = &obj1; 
+    ptr2 = &obj2; 
+    
+    obj2.f1(); 
+    ptr2->f1() 
+}
+```
 
 A virtual function is a member function which is declared within a base class and is re-defined(Overridden) by a derived class. When you refer to a derived class object using a pointer or a reference to the base class, you can call a virtual function for that object and execute the derived class’s version of the function. 
 
@@ -449,7 +697,7 @@ A virtual function is a member function which is declared within a base class an
 * A virtual function can be a friend function of another class.
 * Virtual functions should be accessed using pointer or reference of base class type to achieve run time polymorphism.
 * The prototype of virtual functions should be the same in the base as well as derived class.
-* They are always defined in the base class and overridden in a derived class. It is not mandatory for the derived * class to override (or re-define the virtual function), in that case, the base class version of the function is used.
+* They are always defined in the base class and overridden in a derived class. It is not mandatory for the derived  class to override (or re-define the virtual function), in that case, the base class version of the function is used.
 * A class may have virtual destructor but it cannot have a virtual constructor.
 
 # 22. What is docker? What is cloud computing? (I didn’t mention these in my resume)
