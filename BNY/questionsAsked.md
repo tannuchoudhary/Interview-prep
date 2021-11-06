@@ -746,30 +746,150 @@ For a visual explanation, think of the shipping containers used for intermodal s
 basically Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications.
 
 ### Cloud computing
+* basically Cloud computing is the delivery of different services through the Internet, including data storage, servers, databases, networking, and software.
+
+These can be stored on cloud and can be accessed from anywhere: E-mail, Documents, Blogs, Spreadsheets, Video, Pictures, Calender, Chat, Presentations, Address Book
+
+We can access them using: Desktop, Laptop, smartphone, Tablet
 Cloud computing is a technology that uses the internet for storing and managing data on remote servers, and then access data via the internet. ... One such example is Google cloud – It is a suite of public cloud services offered by Google. All the application development run on Google hardware.
 
 There are 3 main types of cloud computing services: Infrastructure-as-a-Service (IaaS), Platforms-as-a-Service (PaaS), and Software-as-a-Service (SaaS).
 
 # 23. Do you know Java? I said I know the basics, so – What is the entry point of a code in Java? Tell the syntax? Why main is static?
 
+## Entry point
+In computer programming, an entry point is a point in a program where the execution of a program begins, and where the program has access to command line arguments. To start a program's execution, the loader or operating system passes control to its entry point.
+
+## The main method is the entry point of a Java application.
+Specifically、when the Java Virtual Machine is told to run an application by specifying its class (by using the java application launcher), it will look for the main method with the signature of public static void main(String[]).
+
+## Code in java, file : HelloWorld.java
+```java
+/* This is a simple Java program.
+FileName : "HelloWorld.java". */
+class HelloWorld
+{
+	// Your program begins with a call to main().
+	// Prints "Hello, World" to the terminal window.
+	public static void main(String args[])
+	{
+		System.out.println("Hello, World");
+	}
+}
+
+```
+* **Class definition**:This line uses the keyword class to declare that a new class is being defined.
+class HelloWorld 
+HelloWorld is an identifier that is the name of the class. The entire class definition, including all of its members, will be between the opening curly brace  {  and the closing curly brace  } .
+
+* **main method**: In Java programming language, every application must contain a main method whose signature is:
+public static void main(String[] args)
+
+   * public: So that JVM can execute the method from anywhere.
+   * static: Main method is to be called without object. 
+   The modifiers public and static can be written in either order.
+   * void: The main method doesn't return anything.
+   * main(): Name configured in the JVM.
+   * String[]: The main method accepts a single argument: 
+             an array of elements of type String.
+Like in C/C++, main method is the entry point for your application and will subsequently invoke all the other methods required by your program.
+
+* The next line of code is shown here. Notice that it occurs inside main( ).
+``` 
+System.out.println("Hello, World");
+```
+This line outputs the string “Hello, World” followed by a new line on the screen. Output is actually accomplished by the built-in println( ) method. System is a predefined class that provides access to the system, and out is the variable of type output stream that is connected to the console.
+
+* Comments: They can either be multi-line or single line comments.
+
+```java
+/* This is a simple Java program. 
+Call this file "HelloWorld.java". */
+```
+This is a multiline comment. This type of comment must begin with /* and end with */. For single line you may directly use // as in C/C++.
+
+## Java Program to add two numbers: file : Main.java
+```java
+import java.util.Scanner;
+
+class Main{
+    public static void main(String args[]){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Hello world");
+        
+        int a = scan.nextInt();
+        int b = scan.nextInt();
+        int sum = a+b;
+        System.out.println("Sum is " + sum);
+        
+    }
+};
+```
+
 # 24. Tell me about Switch & Hub. Which data structure is used in switches?
+[in mor edetail](https://www.geeksforgeeks.org/difference-between-hub-and-switch/)
 
-A Hub is a networking device that allows you to connect multiple PCs to a single network, whereas a Switch connects various devices together on a single computer network. A Hub operates on the physical layer, whereas Switch operates on the data link layer.[in mor edetail](https://www.geeksforgeeks.org/difference-between-hub-and-switch/)
+**Hub:**
 
-I think graph data structure is used in switches
+A Hub is a networking device that allows you to connect multiple PCs to a single network, whereas a Switch connects various devices together on a single computer network. A Hub operates on the physical layer, whereas Switch operates on the data link layer.
 
-# 25. TCP vs UDP
+**Switch:**
+
+Switch is a network device which is used to enable the connection establishment and connection termination on the basis of need. Switch is operated on Data link layer. In this packet filtering is available. It is type of full duplex transmission mode and it is also called efficient bridge. 
+
+hub - jo request jayega uska result wo sbko bhej dega jo v connected h, koi filtering ni krega 
+jo v packet aya h, wo saarey ports pe bhej dega jo v connected h aur computer decide krega ki ye mere lie h ya nahi
+
+* Hashmap is used in switches
+* switches: kaun sa mac address kaun sa port se connected h, 
+
+![Screenshot from 2021-11-06 18-07-20](https://user-images.githubusercontent.com/42698268/140609974-e69e5763-6354-4899-8fd8-868d43362a0e.png)
+
+
+
+agar 2 computer connected h aur hm request bhej rhe h google ko to wo jab bhejega information to check krega mera mac address kis port se connected h aur mera mac address jis port se connected h uspe bhej dega.
+* hashtble - mac address key, aur port ko value rkhna hoga
+* ek switch se utne computer connected hongey jitne port hongey
+## In short: 
+### OSI model and their 7 layers
+* Physical layer wroks on - Bits(0,1)
+* Data link - Mac adrs
+* Network laye - IP address( internet protocol - ipv4, ipv6)
+* Transport layer - port number(tcp, udp), (agar ip address aur amc address diya jaye to wo computer tak phch jayega lkin kis process ko dena h to port number batayega) example- jab courier ayega to address aur house number k alawa apko us person ka name dena hoga jisko parcel dena h
+* session layer - if i am connecting to google, to mere aur google k bich session baneg ajust like session
+* presentation - compression hota h jaise kisi data ko secure krke bhejna h to compress krke bhejte h
+* Application - saara application kaam kr rha h jo v net se connected h, http, ftp, smtp(simple mail transfer protocol)
+
+![7 layers](https://user-images.githubusercontent.com/42698268/140606486-48fa8a54-60e5-414d-ba99-7a1c847333cc.jpeg)
+
+
+![osi model](https://user-images.githubusercontent.com/42698268/140606456-1b3b51c3-62a6-410e-b0c1-1787b118fbf0.jpeg)
+
+## [Explanantion of OSI Model](https://www.geeksforgeeks.org/layers-of-osi-model/)
+
+
+
 
 # 26. Find how you can generate a given sequence of numbers from the BST shown on the whiteboard.
 
-# 27. Which databases have you used? Difference between SQL and NoSQL.
+# 27. [Which databases have you used? Difference between SQL and NoSQL.](https://www.geeksforgeeks.org/difference-between-sql-and-nosql/)
+
+
+![Screenshot from 2021-11-06 18-05-07](https://user-images.githubusercontent.com/42698268/140609852-27b19a62-4586-4c19-b0a7-a70dbe980162.png)
+
 
 # 28. What servers have you used?
+* i've used apache server to host my project locally on my computer
+* local host - is an ip (127. 0. 0. 1 ip will be used to access locally hosted files)
+* agar aise host krna padey to server kharidna padega to wo isp(intenet service provider) wo tmko ek ip dega
+
+
+
 
 # 29. What is the CAP theorem?
 
 * consitency - accurate results
-* atomicity - ALL OR NONE
+* atomicity/ availability(take a look)- ALL OR NONE
 * partition tolerance - cluster of nodes, they all communicate and if communication is not happening dur to something still system chalna chahiye, i.e combined system chalte rhna chahiye( it is a kind of durability)
 
 i.e koi node fail kr jaye fir v tmhara system kaam krna chahiye
@@ -782,7 +902,7 @@ i.e koi node fail kr jaye fir v tmhara system kaam krna chahiye
 * Kind of questions they asked
 * Time se jada interview liya gaya th
 * Judge krne k lie usne pura time liye, he took double time
-* I was very happy die to this, as interviewer gave me propeer time to explain my answer
+* I was very happy due to this, as interviewer gave me propeer time to explain my answer
 
 # 31. Favourite programming language?
 
@@ -807,12 +927,6 @@ i.e koi node fail kr jaye fir v tmhara system kaam krna chahiye
 
 Greater benefits have been achieved in Mysql, for being open sourced and providing, for the operational environment, the same functionality as any DBMS (cost-benefit ratio)
 
-# 40. What servers have you used?
-* i've used apache server to host my project locally on my computer
-* local host - is an ip (127. 0. 0. 1 ip will be used to access locally hosted files)
-* agar aise host krna padey to server kharidna padega to wo isp(intenet service provider) wo tmko ek ip dega
-
-
 
 # 40. Do you have any leadership experience?
 * coding ninjas
@@ -829,26 +943,6 @@ Businesses, communities and global economies rely on us because we prioritize cl
 
 What is BNY doing in India?
 For over 234 years, as the investment company for the world, we have been leading change in the global financial services industry. BNY Mellon Technology Private Limited, established in 2000, is a group company of BNY Mellon operating in India, providing technology solutions to the bank.
-
-
-
-
-
-
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
 
 
 # [42](https://www.geeksforgeeks.org/bny-mellon-interview-experience-for-6-month-internship-2020-virtual/?ref=rp)To swap 0 and 5 without the use of any condition, loop, or extra space
