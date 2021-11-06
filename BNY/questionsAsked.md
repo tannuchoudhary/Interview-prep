@@ -1,3 +1,36 @@
+# My questions round 1:
+
+* Gave his Introduction
+* Introduce yourself
+* Tell briefly about your project(mine was web based compiler and pet adoption website) 
+* Tell that project which is completely working( told web based compiler)
+* If you have used compilex(for compiler) and ace.js(for editor) then what did you do in this project
+* Show the code(showed him github repo)
+* Show where have you implemented in code that your input will be saved
+* One oops question on hackerrank code pair:
+	* question: you are given a class which contains a vector, you'll have a function and parameter passed in that function is two vectors, you have to swap the content of the first vector and put it into the second vector
+
+* In which langauge you are proficient(i said c++)
+* difference between c and c++
+* what else you are good at( i said ds algo)
+* what is file structure and file storage
+* friend function
+* stack and its application
+* linear and non linear ds, examples and application
+* what is queue, linear or non linear
+* queue and its application
+* implement queue using stack
+* What is Hashtable
+* Situation based: 
+	* What if you are team lead and only you know how to do that particular work, and you have a deadline to meet
+	* What if 3 of your team members are showing attitude 
+	* What if 1 of them will agree to work with you but other 2 have a problem with you being the team leader
+	* what if all the three of them are as much skilled as you, would you leave the position of team leader
+
+* Have you done anything which shows your leaderhsip quality
+* Do you have any question from me 
+
+-------------------------------------------------------------------------------------------------------
 # 0. Introduce yourself.
 # 1. Brief discussion about my final year project.
 # 2. [Decimal Equivalent of Binary Linked List](https://www.geeksforgeeks.org/decimal-equivalent-of-binary-linked-list/)
