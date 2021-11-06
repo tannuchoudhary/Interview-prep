@@ -51,3 +51,13 @@
 
 # [SDE sheet revision](https://github.com/tannuchoudhary/SDE_30_180)
 
+# Project revision
+  * Revise tkinter project(employee dbms), and keep notes with full explanation
+  * Revise rest of the projects(Adopet, tindog, library management system)
+
+# Make notes about the compnay,
+  * Awards won by the company
+  * Their culture and work ethics
+  * What technology they are currently working on
+  * What are the things that have made them famous
+  * What changes they are bringing to the community
