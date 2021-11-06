@@ -1,5 +1,5 @@
 # You have to do:
-# Off campus
+# 1. Off campus
 
 ## [0.](https://www.geeksforgeeks.org/bny-mellon-interview-experience-for-software-developer-off-campus/)22 july 2021
 
@@ -19,7 +19,7 @@
 
 ## [8.](https://discuss.codechef.com/t/bny-mellon-intern-interview-experience/32088) july 2019
 
-# On campus
+# 2.On campus
 
 ## [0.](https://www.geeksforgeeks.org/bny-mellon-internship-interview-experience-for-software-developer-on-campus-2022/?ref=leftbar-rightbar) 5 oct 2021
 
@@ -37,25 +37,25 @@
 
 ## [7.](https://www.geeksforgeeks.org/bny-mellon-interview-experience-for-freshers/) 10 sep 2019
 
-# [Core sheet DBMS](https://docs.google.com/document/d/1xtoMGLDZIMFdTW-8crbL9dPxiXJ41FUv-9lZWuw01SY/edit?usp=sharing)
+# 3. [Core sheet DBMS](https://docs.google.com/document/d/1xtoMGLDZIMFdTW-8crbL9dPxiXJ41FUv-9lZWuw01SY/edit?usp=sharing)
 
-# [Core sheet OS](https://github.com/tannuchoudhary/Interview-prep/blob/main/OS_Core.md)
+# 4. [Core sheet OS](https://github.com/tannuchoudhary/Interview-prep/blob/main/OS_Core.md)
 
-# [Core sheet CN](https://github.com/tannuchoudhary/Interview-prep/blob/main/CN_Core.md)
+# 5. [Core sheet CN](https://github.com/tannuchoudhary/Interview-prep/blob/main/CN_Core.md)
 
-# [Graph series revision](https://github.com/tannuchoudhary/GraphSeries)
+# 6. [Graph series revision](https://github.com/tannuchoudhary/GraphSeries)
 
-# [Tree series](https://github.com/tannuchoudhary/TreeSeries)
+# 7. [Tree series](https://github.com/tannuchoudhary/TreeSeries)
 
-# [Linked List series revision](https://github.com/tannuchoudhary/SDE_30_180)
+# 8. [Linked List series revision](https://github.com/tannuchoudhary/SDE_30_180)
 
-# [SDE sheet revision](https://github.com/tannuchoudhary/SDE_30_180)
+# 9. [SDE sheet revision](https://github.com/tannuchoudhary/SDE_30_180)
 
-# Project revision
+# 10. Project revision
   * Revise tkinter project(employee dbms), and keep notes with full explanation
   * Revise rest of the projects(Adopet, tindog, library management system)
 
-# Make notes about the compnay,
+# 11. Make notes about the compnay,
   * Awards won by the company
   * Their culture and work ethics
   * What technology they are currently working on
