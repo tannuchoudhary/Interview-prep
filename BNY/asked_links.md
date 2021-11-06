@@ -1,3 +1,4 @@
+# You have to do:
 # Off campus
 
 ## [0.](https://www.geeksforgeeks.org/bny-mellon-interview-experience-for-software-developer-off-campus/)22 july 2021
@@ -36,4 +37,17 @@
 
 ## [7.](https://www.geeksforgeeks.org/bny-mellon-interview-experience-for-freshers/) 10 sep 2019
 
+# [Core sheet DBMS](https://docs.google.com/document/d/1xtoMGLDZIMFdTW-8crbL9dPxiXJ41FUv-9lZWuw01SY/edit?usp=sharing)
+
+# [Core sheet OS](https://github.com/tannuchoudhary/Interview-prep/blob/main/OS_Core.md)
+
+# [Core sheet CN](https://github.com/tannuchoudhary/Interview-prep/blob/main/CN_Core.md)
+
+# [Graph series revision](https://github.com/tannuchoudhary/GraphSeries)
+
+# [Tree series](https://github.com/tannuchoudhary/TreeSeries)
+
+# [Linked List series revision](https://github.com/tannuchoudhary/SDE_30_180)
+
+# [SDE sheet revision](https://github.com/tannuchoudhary/SDE_30_180)
 
