@@ -28,8 +28,10 @@
 	* what if all the three of them are as much skilled as you, would you leave the position of team leader
 
 * Have you done anything which shows your leaderhsip quality
-* Do you have any question from me 
+* Do you have any question from me
 
+-------------------------------------------------------------------------------------------------------
+# Must do the coding and dbms question you did in online assesment
 -------------------------------------------------------------------------------------------------------
 # 0. Introduce yourself.
 # 1. Brief discussion about my final year project.
@@ -938,14 +940,162 @@ i.e koi node fail kr jaye fir v tmhara system kaam krna chahiye
 * I was very happy due to this, as interviewer gave me propeer time to explain my answer
 
 # 31. Favourite programming language?
+C++
+
+* Advantage of c++ over java
+	* advantages of C++ over Java:
+
+		1- C++ is compiled language whereas Java code is compiled as well as interpreted. That means execution of C++ programs is faster than Java program.
+
+		2- C++ supports operator overloading (ad hoc polymorphism) it means we can perform computation on objects. Whereas Java does not support operator overloading.
+
+		3- C++ supports multiple inheritance but Java does not support multiple inheritance using classes, which is accomplished using “interface”.
+
+		4- C++ use pointers whereas Java does not use pointers. So, directly we cannot do system level programming using Java (rather we can embed c or c++ code in java using JNI).
+	* C++ is powerfull because you can control everything, run faster and have a great performance. C++ programs are faster. C++ is a multiparadigm language i.e. we can write either object oriented or procedural programs. But in java we can only write object oriented programs.
+	
+* Advanatge over python
+* General advantages
+	* very fast
+	* One of the biggest advantages of C++ is the feature of object-oriented programming which includes concepts like classes, inheritance, polymorphism, data abstraction, and encapsulation that allow code reusability and makes a program even more reliable.
+	* Supports most C features
+	* Memory management
+	* Statically typed
 
 # 32. Do you know about the maps? Tell me something about it.
 
+* A map is a data structure that's designed for fast lookups. Data is stored in key-value pairs with every key being unique. Each key maps to a value hence the name. These pairs are called map entries.
+* A Map is a type of fast key lookup data structure that offers a flexible means of indexing into its individual elements. These keys, along with the data values associated with them, are stored within the Map. ... Each entry of a Map contains exactly one unique key and its corresponding value.
+* Map is dictionary like data structure. It is a sequence of (key, value) pair, where only single value is associated with each unique key. It is often referred as associative array.
+* Keys are in sorted order in map, and the value associated with them are the frequency of the element
+
 # 33. How hashing is done?
+
+* Hashing is a technique or process of mapping keys, values into the hash table by using a hash function. It is done for faster access to elements. The efficiency of mapping depends on the efficiency of the hash function used.
+
+* Hashing is a technique that is used to uniquely identify a specific object from a group of similar objects. Some examples of how hashing is used in our lives include:
+
+	* In universities, each student is assigned a unique roll number that can be used to retrieve information about them.
+	* In libraries, each book is assigned a unique number that can be used to determine information about the book, such as its exact position in the library or the users it has been issued to etc.
+In both these examples the students and books were hashed to a unique number.
+
+Assume that you have an object and you want to assign a key to it to make searching easy. To store the key/value pair, you can use a simple array like a data structure where keys (integers) can be used directly as an index to store values. However, in cases where the keys are large and cannot be used directly as an index, you should use hashing.
+
+In hashing, large keys are converted into small keys by using hash functions. The values are then stored in a data structure called hash table. The idea of hashing is to distribute entries (key/value pairs) uniformly across an array. Each element is assigned a key (converted key). By using that key you can access the element in O(1) time. Using the key, the algorithm (hash function) computes an index that suggests where an entry can be found or inserted.
+
+Hashing is implemented in two steps:
+
+  1. An element is converted into an integer by using a hash function. This element can be used as an index to store the original element, which falls into the hash table.
+	
+  2. The element is stored in the hash table where it can be quickly retrieved using hashed key.
+```
+  hash = hashfunc(key)
+  index = hash % array_size
+ ```
+
+In this method, the hash is independent of the array size and it is then reduced to an index (a number between 0 and array_size − 1) by using the modulo operator (%).
+
 
 # 34. What is the Hash function? What will happen if a hash function returns 1 always?
 
+* A hash function is any function that can be used to map a data set of an arbitrary size to a data set of a fixed size, which falls into the hash table. The values returned by a hash function are called hash values, hash codes, hash sums, or simply hashes.
+
+To achieve a good hashing mechanism, It is important to have a good hash function with the following basic requirements:
+
+  1. Easy to compute: It should be easy to compute and must not become an algorithm in itself.
+
+  2. Uniform distribution: It should provide a uniform distribution across the hash table and should not result in clustering.
+
+  3. Less collisions: Collisions occur when pairs of elements are mapped to the same hash value. These should be avoided.
+
+Note: Irrespective of how good a hash function is, collisions are bound to occur. Therefore, to maintain the performance of a hash table, it is important to manage collisions through various collision resolution techniques.
+
+
+* If the equals method is implemented as per the contract and the hashcode method returns a constant value, then we will still be able to retrieve the value for the key from a hashMap, but the performance will be slow compared to the method returning a unique hashcode.
+
+
 # 35. Difference between map and unordered map
+
+
+**Use std::map when**
+
+  * You need ordered data.
+  * You would have to print/access the data (in sorted order).
+  * You need predecessor/successor of elements.
+  * See advantages of BST over Hash Table for more cases.
+
+```cpp
+// CPP program to demonstrate use of std::map
+#include <bits/stdc++.h>
+
+int main()
+{
+	// Ordered map
+	std::map<int, int> order;
+
+	// Mapping values to keys
+	order[5] = 10;
+	order[3] = 5;
+	order[20] = 100;
+	order[1] = 1;
+
+	// Iterating the map and
+	// printing ordered values
+	for (auto i = order.begin(); i
+		!= order.end(); i++) {
+		std::cout << i->first
+				<< " : "
+				<< i->second << '\n';
+	}
+}
+```
+```
+output:
+1 : 1
+3 : 5
+5 : 10
+20 : 100
+```
+**Use std::unordered_map when** 
+
+  * You need to keep count of some data (Example – strings) and no ordering is required.
+  * You need single element access i.e. no traversal.
+
+```cpp
+// CPP program to demonstrate use of
+// std::unordered_map
+#include <bits/stdc++.h>
+
+int main()
+{
+	// Unordered map
+	std::unordered_map<int, int> order;
+
+	// Mapping values to keys
+	order[5] = 10;
+	order[3] = 5;
+	order[20] = 100;
+	order[1] = 1;
+
+	// Iterating the map and
+	// printing unordered values
+	for (auto i = order.begin();
+		i != order.end(); i++)
+	{
+		std::cout << i->first
+				<< " : "
+				<< i->second << '\n';
+	}
+}
+
+```
+
+```
+1 : 1
+20 : 100
+5 : 10
+3 : 5
+```
 
 # 36. The interviewer discussed a lot about maps.
 
@@ -1027,6 +1177,70 @@ public:
 
 
 # 45. he also asked me a puzzle on my approach to finding the defective ball (of lighter weight) from a group of 8 balls of similar weights with the help of a physical balance using minimum turns on it.
+
+# 46. [Count ways to express a number as sum of consecutive numbers](https://www.geeksforgeeks.org/count-ways-express-number-sum-consecutive-numbers/)
+
+```cpp
+// C++ program to count number of ways to express
+// N as sum of consecutive numbers.
+#include <bits/stdc++.h>
+using namespace std;
+
+long int countConsecutive(long int N)
+{
+	// constraint on values of L gives us the
+	// time Complexity as O(N^0.5)
+	long int count = 0;
+	for (long int L = 1; L * (L + 1) < 2 * N; L++) {
+		double a = (1.0 * N - (L * (L + 1)) / 2) / (L + 1);
+		if (a - (int)a == 0.0)
+			count++;
+	}
+	return count;
+}
+
+// Driver Code
+int main()
+{
+	long int N = 15;
+	cout << countConsecutive(N) << endl;
+	N = 10;
+	cout << countConsecutive(N) << endl;
+	return 0;
+}
+
+```
+# 47. Basic java input-output questions related to operators.
+# 48. Language preferred, and the reason for it. Difference between java and c++.
+# 49. Difference between method overloading and overriding.
+# 50. Super keyword in java and its uses.
+# 51. Do you know how the code is actually deployed on machines in the real world?
+# 52. A very brief discussion on projects.
+# 53. An SQL Query.
+# 54. 2 logical puzzles –  https://www.geeksforgeeks.org/egg-dropping-puzzle-dp-11/ 
+# 55. Detailed discussion on my projects
+# 56. What is a tuple in python?
+# 57. SQL queries
+# 58. What are cookies?
+# 59. What is scope in a programming language?
+# 60. Explain outer join in DBMS
+# 61. Run time polymorphism
+# 62. Inner class vs sub class
+# 63. Interface vs abstract class
+# 64. Design a DBMS for the School attendance System
+# 65. Where do you see yourself in 5 years?
+# 66. What actions have you taken to achieve your long and short-term goals so far?
+# 67. Do you use any online platforms for learning about the latest developments in the field?
+# 68. Are you a member of any professional society or research organisation?
+# 69. My areas of interest? I answered ML and DL.
+# 70. Tell me something about ML that fascinates you.
+# 71. How would you handle a dispute in your project team? What would you do if your team members are disinterested and lazy?
+# 71. Why is Java preferred in the industry?
+# 72. What is inheritance?
+# 73. What is multiple inheritance?
+# 74. What is memory sequencing?
+# 75. Practical applications of ML and Dl.
+# 76. Puzzle: 10 people shake hands with each other. How many handshakes will be there in total?
 
 
 # ONCAMPUS
