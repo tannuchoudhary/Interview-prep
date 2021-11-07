@@ -431,7 +431,7 @@ int main(){
 
 ``` output : a-3 b-8 ```
 
-### changing the function name from add to +, this is more readbale 
+### changing the function name from add to +, this is more readable 
 
 ```cpp
 
