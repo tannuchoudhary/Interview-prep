@@ -219,4 +219,72 @@ int main(){
 # 6. Virtual function
 ```pounter k through object ko call kro to arrow operator lgta h, and object k through kro to dot operator``` 
 
+------------------------------------------------------------------------------------------------------
+
+## Static
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+class Account{
+    private:
+        int balance;
+        static float roi;
+    public:
+        void setBalance(int b){
+            balance = b;
+        }
+        
+        static void setROI(float r){
+            roi = r;
+        }
+};
+
+float Account:: roi;
+int main(){
+    Account a1, a2;
+    //Account::roi = 4.5;
+    
+    a1.setROI(4.5);
+    Account::setROI(4.5);
+}
+
+
+```
+
+## Constructor
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+class Complex{
+    private:
+        int a, b;
+    public:
+        //parameterized constructor
+        Complex(int x, int y){
+            a = x;
+            b = y;
+        }
+        
+        //parameterized constructor
+        Complex(int x){
+            a = x;
+        }
+        //default constructor
+        Complex(){
+            
+        }
+    
+};
+
+int main(){
+    Complex c1(2, 3), c2(4), c3;
+    return 0;
+}
+
+```
+
 
