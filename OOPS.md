@@ -385,7 +385,7 @@ int main(){
 
 # Operator Overloading
 
-## Overloading of binary operator
+## Overloading of binary operator(addition)
 
 ### without operator overloading
 
@@ -437,6 +437,7 @@ int main(){
 
 ```cpp
 
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -458,7 +459,7 @@ class Complex{
         return temp;
     }
     void showData(){
-        cout<<"a-"<<a<<" b-"<<b<<endl;
+        cout<<"a="<<a<<" b="<<b<<endl;
     }
     
 };
@@ -471,11 +472,17 @@ int main(){
     c1.setData(2, 3);
     c2.setData(1, 5);
     
+    //Both of them are same
+    //c3 = c1.operator+(c2);
     c3 = c1 + c2;
+    
+    
     c3.showData();
     
     return 0;
 }
+
+
 
 ```
 
@@ -491,5 +498,49 @@ int main(){
  ![Screenshot from 2021-11-07 23-51-08](https://user-images.githubusercontent.com/42698268/140657273-f64bcdfe-8149-44f1-b679-54c31de5314c.png)
 
 
-## Overloading of unary operator
+## Overloading of unary operator(negation)
 
+```cpp
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class Complex{
+   private:
+    int a, b;
+    
+    public:
+    void setData(int x, int y){
+        a = x;
+        b = y;
+    }
+    //use operator keyword
+    Complex operator -(){
+        Complex temp;
+        temp.a = -a;
+        temp.b = -b;
+        
+        return temp;
+    }
+    void showData(){
+        cout<<"a="<<a<<" b="<<b<<endl;
+    }
+    
+};
+
+
+int main(){
+    Complex c1, c2;
+    
+    c1.setData(2, 3);
+   
+    //both are same
+    //c2 = c1.operator-();
+    c2 = -c1;
+    
+    c2.showData();
+    
+    return 0;
+}
+
+```
