@@ -383,7 +383,9 @@ int main(){
 
 ```
 
-## Operator Overloading
+# Operator Overloading
+
+## Overloading of binary operator
 
 ### without operator overloading
 
@@ -489,4 +491,5 @@ int main(){
  ![Screenshot from 2021-11-07 23-51-08](https://user-images.githubusercontent.com/42698268/140657273-f64bcdfe-8149-44f1-b679-54c31de5314c.png)
 
 
+## Overloading of unary operator
 
