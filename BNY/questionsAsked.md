@@ -40,6 +40,43 @@
 ## My approach(01): 
 Take two pointers, traverse both of them until all the initial zero passed and then move first pointer upto the end to calculate the size of the LL and then start moving the second pointer and along with that, keep caluclating the value by ```ans += pow(2, size) * head->value```
 
+OR
+
+Take two pointers, calculate size of LL using one pointer and then use the second pointer to find the value of the binary ```ans += (head->value * pow(2, count)) ``` and then decrease count each time.
+
+```cpp
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    int getDecimalValue(ListNode* head) {
+        ListNode* ptr1 = head;
+        ListNode* ptr2 = head;
+        
+        int count = 0;
+        while(ptr2->next != NULL){
+            ptr2 = ptr2->next;
+            count++;
+        }
+        int ans = 0;
+        while(ptr1 != NULL){
+            ans += (ptr1->val * pow(2, count));
+            count--;
+            ptr1 = ptr1->next;
+        }
+        return ans;
+    }
+};
+```
+
 ## Aprroach 02
 traverse and just do this ``` ans = ans*2 + head->data ```, it will add 0 until all the initial zeroes will pass and when it will start adding numbers, then it will multiply it by 2 each time, giving the correct result
 
