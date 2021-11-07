@@ -254,7 +254,14 @@ int main(){
 ```
 
 ## Constructor
+* Is a member function of class
+* name is same as class
+* No return type, so can't use return keyword
+* Will never be static
+* Is an instance member function, as create when instance(object) is created(so never static)
+* Called just after an object is created, so used for initialisation
 
+### Default constructor, parameterized constructor, Constructor overloading
 ```cpp
 #include<bits/stdc++.h>
 using namespace std;
@@ -286,5 +293,200 @@ int main(){
 }
 
 ```
+* If you havent created any constructor compiler will create default const. and copy const.
+* If you have created default or parameterized const. then compiler would only create copy const.
+* If you have created only copy const. then compiler will not create any const.
+
+### Copy constructor
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+class Complex{
+    private:
+        int a, b;
+    public:
+        //parameterized constructor
+        Complex(int x, int y){
+            a = x;
+            b = y;
+        }
+        
+        //parameterized constructor
+        Complex(int x){
+            a = x;
+        }
+        //default constructor
+        Complex(){
+            
+        }
+        
+        //copy constructor
+        //using reference variable to prevent recursion and then infinite loop
+        //as c will again call same constructor as c is passing as parameter, and it will always tak evalue
+        //so we'll pass it as reference variable
+        //bcz ye object ban rha h islie constructor call ho rha h
+        //agar object na bana k reference bana do to constructor call hi ni hoga dobaara
+        //so copy constructor me reference variable banana compulsory h, ni to error ayegi
+        Complex(Complex &c){
+            a = c.a;
+            b = c.b;
+        }
+    
+};
+
+int main(){
+    Complex c1(2, 3), c2(4), c3;
+    //it will need copy constructor
+    Complex c4(c1);
+    return 0;
+}
+
+```
+
+## Destructor
+
+* Is a member function of class
+* name is same as class
+* tild sign(~) used before name
+* No return type, so can't use return keyword
+* Takes no argument(no overloading is possible)
+* Will never be static
+* Is an instance member function, as create when instance(object) is created(so never static)
+* called just before object is going to get destroyed
+* so used for deallocation of memory, example - for deallocation of dynamically allocated memory
+
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+class Complex{
+   private:
+    int a, b;
+    
+    public:
+    ~Complex(){
+        cout<<"Destructor executed"<<endl;
+    }
+};
+
+void fun(){
+    Complex c1;
+}
+
+int main(){
+    fun();
+    return 0;
+}
+
+```
+
+## Operator Overloading
+
+### without operator overloading
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+class Complex{
+   private:
+    int a, b;
+    
+    public:
+    void setData(int x, int y){
+        a = x;
+        b = y;
+    }
+    Complex add(Complex c){
+        Complex temp;
+        temp.a = a + c.a;
+        temp.b = b + c.b;
+        
+        return temp;
+    }
+    void showData(){
+        cout<<"a-"<<a<<" b-"<<b<<endl;
+    }
+    
+};
+
+
+
+int main(){
+    Complex c1, c2, c3;
+    
+    c1.setData(2, 3);
+    c2.setData(1, 5);
+    
+    c3 = c1.add(c2);
+    c3.showData();
+    
+    return 0;
+}
+
+```
+
+``` output : a-3 b-8 ```
+
+### changing the function name from add to +, this is more readbale 
+
+```cpp
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class Complex{
+   private:
+    int a, b;
+    
+    public:
+    void setData(int x, int y){
+        a = x;
+        b = y;
+    }
+    //use operator keyword
+    Complex operator +(Complex c){
+        Complex temp;
+        temp.a = a + c.a;
+        temp.b = b + c.b;
+        
+        return temp;
+    }
+    void showData(){
+        cout<<"a-"<<a<<" b-"<<b<<endl;
+    }
+    
+};
+
+
+
+int main(){
+    Complex c1, c2, c3;
+    
+    c1.setData(2, 3);
+    c2.setData(1, 5);
+    
+    c3 = c1 + c2;
+    c3.showData();
+    
+    return 0;
+}
+
+```
+
+``` output : a-3 b-8 ```
+
+* We can see that, by just using operator keyword, we changed the name to +
+* Now in main, we don't need to use dot operator and as we are not using dot, therefore no need of operator word
+
+
+![Screenshot from 2021-11-07 23-50-36](https://user-images.githubusercontent.com/42698268/140657262-6b68c3e3-ccde-4c66-8e18-c5d9a9368bc0.png)
+
+
+ ![Screenshot from 2021-11-07 23-51-08](https://user-images.githubusercontent.com/42698268/140657273-f64bcdfe-8149-44f1-b679-54c31de5314c.png)
+
 
 
