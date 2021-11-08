@@ -783,9 +783,9 @@ int main(){
 ## Why use Java interface?
 There are mainly three reasons to use interface. They are given below.
 
-It is used to achieve abstraction.
-By interface, we can support the functionality of multiple inheritance.
-It can be used to achieve loose coupling.
+* It is used to achieve abstraction.
+* By interface, we can support the functionality of multiple inheritance.
+* It can be used to achieve loose coupling.
 
 
 ## How to declare an interface?
