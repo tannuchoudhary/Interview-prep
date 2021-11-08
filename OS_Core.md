@@ -1,3 +1,7 @@
+# My notes : https://docs.google.com/document/d/1bmtZjFCgWO8-2KcUhW06o_A4vmzmX6gJorxf4iUeoS8/edit?usp=sharing
+
+
+
 # 0. [Basics of OS](https://www.geeksforgeeks.org/introduction-of-operating-system-set-1/?ref=lbp)
 # 1. What is the main purpose of an operating system? Discuss different types? 
 
