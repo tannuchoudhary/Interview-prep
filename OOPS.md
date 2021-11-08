@@ -723,3 +723,57 @@ int main(){
 
 
 # namespace
+
+* header file contains declaration of identifiers, functions etc
+* library file contains definition of identifiers and functions
+* if two header file is written and both contains declaration of same function, so to avoid ambuigity, namespace was used
+* inside header files, all declarations are inside namespace
+* namespace is a block of code containing declarations
+* now there would be no conflicts, as both declaration(which is of same identifier) belongs to different namespaces
+
+
+ ![Screenshot from 2021-11-08 22-35-49](https://user-images.githubusercontent.com/42698268/140786851-01392d28-f998-43ba-9085-237ad32e253e.png)
+ 
+ 
+ ![Screenshot from 2021-11-08 22-35-57](https://user-images.githubusercontent.com/42698268/140787062-2518cd2f-0baf-4670-af2d-fa4342b3fe5f.png)
+ 
+ ![Screenshot from 2021-11-08 22-42-51](https://user-images.githubusercontent.com/42698268/140787825-59a001f4-161e-45f2-9532-e3d8b8ae8df6.png)
+
+* this is how it is written
+
+![Screenshot from 2021-11-08 22-43-43](https://user-images.githubusercontent.com/42698268/140787883-a41cbeb5-e00c-40a1-aac0-e51274eafa0c.png)
+
+* You can use alias for namespace for convenience
+
+![Screenshot from 2021-11-08 22-44-09](https://user-images.githubusercontent.com/42698268/140787922-b218eb61-6dc4-42fe-84ad-6c2314aa2c87.png)
+
+
+
+![Screenshot from 2021-11-08 22-44-22](https://user-images.githubusercontent.com/42698268/140787934-dd50048a-fc86-4c83-bacc-e554097a914d.png)
+
+
+
+![Screenshot from 2021-11-08 22-44-45](https://user-images.githubusercontent.com/42698268/140787949-e4f493af-e06b-4a1c-adaf-fb417f55ef8b.png)
+
+
+
+![Screenshot from 2021-11-08 22-44-52](https://user-images.githubusercontent.com/42698268/140787958-db7b1385-1bdf-41d7-8157-acd89d4faeef.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
