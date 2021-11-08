@@ -13,7 +13,11 @@
 * In which langauge you are proficient(i said c++)
 * difference between c and c++
 * what else you are good at( i said ds algo)
-* what is file structure and file storage
+* what is file structure and storage structure
+
+Storage structure: It is the representation of the data structure in the computer memory. - File structure: It is the representation of the storage structure in the auxiliary memory.
+
+
 * friend function
 * stack and its application
 * linear and non linear ds, examples and application
