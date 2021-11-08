@@ -762,14 +762,34 @@ int main(){
 
 
 
+# Interface
 
 
+* An interface in Java is a blueprint of a class. It has static constants and abstract methods.
+
+* The interface in Java is a mechanism to achieve abstraction
+ There can be only abstract methods in the Java interface, not method body. It is used to achieve abstraction and multiple inheritance in Java
 
 
+* In other words, you can say that interfaces can have abstract methods and variables. It cannot have a method body.
+
+* Java Interface also represents the IS-A relationship.
+* It cannot be instantiated just like the abstract class.
 
 
+* An abstract class allows you to create functionality that subclasses can implement or override. An interface only allows you to define functionality, not implement it. And whereas a class can extend only one abstract class, it can take advantage of multiple interfaces.
 
 
+## Why use Java interface?
+There are mainly three reasons to use interface. They are given below.
+
+It is used to achieve abstraction.
+By interface, we can support the functionality of multiple inheritance.
+It can be used to achieve loose coupling.
+
+
+## How to declare an interface?
+An interface is declared by using the interface keyword. It provides total abstraction; means all the methods in an interface are declared with the empty body, and all the fields are public, static and final by default. A class that implements an interface must implement all the methods declared in the interface.
 
 
 
