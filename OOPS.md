@@ -557,4 +557,123 @@ int main(){
 ![Screenshot from 2021-11-08 21-05-54](https://user-images.githubusercontent.com/42698268/140771390-4fcc6726-47e2-421d-bc86-618c9f031a80.png)
 9438.png)
 
+# Virtual Function
 
+## Points to keep in mind
+* Pointer of a parent class can point to the object of child class, or to the object of any descendent(vanshaj) of the parent class
+
+![Screenshot from 2021-11-05 23-51-40](https://user-images.githubusercontent.com/42698268/140559966-7fc03785-81e8-4bee-8a46-0ed31ae5fd86.png)
+
+* Program to understand this concept
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+class A{
+    public:
+        void f1(){
+            
+        }
+};
+
+class B : public A{
+    public:
+        //this is function overriding
+        void f1(){
+            
+        }
+    
+};
+
+int main(){
+    A *ptr1, *ptr2, obj1;
+    B obj2;
+    
+    ptr1 = &obj1; // ptr1 pointer of type base class can store the address of type A(this is normally what we do)
+    ptr2 = &obj2; //parent class pointer can point to object of child class
+    
+    //calling function using object
+    //here early binding is happening, i.e while compiling compiler will find out that obj2 is of child class type 
+    obj2.f1(); //therefore it will call the f1 function of child class as obj2 is of type child class
+    
+    //calling function using pointer
+    ptr2->f1() //as ptr2 is containing the address of type of child class
+    //so it should have called the f1() of child class
+    
+    /* but at the time of compilation, compiler will not able to find out the type of 
+    address contained in ptr2 at the time of early binding */
+    
+    /* as at compile time only the type of pointer can be found out and not the type of object
+    whose address is contained by the pointer, and the type of pointer was decided at the time
+    of declaration, in line 21, which is of type A*/
+    
+    /*so compiler will assume that, we are trying to call f1() of parent class i.e A, and it 
+    will call the f1() of class A, which is very wrong */
+    
+    /*but the bigger problem is that it will not even show the error, you will never be able to 
+    figure out what is the problem*/
+    
+    /* So to avoid this problem, the solution is that we'll prevent early binding, we'll tell 
+    compiler to do late binding, so that pointer k type ko nahi balki pointer k content ko
+    adhaar maana jaye */
+    
+    /* so to do this, we'll declare the function in parent class i.e class A as virtual*/
+    
+    /* Now no need to define these functions as virtual in child classes, as compiler will
+    automatically consider them as virtual function*/
+    
+    /* Now as we have defined the function as virtual, now due to virtual keyword, late 
+    binding will be done*/
+    
+}
+
+```
+## Result:
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+class A{
+    public:
+       virtual void f1(){
+            
+        }
+};
+
+class B : public A{
+    public:
+        void f1(){
+            
+        }
+    
+};
+
+int main(){
+    A *ptr1, *ptr2, obj1;
+    B obj2;
+    
+    ptr1 = &obj1; 
+    ptr2 = &obj2; 
+    
+    obj2.f1(); 
+    ptr2->f1() 
+}
+```
+
+A virtual function is a member function which is declared within a base class and is re-defined(Overridden) by a derived class. When you refer to a derived class object using a pointer or a reference to the base class, you can call a virtual function for that object and execute the derived class’s version of the function. 
+
+* Virtual functions ensure that the correct function is called for an object, regardless of the type of reference (or pointer) used for function call.
+* They are mainly used to achieve Runtime polymorphism
+* Functions are declared with a virtual keyword in base class.
+* The resolving of function call is done at Run-time.
+
+
+### Rules for virtual function:
+
+* Virtual functions cannot be static.
+* A virtual function can be a friend function of another class.
+* Virtual functions should be accessed using pointer or reference of base class type to achieve run time polymorphism.
+* The prototype of virtual functions should be the same in the base as well as derived class.
+* They are always defined in the base class and overridden in a derived class. It is not mandatory for the derived  class to override (or re-define the virtual function), in that case, the base class version of the function is used.
+* A class may have virtual destructor but it cannot have a virtual constructor.
