@@ -551,7 +551,7 @@ int main(){
 ![Screenshot from 2021-11-08 20-33-07](https://user-images.githubusercontent.com/42698268/140766953-b72f4a7a-b237-4887-9344-08540e5a82f4.png)
 
 
-![Screenshot from 2021-11-08 20-44-50](https://user-images.githubusercontent.com/42698268/140767658-ac6191e8-3fa2-44be-b0ae-560e0f33
+![Screenshot from 2021-11-08 20-44-50](https://user-images.githubusercontent.com/42698268/140767658-ac6191e8-3fa2-44be-b0ae-560e0f33)
 
 # Method overriding
 ![Screenshot from 2021-11-08 21-05-54](https://user-images.githubusercontent.com/42698268/140771390-4fcc6726-47e2-421d-bc86-618c9f031a80.png)
@@ -677,3 +677,47 @@ A virtual function is a member function which is declared within a base class an
 * The prototype of virtual functions should be the same in the base as well as derived class.
 * They are always defined in the base class and overridden in a derived class. It is not mandatory for the derived  class to override (or re-define the virtual function), in that case, the base class version of the function is used.
 * A class may have virtual destructor but it cannot have a virtual constructor.
+
+# Abstract Class
+
+![Screenshot from 2021-11-08 21-48-26](https://user-images.githubusercontent.com/42698268/140778653-d682e4c1-5276-49f6-a8e7-4f477660fae9.png)
+
+* An object can't be created of that class which have do nothing function inside it
+* But you can do inheritance, i.e you can create a child class using that class which have do nothing function
+* But the rule is, if you inherit then you have to override that function in the child class which was do nothing in the parent class
+* Now what if the parent class contains other functions also, and if we can't create an object of parent class how we'll call that function
+* Answer is, you can call that function using child class
+*  But also we know that, still do nothing function i.e f1() in this case can be called if we'll use pointer, so to avoid that we'll declare that function as virtual, to avoid early binding
+*  and this function is called ```pure virtual function```, i.e do nothing function
+
+![Screenshot from 2021-11-08 21-58-35](https://user-images.githubusercontent.com/42698268/140782311-9b9d2297-fc73-4cc3-a9a9-a6a238a693fd.png)
+
+
+## Abstract class
+* That class which contains atleast one pure virtual function is called abstract class
+* and we can never create an object of the abstract class(reason we know from above explanation)
+* In java, we write abstract keyword before the class to make it abstract class, but in c++ there isn't any abstarct keyword, so in c++, that class which contains a pure virtual function is called abstract class.
+
+
+* Now if you don't want to do the overriding of the parent class to call other functions, you can again declare them as the virtual class in child class also
+* so you have to do one thing atleast, i.e either override it in child class, or declare it as pure virtual function in child class also
+* but if the function is pure virtual function in child class also, then we can't create an object of child class too, as it is an abstract class now, so again you have to create a child class to create object
+
+
+If we have two classes to create, i.e student and faculty, so there must be few of the properties similar in both of them, so we'll create a generalised class let's say person, which will store all the common things,
+and whenever we'll want to create a new class, we'll use person class 
+## Advantage
+* efforts reduced
+* architecture maintainable
+* do not need need to create same thing again and again
+* as replica is getting used
+* less cost
+
+### example
+* Now we can see that, there would never need to create an object of person class, we'll need student class to keep the data of student , faculty class to keep the data of faculty , but we'd never need person class, because let us say the common things between student and faculty is name and phone number, and no what would we do by creating an object having name and phone number, if we dont know that who is that person, this is just useless, so we want that the object of the person class can never be created
+
+* so we created person class just to provide common properties of student and faculty
+* so we'll make person class as abstract class
+* there is one more advantage of creating pure virtual functio, we are pressurizing child class to override the function 
+
+# Template
