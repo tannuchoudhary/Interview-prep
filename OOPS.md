@@ -545,3 +545,16 @@ int main(){
 
 ```
 ## Increment operator overloading
+
+# this pointer
+
+![Screenshot from 2021-11-08 20-33-07](https://user-images.githubusercontent.com/42698268/140766953-b72f4a7a-b237-4887-9344-08540e5a82f4.png)
+
+
+![Screenshot from 2021-11-08 20-44-50](https://user-images.githubusercontent.com/42698268/140767658-ac6191e8-3fa2-44be-b0ae-560e0f33
+
+# Method overriding
+![Screenshot from 2021-11-08 21-05-54](https://user-images.githubusercontent.com/42698268/140771390-4fcc6726-47e2-421d-bc86-618c9f031a80.png)
+9438.png)
+
+
