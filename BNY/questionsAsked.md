@@ -34,6 +34,45 @@ Storage structure: It is the representation of the data structure in the compute
 * Have you done anything which shows your leaderhsip quality
 * Do you have any question from me
 
+---------------------------------------------------------------------------------------------------------------------------------------
+
+# 2021 BNY asked
+
+## Calculate the angle between hour hand and minute hand
+
+```cpp
+class Solution {
+public:
+    double angleClock(int h, int m) {
+        // invalid inputs
+        if(h<0 || m<0 || h>24 || m>60) cout<<"Wrong input";
+        
+        
+        if(h == 12 || h == 24) h =0;
+        if(m == 60){
+            h += 1;
+            m = 0;
+            if(h>12){
+                h = h-12;
+            }
+        }
+        
+        // it is same as (h + m/60)*30
+        //as each hour is 30 degrees
+        ///and each minute is 6 degrees
+        double hAngle = (h*60 + m)*0.5;
+        double mAngle = m*6;
+        
+        double ans = abs(hAngle - mAngle);
+        if(ans > 180)
+            ans = 360-ans;
+        
+        return ans;
+    }
+};
+```
+
+
 -------------------------------------------------------------------------------------------------------
 # Must do the coding and dbms question you did in online assesment
 -------------------------------------------------------------------------------------------------------
