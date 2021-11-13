@@ -1,3 +1,5 @@
+# i) ASKED FROM ME
+
 # My round 1 interview Questions :
 
 * Gave his Introduction
@@ -81,7 +83,9 @@ Storage structure: It is the representation of the data structure in the compute
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-# 2021 BNY asked
+
+# ii) ASKED FROM OTHERS(2021)
+
 
 ## Calculate the angle between hour hand and minute hand
 
@@ -240,8 +244,9 @@ int main()
 
 ```
 -------------------------------------------------------------------------------------------------------
-# Must do the coding and dbms question you did in online assesment
--------------------------------------------------------------------------------------------------------
+
+# iii) LAST YEAR ASKED QUESTIONS IN INTERVIEW
+
 # 0. Introduce yourself.
 # 1. Brief discussion about my final year project.
 # 2. [Decimal Equivalent of Binary Linked List](https://www.geeksforgeeks.org/decimal-equivalent-of-binary-linked-list/)
