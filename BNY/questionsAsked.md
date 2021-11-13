@@ -1,4 +1,4 @@
-# My questions round 1:
+# My round 1 interview Questions :
 
 * Gave his Introduction
 * Introduce yourself
@@ -36,6 +36,51 @@ Storage structure: It is the representation of the data structure in the compute
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
+# My round 2 Interview Questions:
+
+
+
+* Introduce yourself
+
+	> My name, degree pursuing, college, cgpa, interships, projects, mentorship programmes, hobbies
+
+* Time complexity of update, insert, delete on linked list and array
+
+	> explained him the tc by taking all the edge cases, example if head and tail both of LL is given, if only head of LL is given, in case of insertion at anywhere in the middle if the address of the position where I want to insert is given in LL, etc
+
+
+* Tell me about all data structures and their applications and how to implement them
+
+	> Told him about all the data structures i.e stack, queue, linked list, hashmap, tree and graph, told him the operations and how to implement these data structures and real life applications of all data structures
+
+* Binary search operation and its time complexity
+	> Explained binary search, took an example and dry run on it, told him the time complexity then he asked why the time complexity is O(log n) therefore explained him, he tried to deviate me by saying that "is it O(log n) or O(n log n) :P
+
+* Tell me about hashmap, How hashing is done, How can we reduce collision
+	> Told him about hashmap, and in what scenario we can use it, took two examples, one of array and one using string of strings
+
+
+* Tell me about graph data structure
+
+	> Told him about the graph data structure, classification on the basis of weighted, non weighted, directed, non directed, told him all the real life applications of graph, told him all the traversal techniques of the graph, and what are the uses of BFS and DFS in other algorithms
+
+
+* Tell me about the algorithms of dp, greedy
+
+	> i told him knapsack(both 0-1 and fractional), kadanes, bfs, dfs), explained these algorithms by taking examples, and by dry running them verbally on small examples
+
+* Asked me to explain my project
+
+	> Told him about the project, what was the idea behind the project, tech stacks used and why it is used, working of project, in future what else I have 
+* One coding question- given a linked list in which nodes are containing number in binary form, calculate the decimal value(present on gfg)
+
+	> I told him two approache: one by taking two pointers and traversing twice, first time to find the size and second time to calculate the value, Second approach is by multiplying the answer by 2 each time and adding data of head, until you'll reach the end of linked list, told him the time complexity of both the approaches and how the second one is better from the first one
+
+* Any questions for me
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
 # 2021 BNY asked
 
 ## Calculate the angle between hour hand and minute hand
