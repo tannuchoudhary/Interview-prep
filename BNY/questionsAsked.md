@@ -316,9 +316,98 @@ int main()
 # 42. Then he asked all about my projects and internships and every other detail on my resume.
 # 43. He gave me some situations and asked me how would I react or manage in such situations.
 # 44. Then he asked some situations from my life in which I’ve exceeded my expectations
-# 45. 
+# 45. How I managed to stay motivated.
+# 46. Make sure to read about the company, especially for the Bar-Raiser round. Facts like CEO and Founders of the company, principles followed by the company, awards received by the company etc. must be considered while reading about the company.
+# 47. I was asked to sort a list using a single line using stream Api .
+# 48. Asked about projects and some Hr related questions like tell me about yourself .
+# 49. Asked me to explain the code which I had solved in Round 1 on paper.
+# 50. Give a brief summary about yourself, what all things you have done so far – technical, no technical both
+# 51. Java and python difference – which one do you think is better?
+# 52. Why do you prefer to code in Java?
+# 53. What are all projects you have done and implementations?
+# 54. Why did you choose this problem statement as your project, what was your thought process to come with this problem statement specifically?
+# 55. How you tested your project?
+# 56. Tell me about a time when you could not do well in academics and how you tackled this situation.
+# 57. Do you think that doing all these projects was beneficial? If yes then how?
+# 58. What are your future plans?
+# 59. Have been involved in any technical discussion forums – how do you keep yourself updated?
+# 60. Do you want to highlight any point which we missed to discuss which will add value to your candidature?
+# 61. He asked tech stack-related questions
+# 62. A simple puzzle: Given 2 jars one of 4 liters, the other 5 liters, and an infinite water supply, how to measure 7 liters of water using these 2 jars. and
+# 63. Tell me about a time where you displayed leadership skills.” and few similar HR questions and
+# 64. What I knew about BNY Mellon. and If I had any questions for him.
+# 65. How will you learn something which is not in your syllabus?
+# 66. What will you do when your team is performing very poorly although having great members ??He expected honest answers rather than ideal ones…
+# 67. Then he asked some questions related to the operating system.
+# 68. How do you implement a Graph?
+# 69. Discussion on the pointer in c++
+# 70. Memory leak
+# 71. Discussion on Dynamic memory allocation and new operator in c++
+# 72. How do you represent 2D array using pointer
+# 73. What are constructors and destructors?
+# 74. Which algorithms are generally used in  DBMS. (Searching and sorting )
+# 75. Different types of Searching algorithms.
+# 76. Detailed Discussion on Project
+# 77. What is your hobby?
+# 78. Tell me the situation where you got beyond your expectations?
+# 79. Do you know about BNY?
+# 80. Where do you see yourself in 5 years?
+# 81. Tell me about yourself? 
+# 82. Discussion on questions solved in the coding round. Asked about my approach and he told my score. I described my approaches, and he was satisfied with them. 
+# 83. How do you keep yourself motivated? 
+# 84. Detailed discussion on the project. 
+# 85. Do you know about BNY? 
 
+# 86. [Tell me difference Between Library  And Module](https://stackoverflow.com/questions/4099975/difference-between-a-module-library-and-a-framework)
+# 87. Write Code of any one module of  your project you know.
 
+# 88. Write function for Binary tree  to check  whether  its  different  nodes value that are present in different paths   in a tree are equal to number X when values of nodes are being added.
+
+# 89. Tell me about the latest Technology you are working on, and how it is going to affect the human beings.
+
+# 90. Again write a function  for question 
+
+-given  m, n where 
+
+m -is no.of  9’s
+
+n- is no .of  0’s
+
+a number is formed by combining m & n and it can have any no. of 9’s and 0’s like-(9, 90, 999, 9090, 9000…etc) and it is starting from 9
+
+you are given X a number where you have to find the smallest number that is formed by the combination of m & n and is divisible by  X
+
+# 91. You are working on the project  and have completed it and during its presentation the project fails, how you are going to handle the situation.
+
+# 92. Where you see Yourself after 5 years, how you are going to achieve that 
+
+# 93. LAST QUESTION -(which was like final nail in the coffin)
+
+ Logical based–
+
+You are provided a work which usually take 10 days to finish, you have to complete that work in  7 days without  doing any extra hours and this work have to be done alone, how you are going to do that?
+
+Ans– First, I smiled because this is the same question which I had  discussed with my friends the day before the interview.
+
+I answered within 2-3 seconds back, and the look on the face of the interviewer was really  intriguing.
+
+ I answered–“” First we are going to schedule are task according to our priority, and then we are going to maintain record of  each task,   if any task during the work is going to be repeated, I am going to look for it in the  record table and not going to work again on that task.This Approach follows Dynamic  Programming approach of global optimization.”  
+ 
+ # 94. Before  the interview  I had gone through the   whole “” TOP 10 Algorithms in the Interview  Questions””
+
+link : “https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/“
+
+# 95. Given a triangle and 3 ants at each edge. They can move in any direction. Find out the probability of ants not colliding with each other. 
+
+-------------------------------------------------------------------------------------------------------------
+Note: 
+* Question I can ask: life as an SWE in the finance sector. 
+* Be confident, even if you’re not sure of your answers. The interviewer will test your patience and endurance by making you second guess your answers but don’t let your nerves get the best of you. 
+* HR will try to put in various challenging situations but your attitude should always be positive and confident. They can see who is being natural, genuine, and who isn’t. Most importantly, ask unique and role-related questions from your interviewer. 
+*  be honest. Don’t try to lie because the interviewer can catch it. Show genuine interest in the company and the work that they do. 
+*  Bar-Raiser Interviews are majorly managerial, but this fact mustn’t be taken lightly. You should prepare yourself well enough for this round too.
+*  Make sure to read about the company, especially for the Bar-Raiser round. Facts like CEO and Founders of the company, principles followed by the company, awards received by the company etc. must be considered while reading about the company.
+*  Keep in mind Time matters so much in all the interviews and do not lie for any reason.
 ---------------------------------------------------------------------------------------------------------------
 
 # 0. Introduce yourself.
