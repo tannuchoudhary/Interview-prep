@@ -247,6 +247,80 @@ int main()
 
 # iii) LAST YEAR ASKED QUESTIONS IN INTERVIEW
 
+
+-------------------------------------------------------------------------------------------------------------
+# Third round prep.
+
+## 1. Introduce yourself.
+
+* Thank You sir/ma'am for giving this opportunity to introduce myself, I am Tannu Kumari, currently I am pursuing B tech from University College of Engineering and Technology Vinoba Bhave University in Information technolgy.
+
+
+*  apart from my curriculum I have done a paid internship at coding Ninjas as a Teaching Assistant, My job there was to debug the code of students, suggesting them the optimal approach and algorithms for the problems,
+
+
+*   in addition to that I have also done freelancing job in Chegg India as an expert for computer science, where I have solved more than 200 problems in computer science asked by students from all over the world.
+
+
+
+
+* Also I have done  a project on Employee database management system using Tkinter framework of python,this is a GUI application in python which supports CRUD(create, read, update,   delete) operations and I had created various widgets including Frame, Entry, Buttons, Labels etc. this also supports reseting, displaying and pritning the data of the employee. for backend I had used MYSQL.
+
+* Also I have Developed a pet adoption website named ADOPET to encourage people to adopt stray animals.
+
+* I have also done a mentorship program at Girlscript Foundation where I Mentored a group of students in building a project on a Library management system which was a C++ based software illustrating OOPS (Object Oriented Programming) concepts and supports CRUD operation, and is used to issue books which maintains the database in a binary file.
+
+* Apart from studies I am pretty much interested in chess and I have also won gold medal in state level chess championship.
+
+
+## 2. What tech stack are you most comfortable with?
+# 3. Which data structure is used to implement auto-complete feature?
+# 4. Brief discussion about Tries.
+# 5. Implement Trie.
+# 6. What is the hardest challenge you’ve faced and how did you overcome it?
+# 7. Why do you want to join BNY Mellon?
+# 8. Tell me about the previous rounds.
+# 9. Favourite programming language?
+# 10. Do you know about the maps? Tell me something about it.
+# 11. How hashing is done?
+# 12. What is the Hash function? What will happen if a hash function returns 1 always?
+# 14. Difference between map and unordered map
+# 15. The interviewer discussed a lot about maps.
+# 16. Discussed automation project which was mentioned in my resume.  
+# 17. What are the challenges that you’ve faced till now?
+# 18. What technology you’ve worked on? Why you choose Django? What is ORM?
+# 19. Which databases have you used? Where have you used it?
+# 20. Do you have any leadership experience?
+# 21. What do you know about BNY Mellon and why you want to join it?
+# 22. [Puzzle - 8 ball problem](https://www.geeksforgeeks.org/puzzle-8-balls-problem/)
+# 23. A detailed discussion on my fields of interest.- the technologies which I have worked on and would like to in the future.
+# 24. He asked about problems faced in doing projects technologically wise and managing wisely too.
+# 25. how will I tackle a dispute among my team members while working on a group project
+# 26. where do I want to see myself after 5 years
+# 27. how do I fit for the role and my expectations from BNY.
+# 27. Where do you see yourself in 5 years?
+# 28. What actions have you taken to achieve your long and short-term goals so far?
+# 29. Do you use any online platforms for learning about the latest developments in the field?
+# 30. Are you a member of any professional society or research organisation?
+# 31. My areas of interest? I answered ML and DL.
+# 32. Tell me something about ML that fascinates you.
+# 33. How would you handle a dispute in your project team? What would you do if your team members are disinterested and lazy?
+# 34. Why is Java preferred in the industry?
+# 35. What is inheritance?
+# 36. What is multiple inheritance?
+# 37. What is memory sequencing?
+# 38. Practical applications of ML and Dl.
+# 39. Puzzle: 10 people shake hands with each other. How many handshakes will be there in total?
+# 40. Any questions for me?
+# 41. why I chose Computer Science as my career
+# 42. Then he asked all about my projects and internships and every other detail on my resume.
+# 43. He gave me some situations and asked me how would I react or manage in such situations.
+# 44. Then he asked some situations from my life in which I’ve exceeded my expectations
+# 45. 
+
+
+---------------------------------------------------------------------------------------------------------------
+
 # 0. Introduce yourself.
 # 1. Brief discussion about my final year project.
 # 2. [Decimal Equivalent of Binary Linked List](https://www.geeksforgeeks.org/decimal-equivalent-of-binary-linked-list/)
