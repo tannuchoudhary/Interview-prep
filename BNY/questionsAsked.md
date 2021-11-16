@@ -1,3 +1,227 @@
+# Third round prep.
+
+# 1. Introduce yourself.
+
+* Thank You sir/ma'am for giving this opportunity to introduce myself, I am Tannu Kumari, currently I am pursuing B tech from University College of Engineering and Technology Vinoba Bhave University in Information technolgy.
+
+
+*  apart from my curriculum I have done a paid internship at coding Ninjas as a Teaching Assistant, My job there was to debug the code of students, suggesting them the optimal approach and algorithms for the problems,
+
+
+*   in addition to that I have also done freelancing job in Chegg India as an expert for computer science, where I have solved more than 200 problems in computer science asked by students from all over the world.
+
+
+
+
+* Also I have done  a project on Employee database management system using Tkinter framework of python,this is a GUI application in python which supports CRUD(create, read, update,   delete) operations and I had created various widgets including Frame, Entry, Buttons, Labels etc. this also supports reseting, displaying and pritning the data of the employee. for backend I had used MYSQL.
+
+* Also I have Developed a pet adoption website named ADOPET to encourage people to adopt stray animals.
+
+* I have also done a mentorship program at Girlscript Foundation where I Mentored a group of students in building a project on a Library management system which was a C++ based software illustrating OOPS (Object Oriented Programming) concepts and supports CRUD operation, and is used to issue books which maintains the database in a binary file.
+
+* Apart from studies I am pretty much interested in chess and I have also won gold medal in state level chess championship.
+
+
+# 2. What tech stack are you most comfortable with?
+Data structures and Algortihms
+# 3. Which data structure is used to implement auto-complete feature?
+# 4. Brief discussion about Tries.
+# 5. Implement Trie.
+# 6. What is the hardest challenge you’ve faced and how did you overcome it?
+
+The hardest challenge I had faced was just after my 12th, I was in my home after giving my boards exam, as I belong from jharkhand(you must have been aware about the condition of my state), and in Jharkhand, I belong to very backward region, so after 12th boards, my parents and relatives wanted me to get married, I didn't knew much at that time, that what I am going to do in future but I was sure that my whole life and career are on stakes right now, so i fought with them with all my energy that I had at that time, I was alone as there was not even a single person in my house to support me, but I gave all the reasons, I did everything what I could have done, luckily my parents got agreed for my further studies and told me that they will keep searching a boy, and whenever they will find a perfect match according to them then I have to leave my college and have to get married, I said nothing and just got admission in a small state gov.t engineering college in jharkhand, I didn't knew that what I am going to do, but i had belief on my hardwork and I knew that only I can change my fate, and from the first sem of my b tech I contacted people on linkdin, talked to them, created github,learned skills, participated in hackathos, and In the second year, I got two internships and worked, I had my first stipend of 15000, paid my own bills, rent etc. and being from the college where there is no on campus placemnt, not even a single company comes in my college , today I am giving interview for a great company like BNY, so I am proud of myself.
+
+# 7. Why do you want to join BNY Mellon?
+
+
+
+# 7.1 Why should we hire you?
+
+Sir, I know that I am not special, All the students who have reached upto this level of interview are intelligent, hardworking, and very good student and I am also one of them and I have too cleared all the rounds with my hardwork, but the most important thing which I believe I have is, I am striver and I am always hungry to learn, I am passionate about work, I am passionate about life, and this is not just true in the field of computer science, I am passionate towards learning every aspect of life
+* whether it is note of music
+* whether it is line of poem
+* whether it is base case of a recursive program
+* Or it is dry running a code of graph data structure
+* whether it is a psychology, that how people think
+* whether it is move of chess
+* or whether it is understanding that what next move my opponent is going to play
+
+and If you give me an opportunity to prove myself that I have that hunger, I have that zeal in me than I promise you that I will prove you that your decision of selecting me was not wrong.
+
+# 8. Tell me about the previous rounds.
+* Tell about interviewer
+* Kind of questions they asked
+* Time se jada interview liya gaya th
+* Judge krne k lie usne pura time liye, he took double time
+* I was very happy due to this, as interviewer gave me propeer time to explain my answer
+
+# 9. Favourite programming language?
+	C++
+# 10. Do you know about the maps? Tell me something about it.
+# 11. How hashing is done?
+# 12. What is the Hash function? What will happen if a hash function returns 1 always?
+# 14. Difference between map and unordered map
+# 15. The interviewer discussed a lot about maps.
+# 16. Discussed project which was mentioned in my resume.  
+# 17. What are the challenges that you’ve faced till now?
+
+# 18. What technology you’ve worked on? Why you choose Django? What is ORM?
+# 19. Which databases have you used? Where have you used it?
+# 20. Do you have any leadership experience?
+# 21. What do you know about BNY Mellon and why you want to join it?
+
+* The Bank of New York Mellon Corporation, commonly known as BNY Mellon, is an American investment banking services holding company headquartered in New York City. BNY Mellon was formed from the merger of The Bank of New York and the Mellon Financial Corporation in 2007. It is the world's largest custodian bank and asset servicing company, with $2.2 trillion in assets under management and $41.7 trillion in assets under custody as of the second quarter of 2021. It is considered a systemically important bank by the Financial Stability Board. BNY Mellon is incorporated in Delaware
+
+* BNY Mellon is a provider of investment management and investment services and we are a world-renowned leader in each. When combined, the power of our extensive capabilities can help drive your success in markets around the world.
+
+* What are the four values of BNY Mellon?
+
+Businesses, communities and global economies rely on us because we prioritize client experience, collaboration, innovation and resilience. As the “bank of banks,” our unique perspective, informed by one of the largest datasets in the world, powers the financial industry.
+
+What is BNY doing in India?
+For over 234 years, as the investment company for the world, we have been leading change in the global financial services industry. BNY Mellon Technology Private Limited, is a group company of BNY Mellon operating in India, providing technology solutions to the bank.
+
+# 22. [Puzzle - 8 ball problem](https://www.geeksforgeeks.org/puzzle-8-balls-problem/)
+# 23. A detailed discussion on my fields of interest.- the technologies which I have worked on and would like to in the future.
+# 24. He asked about problems faced in doing projects technologically wise and managing wisely too.
+# 25. how will I tackle a dispute among my team members while working on a group project
+# 26. where do I want to see myself after 5 years
+# 27. how do I fit for the role and my expectations from BNY.
+# 27. Where do you see yourself in 5 years?
+# 28. What actions have you taken to achieve your long and short-term goals so far?
+# 29. Do you use any online platforms for learning about the latest developments in the field?
+# 30. Are you a member of any professional society or research organisation?
+# 31. My areas of interest? I answered ML and DL.
+# 32. Tell me something about ML that fascinates you.
+# 33. How would you handle a dispute in your project team? What would you do if your team members are disinterested and lazy?
+# 34. Why is Java preferred in the industry?
+# 35. What is inheritance?
+# 36. What is multiple inheritance?
+# 37. What is memory sequencing?
+# 38. Practical applications of ML and Dl.
+# 39. Puzzle: 10 people shake hands with each other. How many handshakes will be there in total?
+# 40. Any questions for me?
+# 41. why I chose Computer Science as my career
+# 42. Then he asked all about my projects and internships and every other detail on my resume.
+# 43. He gave me some situations and asked me how would I react or manage in such situations.
+# 44. Then he asked some situations from my life in which I’ve exceeded my expectations
+# 45. How I managed to stay motivated.
+# 46. Make sure to read about the company, especially for the Bar-Raiser round. Facts like CEO and Founders of the company, principles followed by the company, awards received by the company etc. must be considered while reading about the company.
+# 47. I was asked to sort a list using a single line using stream Api .
+# 48. Asked about projects and some Hr related questions like tell me about yourself .
+# 49. Asked me to explain the code which I had solved in Round 1 on paper.
+# 50. Give a brief summary about yourself, what all things you have done so far – technical, no technical both
+# 51. Java and python difference – which one do you think is better?
+# 52. Why do you prefer to code in Java?
+# 53. What are all projects you have done and implementations?
+# 54. Why did you choose this problem statement as your project, what was your thought process to come with this problem statement specifically?
+# 55. How you tested your project?
+# 56. Tell me about a time when you could not do well in academics and how you tackled this situation.
+# 57. Do you think that doing all these projects was beneficial? If yes then how?
+# 58. What are your future plans?
+# 59. Have been involved in any technical discussion forums – how do you keep yourself updated?
+# 60. Do you want to highlight any point which we missed to discuss which will add value to your candidature?
+# 61. He asked tech stack-related questions
+# 62. A simple puzzle: Given 2 jars one of 4 liters, the other 5 liters, and an infinite water supply, how to measure 7 liters of water using these 2 jars. and
+# 63. Tell me about a time where you displayed leadership skills.” and few similar HR questions and
+# 64. What I knew about BNY Mellon. and If I had any questions for him.
+# 65. How will you learn something which is not in your syllabus?
+# 66. What will you do when your team is performing very poorly although having great members ??He expected honest answers rather than ideal ones…
+# 67. Then he asked some questions related to the operating system.
+# 68. How do you implement a Graph?
+# 69. Discussion on the pointer in c++
+# 70. Memory leak
+# 71. Discussion on Dynamic memory allocation and new operator in c++
+# 72. How do you represent 2D array using pointer
+# 73. What are constructors and destructors?
+# 74. Which algorithms are generally used in  DBMS. (Searching and sorting )
+# 75. Different types of Searching algorithms.
+# 76. Detailed Discussion on Project
+# 77. What is your hobby?
+# 78. Tell me the situation where you got beyond your expectations?
+# 79. Do you know about BNY?
+# 80. Where do you see yourself in 5 years?
+# 81. Tell me about yourself? 
+# 82. Discussion on questions solved in the coding round. Asked about my approach and he told my score. I described my approaches, and he was satisfied with them. 
+# 83. How do you keep yourself motivated? 
+# 84. Detailed discussion on the project. 
+# 85. Do you know about BNY? 
+
+# 86. [Tell me difference Between Library  And Module](https://stackoverflow.com/questions/4099975/difference-between-a-module-library-and-a-framework)
+# 87. Write Code of any one module of  your project you know.
+
+# 88. Write function for Binary tree  to check  whether  its  different  nodes value that are present in different paths   in a tree are equal to number X when values of nodes are being added.
+
+# 89. Tell me about the latest Technology you are working on, and how it is going to affect the human beings.
+
+# 90. Again write a function  for question 
+
+-given  m, n where 
+
+m -is no.of  9’s
+
+n- is no .of  0’s
+
+a number is formed by combining m & n and it can have any no. of 9’s and 0’s like-(9, 90, 999, 9090, 9000…etc) and it is starting from 9
+
+you are given X a number where you have to find the smallest number that is formed by the combination of m & n and is divisible by  X
+
+# 91. You are working on the project  and have completed it and during its presentation the project fails, how you are going to handle the situation.
+
+# 92. Where you see Yourself after 5 years, how you are going to achieve that 
+
+# 93. LAST QUESTION -(which was like final nail in the coffin)
+
+ Logical based–
+
+You are provided a work which usually take 10 days to finish, you have to complete that work in  7 days without  doing any extra hours and this work have to be done alone, how you are going to do that?
+
+Ans– First, I smiled because this is the same question which I had  discussed with my friends the day before the interview.
+
+I answered within 2-3 seconds back, and the look on the face of the interviewer was really  intriguing.
+
+ I answered–“” First we are going to schedule are task according to our priority, and then we are going to maintain record of  each task,   if any task during the work is going to be repeated, I am going to look for it in the  record table and not going to work again on that task.This Approach follows Dynamic  Programming approach of global optimization.”  
+ 
+ # 94. Before  the interview  I had gone through the   whole “” TOP 10 Algorithms in the Interview  Questions””
+
+link : “https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/“
+
+# 95. Given a triangle and 3 ants at each edge. They can move in any direction. Find out the probability of ants not colliding with each other. 
+
+-------------------------------------------------------------------------------------------------------------
+Note: 
+* Question I can ask: life as an SWE in the finance sector. 
+* Be confident, even if you’re not sure of your answers. The interviewer will test your patience and endurance by making you second guess your answers but don’t let your nerves get the best of you. 
+* HR will try to put in various challenging situations but your attitude should always be positive and confident. They can see who is being natural, genuine, and who isn’t. Most importantly, ask unique and role-related questions from your interviewer. 
+*  be honest. Don’t try to lie because the interviewer can catch it. Show genuine interest in the company and the work that they do. 
+*  Bar-Raiser Interviews are majorly managerial, but this fact mustn’t be taken lightly. You should prepare yourself well enough for this round too.
+*  Make sure to read about the company, especially for the Bar-Raiser round. Facts like CEO and Founders of the company, principles followed by the company, awards received by the company etc. must be considered while reading about the company.
+*  Keep in mind Time matters so much in all the interviews and do not lie for any reason.
+
+
+
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
 # i) ASKED FROM ME
 
 # My round 1 interview Questions :
@@ -249,169 +473,7 @@ int main()
 
 
 -------------------------------------------------------------------------------------------------------------
-# Third round prep.
 
-## 1. Introduce yourself.
-
-* Thank You sir/ma'am for giving this opportunity to introduce myself, I am Tannu Kumari, currently I am pursuing B tech from University College of Engineering and Technology Vinoba Bhave University in Information technolgy.
-
-
-*  apart from my curriculum I have done a paid internship at coding Ninjas as a Teaching Assistant, My job there was to debug the code of students, suggesting them the optimal approach and algorithms for the problems,
-
-
-*   in addition to that I have also done freelancing job in Chegg India as an expert for computer science, where I have solved more than 200 problems in computer science asked by students from all over the world.
-
-
-
-
-* Also I have done  a project on Employee database management system using Tkinter framework of python,this is a GUI application in python which supports CRUD(create, read, update,   delete) operations and I had created various widgets including Frame, Entry, Buttons, Labels etc. this also supports reseting, displaying and pritning the data of the employee. for backend I had used MYSQL.
-
-* Also I have Developed a pet adoption website named ADOPET to encourage people to adopt stray animals.
-
-* I have also done a mentorship program at Girlscript Foundation where I Mentored a group of students in building a project on a Library management system which was a C++ based software illustrating OOPS (Object Oriented Programming) concepts and supports CRUD operation, and is used to issue books which maintains the database in a binary file.
-
-* Apart from studies I am pretty much interested in chess and I have also won gold medal in state level chess championship.
-
-
-## 2. What tech stack are you most comfortable with?
-# 3. Which data structure is used to implement auto-complete feature?
-# 4. Brief discussion about Tries.
-# 5. Implement Trie.
-# 6. What is the hardest challenge you’ve faced and how did you overcome it?
-
-The hardest challenge I had faced was just after my 12th, I was in my home after giving my boards exam, as I belong from jharkhand(you must have been aware about the condition of my state), and in Jharkhand, I belong to very backward region, so after 12th boards, my parents and relatives wanted me to get married, I didn't knew much at that time, that what I am going to do in future but I was sure that my whole life and career are on stakes right now, so i fought with them with all my energy that I had at that time, I was alone as there was not even a single person in my house to support me, but I gave all the reasons, I did everything what I could have done, luckily my parents got agreed for my further studies and told me that they will keep searching a boy, and whenever they will find a perfect match according to them then I have to leave my college and have to get married, I said nothing and just got admission in a small state gov.t engineering college in jharkhand, I didn't knew that what I am going to do, but i had belief on my hardwork and I knew that only I can change my fate, and from the first sem of my b tech I contacted people on linkdin, talked to them, created github,learned skills, participated in hackathos, and In the second year, I got two internships and worked, I had my first stipend of 15000, paid my own bills, rent etc. and being from the college where there is no on campus placemnt, not even a single company comes in my college , today I am giving interview for a great company like BNY, so I am proud of myself.
-
-# 7. Why do you want to join BNY Mellon?
-
-# 8. Tell me about the previous rounds.
-# 9. Favourite programming language?
-# 10. Do you know about the maps? Tell me something about it.
-# 11. How hashing is done?
-# 12. What is the Hash function? What will happen if a hash function returns 1 always?
-# 14. Difference between map and unordered map
-# 15. The interviewer discussed a lot about maps.
-# 16. Discussed automation project which was mentioned in my resume.  
-# 17. What are the challenges that you’ve faced till now?
-# 18. What technology you’ve worked on? Why you choose Django? What is ORM?
-# 19. Which databases have you used? Where have you used it?
-# 20. Do you have any leadership experience?
-# 21. What do you know about BNY Mellon and why you want to join it?
-# 22. [Puzzle - 8 ball problem](https://www.geeksforgeeks.org/puzzle-8-balls-problem/)
-# 23. A detailed discussion on my fields of interest.- the technologies which I have worked on and would like to in the future.
-# 24. He asked about problems faced in doing projects technologically wise and managing wisely too.
-# 25. how will I tackle a dispute among my team members while working on a group project
-# 26. where do I want to see myself after 5 years
-# 27. how do I fit for the role and my expectations from BNY.
-# 27. Where do you see yourself in 5 years?
-# 28. What actions have you taken to achieve your long and short-term goals so far?
-# 29. Do you use any online platforms for learning about the latest developments in the field?
-# 30. Are you a member of any professional society or research organisation?
-# 31. My areas of interest? I answered ML and DL.
-# 32. Tell me something about ML that fascinates you.
-# 33. How would you handle a dispute in your project team? What would you do if your team members are disinterested and lazy?
-# 34. Why is Java preferred in the industry?
-# 35. What is inheritance?
-# 36. What is multiple inheritance?
-# 37. What is memory sequencing?
-# 38. Practical applications of ML and Dl.
-# 39. Puzzle: 10 people shake hands with each other. How many handshakes will be there in total?
-# 40. Any questions for me?
-# 41. why I chose Computer Science as my career
-# 42. Then he asked all about my projects and internships and every other detail on my resume.
-# 43. He gave me some situations and asked me how would I react or manage in such situations.
-# 44. Then he asked some situations from my life in which I’ve exceeded my expectations
-# 45. How I managed to stay motivated.
-# 46. Make sure to read about the company, especially for the Bar-Raiser round. Facts like CEO and Founders of the company, principles followed by the company, awards received by the company etc. must be considered while reading about the company.
-# 47. I was asked to sort a list using a single line using stream Api .
-# 48. Asked about projects and some Hr related questions like tell me about yourself .
-# 49. Asked me to explain the code which I had solved in Round 1 on paper.
-# 50. Give a brief summary about yourself, what all things you have done so far – technical, no technical both
-# 51. Java and python difference – which one do you think is better?
-# 52. Why do you prefer to code in Java?
-# 53. What are all projects you have done and implementations?
-# 54. Why did you choose this problem statement as your project, what was your thought process to come with this problem statement specifically?
-# 55. How you tested your project?
-# 56. Tell me about a time when you could not do well in academics and how you tackled this situation.
-# 57. Do you think that doing all these projects was beneficial? If yes then how?
-# 58. What are your future plans?
-# 59. Have been involved in any technical discussion forums – how do you keep yourself updated?
-# 60. Do you want to highlight any point which we missed to discuss which will add value to your candidature?
-# 61. He asked tech stack-related questions
-# 62. A simple puzzle: Given 2 jars one of 4 liters, the other 5 liters, and an infinite water supply, how to measure 7 liters of water using these 2 jars. and
-# 63. Tell me about a time where you displayed leadership skills.” and few similar HR questions and
-# 64. What I knew about BNY Mellon. and If I had any questions for him.
-# 65. How will you learn something which is not in your syllabus?
-# 66. What will you do when your team is performing very poorly although having great members ??He expected honest answers rather than ideal ones…
-# 67. Then he asked some questions related to the operating system.
-# 68. How do you implement a Graph?
-# 69. Discussion on the pointer in c++
-# 70. Memory leak
-# 71. Discussion on Dynamic memory allocation and new operator in c++
-# 72. How do you represent 2D array using pointer
-# 73. What are constructors and destructors?
-# 74. Which algorithms are generally used in  DBMS. (Searching and sorting )
-# 75. Different types of Searching algorithms.
-# 76. Detailed Discussion on Project
-# 77. What is your hobby?
-# 78. Tell me the situation where you got beyond your expectations?
-# 79. Do you know about BNY?
-# 80. Where do you see yourself in 5 years?
-# 81. Tell me about yourself? 
-# 82. Discussion on questions solved in the coding round. Asked about my approach and he told my score. I described my approaches, and he was satisfied with them. 
-# 83. How do you keep yourself motivated? 
-# 84. Detailed discussion on the project. 
-# 85. Do you know about BNY? 
-
-# 86. [Tell me difference Between Library  And Module](https://stackoverflow.com/questions/4099975/difference-between-a-module-library-and-a-framework)
-# 87. Write Code of any one module of  your project you know.
-
-# 88. Write function for Binary tree  to check  whether  its  different  nodes value that are present in different paths   in a tree are equal to number X when values of nodes are being added.
-
-# 89. Tell me about the latest Technology you are working on, and how it is going to affect the human beings.
-
-# 90. Again write a function  for question 
-
--given  m, n where 
-
-m -is no.of  9’s
-
-n- is no .of  0’s
-
-a number is formed by combining m & n and it can have any no. of 9’s and 0’s like-(9, 90, 999, 9090, 9000…etc) and it is starting from 9
-
-you are given X a number where you have to find the smallest number that is formed by the combination of m & n and is divisible by  X
-
-# 91. You are working on the project  and have completed it and during its presentation the project fails, how you are going to handle the situation.
-
-# 92. Where you see Yourself after 5 years, how you are going to achieve that 
-
-# 93. LAST QUESTION -(which was like final nail in the coffin)
-
- Logical based–
-
-You are provided a work which usually take 10 days to finish, you have to complete that work in  7 days without  doing any extra hours and this work have to be done alone, how you are going to do that?
-
-Ans– First, I smiled because this is the same question which I had  discussed with my friends the day before the interview.
-
-I answered within 2-3 seconds back, and the look on the face of the interviewer was really  intriguing.
-
- I answered–“” First we are going to schedule are task according to our priority, and then we are going to maintain record of  each task,   if any task during the work is going to be repeated, I am going to look for it in the  record table and not going to work again on that task.This Approach follows Dynamic  Programming approach of global optimization.”  
- 
- # 94. Before  the interview  I had gone through the   whole “” TOP 10 Algorithms in the Interview  Questions””
-
-link : “https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/“
-
-# 95. Given a triangle and 3 ants at each edge. They can move in any direction. Find out the probability of ants not colliding with each other. 
-
--------------------------------------------------------------------------------------------------------------
-Note: 
-* Question I can ask: life as an SWE in the finance sector. 
-* Be confident, even if you’re not sure of your answers. The interviewer will test your patience and endurance by making you second guess your answers but don’t let your nerves get the best of you. 
-* HR will try to put in various challenging situations but your attitude should always be positive and confident. They can see who is being natural, genuine, and who isn’t. Most importantly, ask unique and role-related questions from your interviewer. 
-*  be honest. Don’t try to lie because the interviewer can catch it. Show genuine interest in the company and the work that they do. 
-*  Bar-Raiser Interviews are majorly managerial, but this fact mustn’t be taken lightly. You should prepare yourself well enough for this round too.
-*  Make sure to read about the company, especially for the Bar-Raiser round. Facts like CEO and Founders of the company, principles followed by the company, awards received by the company etc. must be considered while reading about the company.
-*  Keep in mind Time matters so much in all the interviews and do not lie for any reason.
 ---------------------------------------------------------------------------------------------------------------
 
 # 0. Introduce yourself.
@@ -1351,11 +1413,6 @@ i.e koi node fail kr jaye fir v tmhara system kaam krna chahiye
 
 
 # 30. Tell me about the previous rounds.
-* Tell about interviewer
-* Kind of questions they asked
-* Time se jada interview liya gaya th
-* Judge krne k lie usne pura time liye, he took double time
-* I was very happy due to this, as interviewer gave me propeer time to explain my answer
 
 # 31. Favourite programming language?
 C++
@@ -1535,15 +1592,6 @@ Greater benefits have been achieved in Mysql, for being open sourced and providi
 
 # 41. What do you know about BNY Mellon and why you want to join it?
 
-The Bank of New York Mellon Corporation, commonly known as BNY Mellon, is an American investment banking services holding company headquartered in New York City. BNY Mellon was formed from the merger of The Bank of New York and the Mellon Financial Corporation in 2007. It is the world's largest custodian bank and asset servicing company, with $2.2 trillion in assets under management and $41.7 trillion in assets under custody as of the second quarter of 2021. It is considered a systemically important bank by the Financial Stability Board. BNY Mellon is incorporated in Delaware
-
-BNY Mellon is a provider of investment management and investment services and we are a world-renowned leader in each. When combined, the power of our extensive capabilities can help drive your success in markets around the world.
-
-What are the four values of BNY Mellon?
-Businesses, communities and global economies rely on us because we prioritize client experience, collaboration, innovation and resilience. As the “bank of banks,” our unique perspective, informed by one of the largest datasets in the world, powers the financial industry.
-
-What is BNY doing in India?
-For over 234 years, as the investment company for the world, we have been leading change in the global financial services industry. BNY Mellon Technology Private Limited, established in 2000, is a group company of BNY Mellon operating in India, providing technology solutions to the bank.
 
 
 # [42](https://www.geeksforgeeks.org/bny-mellon-interview-experience-for-6-month-internship-2020-virtual/?ref=rp)To swap 0 and 5 without the use of any condition, loop, or extra space
