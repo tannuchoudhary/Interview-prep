@@ -33,6 +33,23 @@ The hardest challenge I had faced was just after my 12th, I was in my home after
 
 # 7. Why do you want to join BNY Mellon?
 
+* Global Company, Global Opportunities
+With a dedicated business presence on six continents and in 35 countries, BNY Mellon delivers global scale at the local level. The depth and breadth of our organisation provides exciting opportunities for career and global mobility. Recognition programmes highlight individuals from our offices around the world who exemplify our company’s strategy and culture.
+
+* Build Your Professional Experience
+At BNY Mellon we believe continued education and development is paramount at every stage of your career. All employees benefit from our extensive Talent and Development framework, to access training opportunities and participate in a number of career development initiatives. If you are at the beginning of your career, we offer a Graduate Accelerator Programme over 18 – 24 months to enrich your skills and experience.
+
+* Wellbeing Programme
+We are dedicated to helping our colleagues be their best at home and at work through our holistic approach to wellbeing. BNY Mellon’s award-winning Wellbeing Programme provides a variety of options and resources to help our employees improve and maintain their physical health, emotional resilience, financial security and social connections. The programme supports employees with their unique health and wellbeing needs and makes it easier to achieve their goals.
+
+* Flexible Benefits Package
+We offer an attractive, flexible benefits package, allowing you to tailor your benefit choices to meet your personal circumstances. These include medical insurance, health screening, pension, life assurance, employee assistance programme, digital wellbeing app, fitness discount programme, on-site childcare and a parental buddy programme, to name a few.
+
+* Diverse and Inclusive Environment
+Our Diversity and Inclusion vision goes beyond deriving benefit and impact for our business. We are committed to creating the conditions where all can achieve their full potential.
+
+
+Members of our Employee Resource Groups help drive our D&I strategy across business lines and regions. These groups provide employees with opportunities to share, collaborate and support one another through shared interests, common attributes and cultural heritage.
 
 
 # 7.1 Why should we hire you?
@@ -62,17 +79,40 @@ and If you give me an opportunity to prove myself that I have that hunger, I hav
 # 12. What is the Hash function? What will happen if a hash function returns 1 always?
 # 14. Difference between map and unordered map
 # 15. The interviewer discussed a lot about maps.
-# 16. Discussed project which was mentioned in my resume.  
-# 17. What are the challenges that you’ve faced till now?
+# 16. Discussed project which was mentioned in my resume. 
 
-# 18. What technology you’ve worked on? Why you choose Django? What is ORM?
+# 17. What are the challenges that you’ve faced till now?
+Challenges I have faced till now:
+
+In acaedemics:
+* No senior support
+* Not good faculties
+* Environment was not good
+* No guidance, No one to tell which path to follow
+* No on campus opportunities
+* Was always doing backtracking to find the best path
+
+
+
+# 18. What technology you’ve worked on?
+* I have worked on frontend(web dev)
+* I have worked on backend(web dev)
+* Tkinter framework of python
+* 
 # 19. Which databases have you used? Where have you used it?
 # 20. Do you have any leadership experience?
 # 21. What do you know about BNY Mellon and why you want to join it?
 
+## Founder - Alexander Hamilton ( Bank of new york) + 
+## CEO - Thomas P Gibbons
+## the largest inside owner is Gerald Hassell
+## Founded: 1 July 2007, New York, New York, United States
+
 * The Bank of New York Mellon Corporation, commonly known as BNY Mellon, is an American investment banking services holding company headquartered in New York City. BNY Mellon was formed from the merger of The Bank of New York and the Mellon Financial Corporation in 2007. It is the world's largest custodian bank and asset servicing company, with $2.2 trillion in assets under management and $41.7 trillion in assets under custody as of the second quarter of 2021. It is considered a systemically important bank by the Financial Stability Board. BNY Mellon is incorporated in Delaware
 
 * BNY Mellon is a provider of investment management and investment services and we are a world-renowned leader in each. When combined, the power of our extensive capabilities can help drive your success in markets around the world.
+
+* BNY Mellon is a global investments company dedicated to helping its clients manage and service their financial assets throughout the investment lifecycle. Whether providing financial services for institutions, corporations or individual investors
 
 * What are the four values of BNY Mellon?
 
@@ -81,13 +121,56 @@ Businesses, communities and global economies rely on us because we prioritize cl
 What is BNY doing in India?
 For over 234 years, as the investment company for the world, we have been leading change in the global financial services industry. BNY Mellon Technology Private Limited, is a group company of BNY Mellon operating in India, providing technology solutions to the bank.
 
+![Screenshot from 2021-11-08 14-17-22](https://user-images.githubusercontent.com/42698268/142071188-487ee403-abda-433a-9459-0d77e5368073.png)
+
+![Screenshot from 2021-11-08 14-10-44](https://user-images.githubusercontent.com/42698268/142071211-331bce85-ec0a-48d0-b941-04331baa12ff.png)
+
+## [Awards won by BNY](https://www.bnymellon.com/us/en/about-us/awards.html)
+
+Most Important: BNY Mellon has received recent accolades for corporate social responsibility and diversity and inclusion. We are included in Bloomberg’s Gender Equality Index, CDP’s Climate Change ‘A List’, Fortune’s World’s Most Admired Companies list and the Human Rights Campaign’s Corporate Equality Index.
+
+* BNY Mellon Included In The 2021 Bloomberg Gender-Equality Index For The Fourth Year In A Row
+* For the seventh consecutive year BNY Mellon was awarded a position on the Climate Change ‘A List’ 
+* BNY Mellon has been named one of the “World’s Most Admired Companies” by Fortune Magazine.
+* Best Technology Service provider in 2021
+* Best Places to Work for Disability Inclusion, Disability:IN and the American Association of People with Disabilities (AAPD), 2021
+* World’s Most Admired Companies, Fortune Magazine, 2020
+* Industry Person of the Year, Caroline Butler (Global Head of Custody), Global Custodian, 2021 
+* Most Powerful Women in Banking, Emily Portney (BNY Mellon Chief Financial Officer) and Paulette Mullings Bradnock (BNY Mellon Chief Audit Executive), American Banker, 2020
+* Most Powerful Women in Banking, Paulette Mullings Bradnock (BNY Mellon Chief Audit Executive), American Banker, 2019
+* Industry Legend, Hani Kablawi (Head of International at BNY Mellon), Global Custodian's Leaders In Custody Awards, 2020
+
+## iNautix Technologies Private Limited 
+iNautix Technologies Private Limited is a subsidiary of Bank of New York (BNY) Mellon that provides technology solutions and software solutions for clients of BNY Mellon. Their work philosophy is based upon continuous improvement and cost-effectiveness through technology. It provides services such as infrastructure hosting, automating processes, business analytics, and human factors engineering among others. The company mainly deals with compensation management, datawarehousing and BI, document management, customer application and software consulting. The Bank of New York Mellon is committed to provide the services like flexible technology, robust trading services and operational support.
+
 # 22. [Puzzle - 8 ball problem](https://www.geeksforgeeks.org/puzzle-8-balls-problem/)
 # 23. A detailed discussion on my fields of interest.- the technologies which I have worked on and would like to in the future.
 # 24. He asked about problems faced in doing projects technologically wise and managing wisely too.
-# 25. how will I tackle a dispute among my team members while working on a group project
+* Adopet:
+	* Saw problem
+	* couldnt decide, what I can do to solve this problem
+	* then thought of creating a website
+	* Now, this was totally new thing, as i can't take a reference as there isn't any kind of website on the internet
+	* so I had to think evrything from the scratch
+	* from the name of the website to the logo
+	* I have designed everything by myself
+	* 
+# 25. [how will I tackle a dispute among my team members while working on a group project](https://www.sandler.com/blog/professional-development-blog/ways-to-deal-with-team-conflict-effectively/)
+
+How to handle disagreement: https://hbr.org/2017/07/how-to-handle-a-disagreement-on-your-team
+
 # 26. where do I want to see myself after 5 years
+Ans : Senior program manager:
+* SDE
+* Senior SDE
+* Tech lead
+* Associate program manager
+* Program manager
+* Senior program manager
+
+
 # 27. how do I fit for the role and my expectations from BNY.
-# 27. Where do you see yourself in 5 years?
+
 # 28. What actions have you taken to achieve your long and short-term goals so far?
 # 29. Do you use any online platforms for learning about the latest developments in the field?
 # 30. Are you a member of any professional society or research organisation?
@@ -95,16 +178,57 @@ For over 234 years, as the investment company for the world, we have been leadin
 # 32. Tell me something about ML that fascinates you.
 # 33. How would you handle a dispute in your project team? What would you do if your team members are disinterested and lazy?
 # 34. Why is Java preferred in the industry?
+
+* One of the biggest reasons why Java is so popular is the platform independence.
+*  Programs can run on several different types of computer; 
+*  as long as the computer has a Java Runtime Environment (JRE) installed, a Java program can run on it. 
+*  Java is fundamentally object-oriented.
+*  critical areas in which it is used:
+	* Building Android apps
+	* Java web applications
+	* Software tools
+	* Scientific applications
+
+* Java has the best collection of frameworks even today in comparison to Python. For example, the Spring framework is the reason why big companies prefer to use Java as it is easy for the small development teams to collaborate and work in a more organized way
+* Java is used to build applications and platforms for a number of devices, including computers, laptops, gaming consoles, Blu-ray players, car navigation systems, medical monitoring devices, parking meters, lottery terminals and smartphones
+* 90% of the Fortune 500 companies still rely on Java for their development projects. Globally, there are over 8 million Java developers.
+* Java is user-friendly - ava has an English-like syntax, which makes it the perfect language for beginners
+* Java for everything - For long, Java has been the staple programming language for developing Web apps, Android apps, and software tools like Eclipse, IntelliJ IDEA, NetBeans IDE, etc. Today, Java’s use cases have expanded to Data Science applications, Machine Learning applications, and even IoT. Developers and programmers prefer Java for designing all such applications because Java has a suite of high-level concurrency tools and packages that make it possible to create highly scalable solutions. Also, Java is multi-platform compatible.
+* ava boasts of rich API - Although Java contains around fifty keywords, its Application Programming Interface (API) is both extensive and rich – it is replete with numerous methods that you can directly use in any code. Java API comprises methods that can cater to every purpose, including networking, connecting to databases, parsing XML, handling input-output, and so on. Furthermore, Java has plenty of open-source libraries such as Google Guava, Apache Xerxes, Apache POI, Apache Commons, OpenCV, Gson, ETC.
+* A robust community backs Java - One of the biggest reasons for Java’s popularity is its strong and active community support. It boasts of being the second-largest among the Stack Overflow community. So, rest assured, you can rely on the Java community to help you out if you ever get stuck in a programming rut.
+* ava has excellent documentation - Java is an open-source programming language, which means it is absolutely free. Another excellent quality of the language is that Java is well-documented. It has a detailed guide that will clarify the problems that you may face while coding in Java. 
+* Java has a suite of powerful development tools - One of Java’s most interesting aspects is its Integrated Development Environment (IDE). Java’s IDE is an extensive suite of various automation tools, editors, and debuggers. NetBeans, Eclipse, and IntelliJ IDEA are the three most popular Java IDEs. As for tools, Java has Maven and ANT for developing Java applications, Jenkins for Continuous Integration and delivery, and JConsole and Visual VM for monitoring Heap usage. 
+
 # 35. What is inheritance?
 # 36. What is multiple inheritance?
 # 37. What is memory sequencing?
 # 38. Practical applications of ML and Dl.
 # 39. Puzzle: 10 people shake hands with each other. How many handshakes will be there in total?
+
+The formula for the number of handshakes possible at a party with n people is
+
+# handshakes = n*(n - 1)/2.
+This is because each of the n people can shake hands with n - 1 people (they would not shake their own hand), and the handshake between two people is not counted twice.
+
 # 40. Any questions for me?
 # 41. why I chose Computer Science as my career
+* I can explore my passion of mathematics and problem solving, as I have always loved maths
+* To solve real life problems using code
+* It is a field, where everyday I will have new thing to learn
+* Can automate small and boring tasks
+* Everything shows instant results, which fascinates a lot
+* Teaches you Technical skills such as programming, and non-technical skills such as problem-solving and leadership
+* I can contribute in making the world a better place
+
+
 # 42. Then he asked all about my projects and internships and every other detail on my resume.
 # 43. He gave me some situations and asked me how would I react or manage in such situations.
 # 44. Then he asked some situations from my life in which I’ve exceeded my expectations
+
+* During a competitive coding, solved graph problem
+* Solved problem in pressure in group at last moment
+
+
 # 45. How I managed to stay motivated.
 # 46. Make sure to read about the company, especially for the Bar-Raiser round. Facts like CEO and Founders of the company, principles followed by the company, awards received by the company etc. must be considered while reading about the company.
 # 47. I was asked to sort a list using a single line using stream Api .
