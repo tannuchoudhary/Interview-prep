@@ -278,7 +278,11 @@ int main()
 # 4. Brief discussion about Tries.
 # 5. Implement Trie.
 # 6. What is the hardest challenge you’ve faced and how did you overcome it?
+
+The hardest challenge I had faced was just after my 12th, I was in my home after giving my boards exam, as I belong from jharkhand(you must have been aware about the condition of my state), and in Jharkhand, I belong to very backward region, so after 12th boards, my parents and relatives wanted me to get married, I didn't knew much at that time, that what I am going to do in future but I was sure that my whole life and career are on stakes right now, so i fought with them with all my energy that I had at that time, I was alone as there was not even a single person in my house to support me, but I gave all the reasons, I did everything what I could have done, luckily my parents got agreed for my further studies and told me that they will keep searching a boy, and whenever they will find a perfect match according to them then I have to leave my college and have to get married, I said nothing and just got admission in a small state gov.t engineering college in jharkhand, I didn't knew that what I am going to do, but i had belief on my hardwork and I knew that only I can change my fate, and from the first sem of my b tech I contacted people on linkdin, talked to them, created github,learned skills, participated in hackathos, and In the second year, I got two internships and worked, I had my first stipend of 15000, paid my own bills, rent etc. and being from the college where there is no on campus placemnt, not even a single company comes in my college , today I am giving interview for a great company like BNY, so I am proud of myself.
+
 # 7. Why do you want to join BNY Mellon?
+
 # 8. Tell me about the previous rounds.
 # 9. Favourite programming language?
 # 10. Do you know about the maps? Tell me something about it.
