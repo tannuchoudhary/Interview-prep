@@ -1,4 +1,5 @@
 # Third round prep.
+# [HR Prep](https://www.interviewbit.com/hr-interview-questions/)
 
 # 1. Introduce yourself.
 
@@ -33,6 +34,13 @@ The hardest challenge I had faced was just after my 12th, I was in my home after
 
 # 7. Why do you want to join BNY Mellon?
 
+* Whatever I have learnt is a theoritical knowledge, so by joining BNY mellon, I would have an opportunity to implement things practically
+
+I've seen your company consistently listed as one of the top places to work, I've read employee testimonials and heard of your enthusiasm for encouraging employee growth through education, training and vast resources. I already know that engaged employees produce better work, and that is evident in the most recent campaign you created. I would love to join your innovative team, continue to create great work, and grow within the company by learning new skills.
+
+Besides, I have researched your company and found that it has impressive and promising projections which made me excited to be a part of the amazing future.I would take pride in working under the great leadership of this company and I found this place to be a perfect fit for utilizing my expertise along with the promising aspect of personal growth.
+
+
 * Global Company, Global Opportunities
 With a dedicated business presence on six continents and in 35 countries, BNY Mellon delivers global scale at the local level. The depth and breadth of our organisation provides exciting opportunities for career and global mobility. Recognition programmes highlight individuals from our offices around the world who exemplify our company’s strategy and culture.
 
@@ -54,7 +62,7 @@ Members of our Employee Resource Groups help drive our D&I strategy across busin
 
 # 7.1 Why should we hire you?
 
-Sir, I know that I am not special, All the students who have reached upto this level of interview are intelligent, hardworking, and very good student and I am also one of them and I have too cleared all the rounds with my hardwork, but the most important thing which I believe I have is, I am striver and I am always hungry to learn, I am passionate about work, I am passionate about life, and this is not just true in the field of computer science, I am passionate towards learning every aspect of life
+ the most important thing which I believe I have is, I am striver and I am always hungry to learn, I am passionate about work, I am passionate about life, and this is not just true in the field of computer science, I am passionate towards learning every aspect of life
 * whether it is note of music
 * whether it is line of poem
 * whether it is base case of a recursive program
