@@ -17,5 +17,5 @@ I've seen your company consistently listed as one of the top places to work, I'v
 * good review on glassdoor(4.0)
 
 # Why should we hire you
-* I always strive to learn new things
+* the most important thing which I believe I have is, I am always hungry to learn, I am passionate about work, I am passionate about life, and this is not just true in the field of computer science, I am passionate towards learning every aspect of life
 * Whatever I have learnt is a theoritical knowledge, If you hire me, It would be an opportunity for me to implement things practically
