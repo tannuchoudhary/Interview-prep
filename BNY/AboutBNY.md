@@ -11,7 +11,7 @@
 
 * BNY mellon is the first banks to adopt computing technology, implementing innovation centers and gaining insights from one of the largest datasets in the world. 
 
-* The bank's primary functions are managing and servicing the investments of institutions and high-net-worth individuals.[13] Its two primary businesses are Investment Services and Investment Management.[110][111] The bank's clients include 80 percent of Fortune 500 companies.[112] The company also serves 77 percent of the top 100 endowments, 87 percent of the top 1,000 pension and employee benefit funds, 51 percent of the top 200 life and health insurance companies and 50 percent of the top 50 universities.[113]
+* The bank's primary functions are managing and servicing the investments of institutions and high-net-worth individuals.[13] Its two primary businesses are Investment Services and Investment Management.[110][111] The bank's clients include 80 percent of Fortune 500 companies.[112] The company also serves 77 percent of the top 100 endowments(funding or financing), 87 percent of the top 1,000 pension and employee benefit funds, 51 percent of the top 200 life and health insurance companies and 50 percent of the top 50 universities.[113]
 
 
 
