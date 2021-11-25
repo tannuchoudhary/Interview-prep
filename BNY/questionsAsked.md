@@ -1,3 +1,253 @@
+
+# i) ASKED FROM ME
+
+# My round 1 interview Questions :
+
+* Gave his Introduction
+* Introduce yourself
+* Tell briefly about your project(mine was web based compiler and pet adoption website) 
+* Tell that project which is completely working( told web based compiler)
+* If you have used compilex(for compiler) and ace.js(for editor) then what did you do in this project
+* Show the code(showed him github repo)
+* Show where have you implemented in code that your input will be saved
+* One oops question on hackerrank code pair:
+	* question: you are given a class which contains a vector, you'll have a function and parameter passed in that function is two vectors, you have to swap the content of the first vector and put it into the second vector
+
+* In which langauge you are proficient(i said c++)
+* difference between c and c++
+* what else you are good at( i said ds algo)
+* what is file structure and storage structure
+
+Storage structure: It is the representation of the data structure in the computer memory. - File structure: It is the representation of the storage structure in the auxiliary memory.
+
+
+* friend function
+* stack and its application
+* linear and non linear ds, examples and application
+* what is queue, linear or non linear
+* queue and its application
+* implement queue using stack
+* What is Hashtable
+* Situation based: 
+	* What if you are team lead and only you know how to do that particular work, and you have a deadline to meet
+	* What if 3 of your team members are showing attitude 
+	* What if 1 of them will agree to work with you but other 2 have a problem with you being the team leader
+	* what if all the three of them are as much skilled as you, would you leave the position of team leader
+
+* Have you done anything which shows your leaderhsip quality
+* Do you have any question from me
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+# My round 2 Interview Questions:
+
+
+
+* Introduce yourself
+
+	> My name, degree pursuing, college, cgpa, interships, projects, mentorship programmes, hobbies
+
+* Time complexity of update, insert, delete on linked list and array
+
+	> explained him the tc by taking all the edge cases, example if head and tail both of LL is given, if only head of LL is given, in case of insertion at anywhere in the middle if the address of the position where I want to insert is given in LL, etc
+
+
+* Tell me about all data structures and their applications and how to implement them
+
+	> Told him about all the data structures i.e stack, queue, linked list, hashmap, tree and graph, told him the operations and how to implement these data structures and real life applications of all data structures
+
+* Binary search operation and its time complexity
+	> Explained binary search, took an example and dry run on it, told him the time complexity then he asked why the time complexity is O(log n) therefore explained him, he tried to deviate me by saying that "is it O(log n) or O(n log n) :P
+
+* Tell me about hashmap, How hashing is done, How can we reduce collision
+	> Told him about hashmap, and in what scenario we can use it, took two examples, one of array and one using string of strings
+
+
+* Tell me about graph data structure
+
+	> Told him about the graph data structure, classification on the basis of weighted, non weighted, directed, non directed, told him all the real life applications of graph, told him all the traversal techniques of the graph, and what are the uses of BFS and DFS in other algorithms
+
+
+* Tell me about the algorithms of dp, greedy
+
+	> i told him knapsack(both 0-1 and fractional), kadanes, bfs, dfs), explained these algorithms by taking examples, and by dry running them verbally on small examples
+
+* Asked me to explain my project
+
+	> Told him about the project, what was the idea behind the project, tech stacks used and why it is used, working of project, in future what else I have 
+* One coding question- given a linked list in which nodes are containing number in binary form, calculate the decimal value(present on gfg)
+
+	> I told him two approache: one by taking two pointers and traversing twice, first time to find the size and second time to calculate the value, Second approach is by multiplying the answer by 2 each time and adding data of head, until you'll reach the end of linked list, told him the time complexity of both the approaches and how the second one is better from the first one
+
+* Any questions for me
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# ii) ASKED FROM OTHERS(2021)
+
+
+## Calculate the angle between hour hand and minute hand
+
+```cpp
+class Solution {
+public:
+    double angleClock(int h, int m) {
+        // invalid inputs
+        if(h<0 || m<0 || h>24 || m>60) cout<<"Wrong input";
+        
+        
+        if(h == 12 || h == 24) h =0;
+        if(m == 60){
+            h += 1;
+            m = 0;
+            if(h>12){
+                h = h-12;
+            }
+        }
+        
+        // it is same as (h + m/60)*30
+        //as each hour is 30 degrees
+        ///and each minute is 6 degrees
+        double hAngle = (h*60 + m)*0.5;
+        double mAngle = m*6;
+        
+        double ans = abs(hAngle - mAngle);
+        if(ans > 180)
+            ans = 360-ans;
+        
+        return ans;
+    }
+};
+```
+
+## Knapsack problem
+
+```cpp
+#include<iostream>
+#include<algorithm>
+
+using namespace std;
+struct item{            //This is a structure to contain profit and weight of objects
+  float profit, weight;
+};
+bool cmp(item d1, item d2){ //comparison function for descending order
+  int r1 = d1.profit / d1.weight; //sorting profit by weight ratio.
+  int r2 = d2.profit / d2.weight;
+  return r1 > r2;
+}
+float knapsack(float m,struct item a[], int size){
+  sort(a, a+size, cmp);    //sort fuction for sorting in descending order.
+  cout<<"Your data after sorting"<<endl;
+  cout<<"PROFIT | WEIGHT | PROF/WT"<<endl;
+  for(int k=0; k<size; k++){
+    cout<<"    "<<a[k].profit<<"    "<<a[k].weight<<"    "<<a[k].profit/a[k].weight<<endl;
+  }
+  float current = 0.00;   //current weight filled in knapsack.
+  float profit = 0.00;   //Final maximum profit.
+  float remain;         //Remaining weight in knapsack.
+  for(int i=0; i<size; i++){
+    if(current + a[i].weight <= m){  //If there is space in the knapsack for filling the object fully then proceed
+
+      current += a[i].weight; //increase the current weight
+      profit += a[i].profit; //increase the profit
+    }
+    else{                    //When we want to keep fraction of object in knapsack.
+      remain = m - current;
+      profit += a[i].profit * remain/a[i].weight;
+      break;
+    }
+  }
+  cout<<endl<<"Your maximum profit will be ";
+  return profit;
+}
+int main(){
+  float m = 15.00; //This is the capacity of knapsack.
+  item a[] = {{10, 2}, {5,3}, {15, 5}, {7, 7}, {6, 1}, {18, 4}, {3, 1}};//Items in the knapsack i.e, profit along with it's corresponding weight.
+  int size = sizeof(a) / sizeof(a[0]);
+  cout<<"PROFIT | WEIGHT | PROF/WT"<<endl;
+  for(int i=0; i<size; i++){
+    cout<<"    "<<a[i].profit<<"    "<<a[i].weight<<"    "<<a[i].profit/a[i].weight<<endl;
+  }
+  cout<<knapsack(m, a, size)<<endl;
+  return 0;
+}
+
+```
+
+## Number of substrings with count of each character as k
+
+```cpp
+// C++ program to count number of substrings
+// with counts of distinct characters as k.
+#include <bits/stdc++.h>
+using namespace std;
+const int MAX_CHAR = 26;
+
+// Returns true if all values
+// in freq[] are either 0 or k.
+bool check(int freq[], int k)
+{
+	for (int i = 0; i < MAX_CHAR; i++)
+		if (freq[i] && freq[i] != k)
+			return false;
+	return true;
+}
+
+// Returns count of substrings where frequency
+// of every present character is k
+int substrings(string s, int k)
+{
+	int res = 0; // Initialize result
+
+	// Pick a starting point
+	for (int i = 0; s[i]; i++) {
+
+		// Initialize all frequencies as 0
+		// for this starting point
+		int freq[MAX_CHAR] = { 0 };
+
+		// One by one pick ending points
+		for (int j = i; s[j]; j++) {
+
+			// Increment frequency of current char
+			int index = s[j] - 'a';
+			freq[index]++;
+
+			// If frequency becomes more than
+			// k, we can't have more substrings
+			// starting with i
+			if (freq[index] > k)
+				break;
+
+			// If frequency becomes k, then check
+			// other frequencies as well.
+			else if (freq[index] == k &&
+				check(freq, k) == true)
+				res++;
+		}
+	}
+	return res;
+}
+
+// Driver code
+int main()
+{
+	string s = "aabbcc";
+	int k = 2;
+	cout << substrings(s, k) << endl;
+
+	s = "aabbc";
+	k = 2;
+	cout << substrings(s, k) << endl;
+}
+
+```
+-------------------------------------------------------------------------------------------------------
+
+# iii) LAST YEAR ASKED QUESTIONS IN INTERVIEW
+
 # Third round prep.
 # [HR Prep](https://www.interviewbit.com/hr-interview-questions/)
 
@@ -30,7 +280,6 @@ Data structures and Algortihms
 # 5. Implement Trie.
 # 6. What is the hardest challenge you’ve faced and how did you overcome it?
 
-The hardest challenge I had faced was just after my 12th, I was in my home after giving my boards exam, as I belong from jharkhand(you must have been aware about the condition of my state), and in Jharkhand, I belong to very backward region, so after 12th boards, my parents and relatives wanted me to get married, I didn't knew much at that time, that what I am going to do in future but I was sure that my whole life and career are on stakes right now, so i fought with them with all my energy that I had at that time, I was alone as there was not even a single person in my house to support me, but I gave all the reasons, I did everything what I could have done, luckily my parents got agreed for my further studies and told me that they will keep searching a boy, and whenever they will find a perfect match according to them then I have to leave my college and have to get married, I said nothing and just got admission in a small state gov.t engineering college in jharkhand, I didn't knew that what I am going to do, but i had belief on my hardwork and I knew that only I can change my fate, and from the first sem of my b tech I contacted people on linkdin, talked to them, created github,learned skills, participated in hackathos, and In the second year, I got two internships and worked, I had my first stipend of 15000, paid my own bills, rent etc. and being from the college where there is no on campus placemnt, not even a single company comes in my college , today I am giving interview for a great company like BNY, so I am proud of myself.
 
 # 7. Why do you want to join BNY Mellon?
 
@@ -63,13 +312,6 @@ Members of our Employee Resource Groups help drive our D&I strategy across busin
 # 7.1 Why should we hire you?
 
  the most important thing which I believe I have is, I am striver and I am always hungry to learn, I am passionate about work, I am passionate about life, and this is not just true in the field of computer science, I am passionate towards learning every aspect of life
-* whether it is note of music
-* whether it is line of poem
-* whether it is base case of a recursive program
-* Or it is dry running a code of graph data structure
-* whether it is a psychology, that how people think
-* whether it is move of chess
-* or whether it is understanding that what next move my opponent is going to play
 
 and If you give me an opportunity to prove myself that I have that hunger, I have that zeal in me than I promise you that I will prove you that your decision of selecting me was not wrong.
 
@@ -78,7 +320,7 @@ and If you give me an opportunity to prove myself that I have that hunger, I hav
 * Kind of questions they asked
 * Time se jada interview liya gaya th
 * Judge krne k lie usne pura time liye, he took double time
-* I was very happy due to this, as interviewer gave me propeer time to explain my answer
+* I was very happy due to this, as interviewer gave me proper time to explain my answer
 
 # 9. Favourite programming language?
 	C++
@@ -354,254 +596,6 @@ Note:
 .
 .
 
-# i) ASKED FROM ME
-
-# My round 1 interview Questions :
-
-* Gave his Introduction
-* Introduce yourself
-* Tell briefly about your project(mine was web based compiler and pet adoption website) 
-* Tell that project which is completely working( told web based compiler)
-* If you have used compilex(for compiler) and ace.js(for editor) then what did you do in this project
-* Show the code(showed him github repo)
-* Show where have you implemented in code that your input will be saved
-* One oops question on hackerrank code pair:
-	* question: you are given a class which contains a vector, you'll have a function and parameter passed in that function is two vectors, you have to swap the content of the first vector and put it into the second vector
-
-* In which langauge you are proficient(i said c++)
-* difference between c and c++
-* what else you are good at( i said ds algo)
-* what is file structure and storage structure
-
-Storage structure: It is the representation of the data structure in the computer memory. - File structure: It is the representation of the storage structure in the auxiliary memory.
-
-
-* friend function
-* stack and its application
-* linear and non linear ds, examples and application
-* what is queue, linear or non linear
-* queue and its application
-* implement queue using stack
-* What is Hashtable
-* Situation based: 
-	* What if you are team lead and only you know how to do that particular work, and you have a deadline to meet
-	* What if 3 of your team members are showing attitude 
-	* What if 1 of them will agree to work with you but other 2 have a problem with you being the team leader
-	* what if all the three of them are as much skilled as you, would you leave the position of team leader
-
-* Have you done anything which shows your leaderhsip quality
-* Do you have any question from me
-
----------------------------------------------------------------------------------------------------------------------------------------
-
-# My round 2 Interview Questions:
-
-
-
-* Introduce yourself
-
-	> My name, degree pursuing, college, cgpa, interships, projects, mentorship programmes, hobbies
-
-* Time complexity of update, insert, delete on linked list and array
-
-	> explained him the tc by taking all the edge cases, example if head and tail both of LL is given, if only head of LL is given, in case of insertion at anywhere in the middle if the address of the position where I want to insert is given in LL, etc
-
-
-* Tell me about all data structures and their applications and how to implement them
-
-	> Told him about all the data structures i.e stack, queue, linked list, hashmap, tree and graph, told him the operations and how to implement these data structures and real life applications of all data structures
-
-* Binary search operation and its time complexity
-	> Explained binary search, took an example and dry run on it, told him the time complexity then he asked why the time complexity is O(log n) therefore explained him, he tried to deviate me by saying that "is it O(log n) or O(n log n) :P
-
-* Tell me about hashmap, How hashing is done, How can we reduce collision
-	> Told him about hashmap, and in what scenario we can use it, took two examples, one of array and one using string of strings
-
-
-* Tell me about graph data structure
-
-	> Told him about the graph data structure, classification on the basis of weighted, non weighted, directed, non directed, told him all the real life applications of graph, told him all the traversal techniques of the graph, and what are the uses of BFS and DFS in other algorithms
-
-
-* Tell me about the algorithms of dp, greedy
-
-	> i told him knapsack(both 0-1 and fractional), kadanes, bfs, dfs), explained these algorithms by taking examples, and by dry running them verbally on small examples
-
-* Asked me to explain my project
-
-	> Told him about the project, what was the idea behind the project, tech stacks used and why it is used, working of project, in future what else I have 
-* One coding question- given a linked list in which nodes are containing number in binary form, calculate the decimal value(present on gfg)
-
-	> I told him two approache: one by taking two pointers and traversing twice, first time to find the size and second time to calculate the value, Second approach is by multiplying the answer by 2 each time and adding data of head, until you'll reach the end of linked list, told him the time complexity of both the approaches and how the second one is better from the first one
-
-* Any questions for me
-
-
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-
-# ii) ASKED FROM OTHERS(2021)
-
-
-## Calculate the angle between hour hand and minute hand
-
-```cpp
-class Solution {
-public:
-    double angleClock(int h, int m) {
-        // invalid inputs
-        if(h<0 || m<0 || h>24 || m>60) cout<<"Wrong input";
-        
-        
-        if(h == 12 || h == 24) h =0;
-        if(m == 60){
-            h += 1;
-            m = 0;
-            if(h>12){
-                h = h-12;
-            }
-        }
-        
-        // it is same as (h + m/60)*30
-        //as each hour is 30 degrees
-        ///and each minute is 6 degrees
-        double hAngle = (h*60 + m)*0.5;
-        double mAngle = m*6;
-        
-        double ans = abs(hAngle - mAngle);
-        if(ans > 180)
-            ans = 360-ans;
-        
-        return ans;
-    }
-};
-```
-
-## Knapsack problem
-
-```cpp
-#include<iostream>
-#include<algorithm>
-
-using namespace std;
-struct item{            //This is a structure to contain profit and weight of objects
-  float profit, weight;
-};
-bool cmp(item d1, item d2){ //comparison function for descending order
-  int r1 = d1.profit / d1.weight; //sorting profit by weight ratio.
-  int r2 = d2.profit / d2.weight;
-  return r1 > r2;
-}
-float knapsack(float m,struct item a[], int size){
-  sort(a, a+size, cmp);    //sort fuction for sorting in descending order.
-  cout<<"Your data after sorting"<<endl;
-  cout<<"PROFIT | WEIGHT | PROF/WT"<<endl;
-  for(int k=0; k<size; k++){
-    cout<<"    "<<a[k].profit<<"    "<<a[k].weight<<"    "<<a[k].profit/a[k].weight<<endl;
-  }
-  float current = 0.00;   //current weight filled in knapsack.
-  float profit = 0.00;   //Final maximum profit.
-  float remain;         //Remaining weight in knapsack.
-  for(int i=0; i<size; i++){
-    if(current + a[i].weight <= m){  //If there is space in the knapsack for filling the object fully then proceed
-
-      current += a[i].weight; //increase the current weight
-      profit += a[i].profit; //increase the profit
-    }
-    else{                    //When we want to keep fraction of object in knapsack.
-      remain = m - current;
-      profit += a[i].profit * remain/a[i].weight;
-      break;
-    }
-  }
-  cout<<endl<<"Your maximum profit will be ";
-  return profit;
-}
-int main(){
-  float m = 15.00; //This is the capacity of knapsack.
-  item a[] = {{10, 2}, {5,3}, {15, 5}, {7, 7}, {6, 1}, {18, 4}, {3, 1}};//Items in the knapsack i.e, profit along with it's corresponding weight.
-  int size = sizeof(a) / sizeof(a[0]);
-  cout<<"PROFIT | WEIGHT | PROF/WT"<<endl;
-  for(int i=0; i<size; i++){
-    cout<<"    "<<a[i].profit<<"    "<<a[i].weight<<"    "<<a[i].profit/a[i].weight<<endl;
-  }
-  cout<<knapsack(m, a, size)<<endl;
-  return 0;
-}
-
-```
-
-## Number of substrings with count of each character as k
-
-```cpp
-// C++ program to count number of substrings
-// with counts of distinct characters as k.
-#include <bits/stdc++.h>
-using namespace std;
-const int MAX_CHAR = 26;
-
-// Returns true if all values
-// in freq[] are either 0 or k.
-bool check(int freq[], int k)
-{
-	for (int i = 0; i < MAX_CHAR; i++)
-		if (freq[i] && freq[i] != k)
-			return false;
-	return true;
-}
-
-// Returns count of substrings where frequency
-// of every present character is k
-int substrings(string s, int k)
-{
-	int res = 0; // Initialize result
-
-	// Pick a starting point
-	for (int i = 0; s[i]; i++) {
-
-		// Initialize all frequencies as 0
-		// for this starting point
-		int freq[MAX_CHAR] = { 0 };
-
-		// One by one pick ending points
-		for (int j = i; s[j]; j++) {
-
-			// Increment frequency of current char
-			int index = s[j] - 'a';
-			freq[index]++;
-
-			// If frequency becomes more than
-			// k, we can't have more substrings
-			// starting with i
-			if (freq[index] > k)
-				break;
-
-			// If frequency becomes k, then check
-			// other frequencies as well.
-			else if (freq[index] == k &&
-				check(freq, k) == true)
-				res++;
-		}
-	}
-	return res;
-}
-
-// Driver code
-int main()
-{
-	string s = "aabbcc";
-	int k = 2;
-	cout << substrings(s, k) << endl;
-
-	s = "aabbc";
-	k = 2;
-	cout << substrings(s, k) << endl;
-}
-
-```
--------------------------------------------------------------------------------------------------------
-
-# iii) LAST YEAR ASKED QUESTIONS IN INTERVIEW
 
 
 -------------------------------------------------------------------------------------------------------------
