@@ -36,7 +36,7 @@ Ans - https://www.geeksforgeeks.org/sql-query-to-find-the-name-of-a-person-whose
  ## 14. What is your biggest achievement
  ## 15. If you are given a chance what will you change in past
  
- # FULL TIME (Round 1)
+ # 2. FULL TIME (Round 1)
  ## 16. Questions based on my internships and projects (Give an instance where you used Exception Handling and Polymorphism in your project).
  ## 17. Differences between threads and processes.
  ## 18. Explain TCP Handshake.
@@ -53,8 +53,18 @@ Ans - https://www.geeksforgeeks.org/sql-query-to-find-the-name-of-a-person-whose
 
 ## 25. Puzzle 2: https://www.geeksforgeeks.org/puzzle-7-find-the-jar-with-contaminated-pills/
  
+# Round 3 (Managerial round)
  
- 
+## 26. What are your non-technical interests?
+## 27. What tech stack are you most comfortable with?
+## 28. Questions about my internship and my final year project.
+## 29. Explain File operations in C++.
+## 30. How will you print numbers from 1 to 100 without using a loop? (Discussion only)
+## 31. Explain the steps involved in SDLC.
+
+# 3. Full time(round 1)
+## 1. Tell me about the projects you have worked on.
+## 2. Find the maximum occurring number in as array. https://www.geeksforgeeks.org/find-the-maximum-repeating-number-in-ok-time/
  
  
  
