@@ -18,6 +18,40 @@ Ans - https://www.geeksforgeeks.org/sql-query-to-find-the-name-of-a-person-whose
     * book – alike
     * textbook – not alike
     
+### Answer: 
+* Approach 01: Divide the string into two half, and store them in two different strings of half size, and then find out the no. of vowels in each string and compare them, T.C = O(N), S.C = O(N)
+* Approach 02: Don't use extra space, start traversing and find out the no of vowels in first half and second half and store them in two variables and then compare, T.C = O(N), S.C = O(1)
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    string str;
+    cin>>str;
+    
+    int sz = str.length();
+    
+    int first=0, second=0;
+    for(int i=0; i<sz; i++){
+        if(i<sz/2){
+            if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u')
+                first++;
+        }
+        else{
+            if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u')
+                second++;
+        }
+    }
+    
+    if(first == second) cout<<"yes";
+    else cout<<"No";
+    return 0;
+}
+```
+* Approach 03: Find the size of string and start traversing from its half to the left and right simultaneously, store the no of vowels in left and right in two variables and compare at last, T.C = O(N/2), S.C = O(1)
+
+    
  ## 4. Given array of strings find kth distinct string
     * s=[“a”, “b”, “c”, “a”], k=2   Output will be “c” (2nd distinct string)
     * s=[“aa”, “aaa”, “aaa”, “aaaa” ], k=2 Output will be “aaaa” (2nd distinct string)
