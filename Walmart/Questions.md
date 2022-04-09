@@ -1,5 +1,5 @@
 
-# 1. INTERNSHIP (Round 1)
+# 1. INTERNSHIP (Round 1) - CODEHERS
 ## 1. SQL query to find names of all employees that start with “Mu”
 
 Ans - https://www.geeksforgeeks.org/sql-query-to-find-the-name-of-a-person-whose-name-starts-with-specific-letter/
@@ -36,7 +36,7 @@ Ans - https://www.geeksforgeeks.org/sql-query-to-find-the-name-of-a-person-whose
  ## 14. What is your biggest achievement
  ## 15. If you are given a chance what will you change in past
  
- # 2. FULL TIME (Round 1)
+ # 2. FULL TIME (Round 1) - CODEHERS
  ## 16. Questions based on my internships and projects (Give an instance where you used Exception Handling and Polymorphism in your project).
  ## 17. Differences between threads and processes.
  ## 18. Explain TCP Handshake.
@@ -62,7 +62,7 @@ Ans - https://www.geeksforgeeks.org/sql-query-to-find-the-name-of-a-person-whose
 ## 30. How will you print numbers from 1 to 100 without using a loop? (Discussion only)
 ## 31. Explain the steps involved in SDLC.
 
-# 3. Full time(round 1)
+# 3. Full time(round 1) - CODEHERS
 ## 32. Tell me about the projects you have worked on.
 ## 33. Find the maximum occurring number in as array. https://www.geeksforgeeks.org/find-the-maximum-repeating-number-in-ok-time/
 ## 34. Exception handling in C++ in detail.
@@ -94,6 +94,49 @@ Ans - https://www.geeksforgeeks.org/sql-query-to-find-the-name-of-a-person-whose
 ## 58. Rope burning puzzle:  https://kottke.org/06/11/rope-burning-logic-problem
 ## 59. Do you have any questions.
 
+# 4. Full time(Round 1) - CODEHERS
+
+## 60. The interview started with a short introduction of both of us. 
+## 61. Post that, we had some discussions around my projects
+## 62. Inheritance
+## 63. Polymorphism
+## 64. Virtual functions
+## 65. Immutable classes
+## 66. Storage classes
+## 67. He asked me to show the use of virtual functions
+## 68. I was asked to explain all types of inheritance with examples
+## 69. He asked me differences between Process and Threads
+
+# Round 2
+## 70. It started with short introductions of both of us and some discussions around my projects
+## 71. Then he asked me searching algorithms
+## 72. Sorting algorithms
+## 73. And one coding question
+## 74. Then he moved to a few puzzles. I could solve both the puzzles, but first one took more time compared to the second one. 
+
+# Round 3
+## 75. It started with a short introduction of me. 
+## 76. Then she went deep into my internship experience - my responsibilities as an intern, mistakes committed by me, ability to complete tasks within deadline, challenges faced during internship period etc. 
+## 77. Then she asked me a puzzle which I was able to solve quickly. 
+## 78. She wanted to know why I want to join Walmart.
+## 79. What challenges have I faced in real life.
+## 80. She also asked a technology that I would like to learn apart from my current skill set
+
+# 5. Intern (Round 1)  -CODEHERS
+## 81. Short Introduction
+## 82. A coding question on Permutation of Strings
+## 83. Theoretical Questions revolving around SQL, DBMS, and OOPs
+## 84. Difference between binary trees and balanced binary trees.
+## 85. A coding question on Binary Trees (count total number of nodes)
+## 86. DFS vs BFS and conceptual questions on them
+## 87. Some more questions on different Data Structures and core CS fundamentals (can’t remember …)
+## 88. We discussed various technologies used and products at Walmart and the vast learning scope.
+
+# Round 2
+## 89. Short Introduction
+## 90. Hobbies
+## 91. A small explanation of projects.
+## 92. Relocation choices and a few more general HR questions.
 
  
  
