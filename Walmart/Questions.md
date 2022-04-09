@@ -56,6 +56,27 @@ int main(){
     * s=[“a”, “b”, “c”, “a”], k=2   Output will be “c” (2nd distinct string)
     * s=[“aa”, “aaa”, “aaa”, “aaaa” ], k=2 Output will be “aaaa” (2nd distinct string)
     
+ Answer :
+ ```cpp
+ class Solution {
+public:
+    string kthDistinct(vector<string>& arr, int k) {
+        unordered_map<string, int> mp;
+        
+        for(auto s : arr)
+            mp[s]++;
+        
+        int t = 0;
+        for(auto s : arr){
+            if(mp[s] == 1)t++;
+            if(t==k) return s;
+        }
+        return "";
+        
+    }
+};
+```
+    
  ## 5. Bankers Algorithm
  ## 6. What are scheduling algorithms with example
  ## 7. 3-4 questions about projects that I have done
