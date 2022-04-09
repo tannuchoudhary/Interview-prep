@@ -63,8 +63,38 @@ Ans - https://www.geeksforgeeks.org/sql-query-to-find-the-name-of-a-person-whose
 ## 31. Explain the steps involved in SDLC.
 
 # 3. Full time(round 1)
-## 1. Tell me about the projects you have worked on.
-## 2. Find the maximum occurring number in as array. https://www.geeksforgeeks.org/find-the-maximum-repeating-number-in-ok-time/
+## 32. Tell me about the projects you have worked on.
+## 33. Find the maximum occurring number in as array. https://www.geeksforgeeks.org/find-the-maximum-repeating-number-in-ok-time/
+## 34. Exception handling in C++ in detail.
+## 35. What do you mean by OOPS
+## 36. What is inheritance.
+## 37. Create a database to store the information of employees and their salaries (just explain).
+## 38. What are insertion, deletion and updation anomalies in DBMS. https://www.geeksforgeeks.org/anomalies-in-relational-model/
+## 39. Find the equilibrium index of an array. https://www.geeksforgeeks.org/equilibrium-index-of-an-array/
+## 40. Whats polymorphism -> compile and runtime.
+## 41. Write code to show run time polymorphism. https://www.geeksforgeeks.org/polymorphism-in-c/
+# Round 2
+## 42. Tell me about yourself and projects you have worked on.
+## 43. What’s polymorphism.
+## 44. What are exceptions in Java – Since my primary language was C++, so I explained exception in C++ only.
+## 45. What are collections in Java – list, map, set.
+## 46. Find the maximum occurring number in as array. (yes I got the same que in previous round too)
+## 47. Whats binary search – only explain.
+## 48. Name all the sorting algorithm you have studied and which algorithm to be used for larger inputs.
+## 49. Write a SQL query to print the highest salary in each department.
+# Round 3
+## 50. Tell me about yourself.
+## 51. Have you got offer from another organization?
+## 52. Why do you want to join Walmart?
+## 53. Interviewer told me about what projects they work on. She told me about a system that estimates the time between 2 cities during a delivery. Then she asked me what do you think how we implement it. I gave my views related to graphs and shortest distance algorithms considering factors like traffic and all. Then she asked me how to use Machine Learning in this context.
+## 54. What are things you are good at apart from technical skills.
+## 55. What is the thing you are bad at?
+## 56. What do you apart from studies?
+## 57. Why should we hire you?
+## 58. Rope burning puzzle:  https://kottke.org/06/11/rope-burning-logic-problem
+## 59. Do you have any questions.
+
+
  
  
  
