@@ -159,4 +159,5 @@ Ans - https://www.geeksforgeeks.org/sql-query-to-find-the-name-of-a-person-whose
  
  
  
+ 
     
