@@ -78,7 +78,43 @@ public:
 ```
     
  ## 5. Bankers Algorithm
+ The banker's algorithm is a resource allocation and deadlock avoidance algorithm that tests for safety by simulating the allocation for predetermined maximum possible amounts of all resources, then makes an “s-state” check or safe state check to test for possible activities, before deciding whether allocation should be allowed to continue
+ ![Screenshot from 2022-04-11 03-36-31](https://user-images.githubusercontent.com/42698268/162641988-3260e268-4ce4-4c8f-a20f-c75fedffab59.png)
+
+ ![Screenshot from 2022-04-11 03-37-07](https://user-images.githubusercontent.com/42698268/162641994-7dcd4dd4-6a82-4ded-b8df-dbb25c931983.png)
+
+ ![Screenshot from 2022-04-11 03-36-57](https://user-images.githubusercontent.com/42698268/162641995-545a48ae-8b42-4d65-a47c-b2beeeb284c3.png)
+
  ## 6. What are scheduling algorithms with example
+
+ ![Screenshot from 2022-04-11 03-53-21](https://user-images.githubusercontent.com/42698268/162642331-a4db824f-aa5d-4f66-9932-90d264ffb517.png)
+
+ ![Screenshot from 2022-04-11 03-51-04](https://user-images.githubusercontent.com/42698268/162642333-acfa060f-ef0a-474b-a7c0-151cde1c8d5a.png)
+
+ ![Screenshot from 2022-04-11 03-53-32](https://user-images.githubusercontent.com/42698268/162642341-ab9d8876-994e-4025-bd29-3774383e75ec.png)
+
+ ![Screenshot from 2022-04-11 03-47-28](https://user-images.githubusercontent.com/42698268/162642352-c4c09a01-1e6f-4629-89fb-ad2b27b3d199.png)
+
+ ![Screenshot from 2022-04-11 03-47-53](https://user-images.githubusercontent.com/42698268/162642353-4fd973f8-548a-406a-944d-28cedf9e513a.png)
+
+![Screenshot from 2022-04-11 03-48-03](https://user-images.githubusercontent.com/42698268/162642359-e57e99de-53dc-4f1c-8889-f0b2eeca61b1.png)
+
+![Screenshot from 2022-04-11 03-48-38](https://user-images.githubusercontent.com/42698268/162642361-548cfe0d-7e25-4811-9b47-849355f994b7.png)
+
+![Screenshot from 2022-04-11 03-48-52](https://user-images.githubusercontent.com/42698268/162642363-8fbfee9f-3180-48ae-becf-8805b73433ee.png)
+
+![Screenshot from 2022-04-11 03-49-11](https://user-images.githubusercontent.com/42698268/162642364-721eaa82-508a-4ad6-90e4-7ed26ab00291.png)
+
+![Screenshot from 2022-04-11 03-49-25](https://user-images.githubusercontent.com/42698268/162642368-d1249831-4db7-4203-82b9-b661bf9efbeb.png)
+
+![Screenshot from 2022-04-11 03-49-52](https://user-images.githubusercontent.com/42698268/162642370-6478ce18-5189-4dc0-99b1-6f172816ab8c.png)
+
+![Screenshot from 2022-04-11 03-50-35](https://user-images.githubusercontent.com/42698268/162642371-1fabdc43-1731-4483-9fd7-3d5fb2d659de.png)
+
+![Screenshot from 2022-04-11 03-50-50](https://user-images.githubusercontent.com/42698268/162642375-bc13a239-28f0-4fce-9645-f3e6eec068da.png)
+
+ 
+ 
  ## 7. 3-4 questions about projects that I have done
  
  # Round 2
