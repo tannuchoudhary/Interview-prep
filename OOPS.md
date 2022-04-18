@@ -1,3 +1,21 @@
+# 1. OOPS
+![Screenshot from 2021-08-14 10-28-34](https://user-images.githubusercontent.com/42698268/129434732-f1b2edaf-f1bc-438d-91e1-94e72cfaaa88.png)
+
+# Class and Object
+### Class
+
+![Screenshot from 2022-04-18 18-51-47](https://user-images.githubusercontent.com/42698268/163814741-8fa488a7-54c8-4d10-8630-215239807394.png)
+
+### Object 
+An Object is an instance of a Class. When a class is defined, no memory is allocated but when it is instantiated (i.e. an object is created) memory is allocated.
+
+![Screenshot from 2021-08-14 10-32-57](https://user-images.githubusercontent.com/42698268/129434740-bac49482-89ff-45d5-ba71-cd50114b2c53.png)
+
+![Screenshot from 2021-08-14 10-34-24](https://user-images.githubusercontent.com/42698268/129434757-fad1c4c9-d9ac-4cff-85d1-379a78c6ac11.png)
+
+
+
+
 # 1. [40 OOPS Interview Questions](https://www.interviewbit.com/oops-interview-questions/) .
 
 
