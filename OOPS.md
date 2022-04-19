@@ -51,11 +51,13 @@ Each process has an address in memory. In other words, each process allocates a 
   
 
 # 6. Virtual function
-```pounter k through object ko call kro to arrow operator lgta h, and object k through kro to dot operator``` 
+```pointer k through object ko call kro to arrow operator lgta h, and object k through kro to dot operator``` 
 
 ------------------------------------------------------------------------------------------------------
 
 # 7.Static Keyword
+
+* Membership label or scope resolution is used to define static member variable
 
 ```cpp
 #include<bits/stdc++.h>
@@ -74,7 +76,7 @@ class Account{
             roi = r;
         }
 };
-
+//declaration of static member variable
 float Account:: roi;
 int main(){
     Account a1, a2;
