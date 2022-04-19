@@ -56,6 +56,13 @@ Each process has an address in memory. In other words, each process allocates a 
 ------------------------------------------------------------------------------------------------------
 
 # 7.Static Keyword
+![Screenshot from 2022-04-18 19-14-50](https://user-images.githubusercontent.com/42698268/163907013-6c18432b-8285-45ce-bdd0-df55f3545b37.png)
+![Screenshot from 2022-04-18 19-15-01](https://user-images.githubusercontent.com/42698268/163907019-34b6aba7-5076-472a-8429-29815c03ee72.png)
+![Screenshot from 2022-04-19 07-14-17](https://user-images.githubusercontent.com/42698268/163907068-ffc1de4e-5405-4835-bc9c-209ceadd461e.png)
+
+![Screenshot from 2022-04-19 07-42-20](https://user-images.githubusercontent.com/42698268/163907082-3827ccda-f95b-4344-b492-fcccff5036ba.png)
+
+![Screenshot from 2022-04-19 07-48-21](https://user-images.githubusercontent.com/42698268/163907094-638554af-bb47-4d26-ab0e-1d32afe2d745.png)
 
 * Membership label or scope resolution is used to define static member variable
 
@@ -65,13 +72,16 @@ using namespace std;
 
 class Account{
     private:
+        
         int balance;
+        //static member variable
         static float roi;
     public:
         void setBalance(int b){
             balance = b;
         }
         
+        //static member function
         static void setROI(float r){
             roi = r;
         }
@@ -80,9 +90,14 @@ class Account{
 float Account:: roi;
 int main(){
     Account a1, a2;
-    //Account::roi = 4.5;
+    //Access static member variable using class name when it is defined as public
+    //Account::roi = 4.5; 
     
+    //access static member variable using object
     a1.setROI(4.5);
+    
+    //Access static member variable without using object, using static member function when it is defined as private
+    //syntax - class name, scope resolution operator, static member function
     Account::setROI(4.5);
 }
 
@@ -90,6 +105,28 @@ int main(){
 ```
 
 ## Constructor
+
+
+
+![Screenshot from 2022-04-19 07-54-07](https://user-images.githubusercontent.com/42698268/163909189-c99c95b1-22c8-4ff3-897e-1f0903427886.png)
+
+
+![Screenshot from 2022-04-19 07-55-16](https://user-images.githubusercontent.com/42698268/163909196-3b530ebb-4091-41c5-b3cf-a67d57ed2bfc.png)
+
+![Screenshot from 2022-04-19 07-59-37](https://user-images.githubusercontent.com/42698268/163909216-fc5ec57b-4fca-4e98-aa38-e81bc1a78f20.png)
+
+
+
+![Screenshot from 2022-04-19 08-00-38](https://user-images.githubusercontent.com/42698268/163909224-4efee52b-aab1-4885-acd5-d7b71f9d0c17.png)
+
+![Screenshot from 2022-04-19 08-00-50](https://user-images.githubusercontent.com/42698268/163909228-e0e5a21c-7248-47dc-949f-c5c41d15a6c2.png)
+
+
+
+
+
+
+
 * Is a member function of class
 * name is same as class
 * No return type, so can't use return keyword
@@ -129,6 +166,7 @@ int main(){
 }
 
 ```
+
 * If you havent created any constructor compiler will create default const. and copy const.
 * If you have created default or parameterized const. then compiler would only create copy const.
 * If you have created only copy const. then compiler will not create any const.
@@ -218,6 +256,14 @@ int main(){
 }
 
 ```
+
+![Screenshot from 2022-04-19 08-21-04](https://user-images.githubusercontent.com/42698268/163911122-c7a1f74f-e60b-4d96-88c1-64c855ea59f5.png)
+![Screenshot from 2022-04-19 08-23-00](https://user-images.githubusercontent.com/42698268/163911130-675d79e3-6f2d-4c33-adab-15b5ece71983.png)
+
+![Screenshot from 2022-04-19 08-23-58](https://user-images.githubusercontent.com/42698268/163911136-f87c27eb-baeb-4abe-adb4-4d81a35edf1c.png)
+
+![Screenshot from 2022-04-19 08-25-09](https://user-images.githubusercontent.com/42698268/163911143-1970f358-4308-4bf6-916d-6e059f550d6a.png)
+
 
 # Operator Overloading
 
@@ -381,6 +427,13 @@ int main(){
 
 ```
 ## Increment operator overloading
+
+# Friend function
+
+* No membership label or friend keyword is required while defining friend function
+* friend function can access private members of class
+* declared inside class, defined outside class
+
 
 # this pointer
 
