@@ -4,7 +4,7 @@
 
 # 2.
 
-* Thank You sir/ma'am for giving this opportunity to introduce myself, I am Tannu Kumari, currently I am pursuing B tech from University College of Engineering and Technology Vinoba Bhave University in Information technolgy.
+* Thank You sir/ma'am for giving this opportunity to introduce myself, I am Tannu Kumari, I am pursuing B tech from University College of Engineering and Technology Vinoba Bhave University in Information technolgy.
 
 * Currently I am interning with Bank of New york Mellon and there I am Working on Spring and Spring boot based projects, working with build tools such as Maven, I have migrated 3 projects from java 8 to java 11, also have upgraded all the third party jars which were vulnerable, and have migrated projects from Spring to Spring boot following the three-tier architecture.
 
