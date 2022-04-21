@@ -13,6 +13,8 @@
 
 *   in addition to that I have also done freelancing job in Chegg India as an expert for computer science, where I have solved more than 200 problems in computer science asked by students from all over the world.
 
+* In projects I have created a Web-based Compiler, It is an implementation of Compilex module. It provides an interface to compile and run
+your programs in various languages.
 
 * Also I have done  a project on Employee database management system using Tkinter framework of python,this is a GUI application in python which supports CRUD(create, read, update,   delete) operations and I had created various widgets including Frame, Entry, Buttons, Labels etc. this also supports reseting, displaying and pritning the data of the employee. for backend I had used MYSQL.
 
