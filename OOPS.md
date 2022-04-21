@@ -433,6 +433,102 @@ int main(){
 * No membership label or friend keyword is required while defining friend function
 * friend function can access private members of class
 * declared inside class, defined outside class
+* Keep in mind that you have to do the forward declaration of the class which you are passing through the friend function definition if the class is defined below. 
+
+
+![Screenshot from 2022-04-19 19-59-15](https://user-images.githubusercontent.com/42698268/164028952-82563a09-cd44-4bfd-8fb5-ef4f58b34454.png)
+
+![Screenshot from 2022-04-19 19-59-02](https://user-images.githubusercontent.com/42698268/164029025-f347c42a-09e0-4c80-92d7-37a7c635c865.png)
+
+
+![Screenshot from 2022-04-19 20-03-29](https://user-images.githubusercontent.com/42698268/164028961-38a26efb-2a77-4f3a-ba45-ab34b0dc0689.png)
+
+* Member function can access the member of only one class i.e the one for which it has been defined, Friend function can access members of more than one class, as it is not the member of any of the class
+* For defining friend function you don't need to use membership label as friend function is not the member of any class
+
+### Function overloading using friend function
+* When we overload a binary operator, we pass one argument when we create it as member function and we pass 2 arguments when we create it as friend function, because 2nd argument is the one which was used as object in member function.
+
+![Screenshot from 2022-04-19 20-26-32](https://user-images.githubusercontent.com/42698268/164033800-8286e533-60d0-41c3-bb2f-e680f877df17.png)
+
+![Screenshot from 2022-04-19 20-26-47](https://user-images.githubusercontent.com/42698268/164033813-8ea5d397-91e8-4e92-95f0-c6179b651e68.png)
+
+* Friend function uses one more argument than usual while implementing function overloading
+![Screenshot from 2022-04-19 20-52-13](https://user-images.githubusercontent.com/42698268/164039163-3c35c398-f2be-481a-855c-8a1fa31e1dfc.png)
+
+
+![Screenshot from 2022-04-19 20-52-56](https://user-images.githubusercontent.com/42698268/164039171-ad0d2d82-6a97-4b78-a99b-c874abf34c17.png)
+
+## Operator overloading as friend function(unary operator)
+
+![Screenshot from 2022-04-20 15-27-26](https://user-images.githubusercontent.com/42698268/164203105-ac210c8a-9ac3-4a31-916b-69b86ce78b90.png)
+
+![Screenshot from 2022-04-20 15-27-09](https://user-images.githubusercontent.com/42698268/164203156-85b3cd7e-4d50-4c8d-96c6-9f8318942304.png)
+
+
+# Inheritance
+
+
+![Screenshot from 2022-04-20 15-49-24](https://user-images.githubusercontent.com/42698268/164291442-38a1bcf0-2bf3-4752-a2a4-56c276b76afa.png)
+
+
+![Screenshot from 2022-04-20 15-51-22](https://user-images.githubusercontent.com/42698268/164291447-e3b18a8a-a1ff-42d9-ade1-7927238f1ea4.png)
+
+
+![Screenshot from 2022-04-20 23-18-17](https://user-images.githubusercontent.com/42698268/164291898-8e9dec2f-0fab-4f62-b0cf-037ee6f876b4.png)
+
+
+![Screenshot from 2022-04-20 23-18-36](https://user-images.githubusercontent.com/42698268/164291906-8001c05d-6e88-42aa-b52d-0d6bd1a52cc5.png)
+
+
+![Screenshot from 2022-04-20 23-19-02](https://user-images.githubusercontent.com/42698268/164291926-39ad5798-a11f-4f02-b58f-4e12472cb267.png)
+
+### Types
+![Screenshot from 2022-04-20 23-20-22](https://user-images.githubusercontent.com/42698268/164293483-dacf501e-c5d0-4ea9-b88e-74f4945370b0.png)
+
+![Screenshot from 2022-04-20 23-20-32](https://user-images.githubusercontent.com/42698268/164293551-a174a846-4bca-4183-9bc0-7f52617901a6.png)
+
+
+
+![Screenshot from 2022-04-20 23-20-43](https://user-images.githubusercontent.com/42698268/164296122-97ff78d0-c00e-44d2-9133-e7db65ab7c07.png)
+
+
+![Screenshot from 2022-04-20 23-20-56](https://user-images.githubusercontent.com/42698268/164296132-c6d51f67-25a2-4b6a-9fce-9d8c40d9b0c4.png)
+
+![Screenshot from 2022-04-20 23-22-06](https://user-images.githubusercontent.com/42698268/164296141-60029b91-a52b-4675-be4d-b96ca3514a83.png)
+![Screenshot from 2022-04-20 23-23-22](https://user-images.githubusercontent.com/42698268/164296148-54356278-8149-4955-b109-261cbb90f528.png)
+
+
+![Screenshot from 2022-04-20 23-26-14](https://user-images.githubusercontent.com/42698268/164296160-2e6379fc-a64b-4b63-a778-0db334a2419c.png)
+
+ * Avaibility and accesibility are two different things
+ * Either the member is private, public or protected they would be available i.e the memory would be allotted to them but it is not necessary that they will be accessible
+* Here private will be accessed by neither user 1 nor 2
+* Protected will be accessed by only user 2
+* Public will be accessed by both user 1 and 2
+
+### Role of visibility mode while inheritance
+
+![Screenshot from 2022-04-21 00-01-04](https://user-images.githubusercontent.com/42698268/164298659-88c5d039-a5f1-4246-8224-120819b392aa.png)
+
+* If nothing is written in the place of visibility mode, then visibility mode would be considered as private
+
+### This is the diagram of accessibility
+
+![Screenshot from 2022-04-20 23-53-08](https://user-images.githubusercontent.com/42698268/164298708-c6b63e2f-dc16-4d1b-ace1-a21095d0787a.png)
+
+![Screenshot from 2022-04-21 00-08-55](https://user-images.githubusercontent.com/42698268/164301023-e79128e3-b271-464d-b9ee-e1aeded7497f.png)
+
+
+
+* The above code is wrong as 'a' is private member in class A but we are trying to access it in class B and we know that we cannot access the private members of parent class in a child class.
+
+![Screenshot from 2022-04-21 00-14-53](https://user-images.githubusercontent.com/42698268/164301044-72d5d34c-a683-4abb-8248-4d439a0878c8.png)
+
+* In the above code, in main function we can't access setValue directly as setValue is protected member and protected member can only be accessed using inheritance, so the above code will also give error.
+
+
+# Method overriding, method overloading and method hiding
 
 
 # this pointer
