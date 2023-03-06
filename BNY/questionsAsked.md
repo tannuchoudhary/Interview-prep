@@ -274,7 +274,7 @@ int main()
 
 
 # 2. What tech stack are you most comfortable with?
-Data structures and Algortihms
+
 # 3. Which data structure is used to implement auto-complete feature?
 # 4. Brief discussion about Tries.
 # 5. Implement Trie.
